@@ -1,0 +1,116 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357abd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#bgGradient)"/>
+  
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#34495e" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#grid)"/>
+  
+  <g transform="translate(400, 200)">
+    <ellipse cx="0" cy="0" rx="180" ry="120" fill="none" stroke="#3498db" stroke-width="3" opacity="0.6" filter="url(#glow)"/>
+    <ellipse cx="0" cy="0" rx="140" ry="95" fill="none" stroke="#2ecc71" stroke-width="2" opacity="0.7"/>
+    <ellipse cx="0" cy="0" rx="100" ry="70" fill="none" stroke="#e74c3c" stroke-width="2" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="60" ry="40" fill="url(#coreGradient)" opacity="0.9" filter="url(#shadow)"/>
+    
+    <g transform="translate(0, -10)">
+      <path d="M-15,-20 L15,-20 L20,0 L15,20 L-15,20 L-20,0 Z" fill="url(#shieldGradient)" filter="url(#shadow)"/>
+      <path d="M-8,-12 L8,-12 L10,0 L8,12 L-8,12 L-10,0 Z" fill="#ffffff" opacity="0.9"/>
+      <circle cx="0" cy="-5" r="3" fill="#e74c3c"/>
+      <rect x="-1" y="2" width="2" height="6" fill="#e74c3c"/>
+    </g>
+    
+    <g opacity="0.8">
+      <circle cx="0" cy="-120" r="8" fill="#3498db" filter="url(#shadow)"/>
+      <circle cx="0" cy="-95" r="6" fill="#2ecc71" filter="url(#shadow)"/>
+      <circle cx="0" cy="-70" r="5" fill="#e74c3c" filter="url(#shadow)"/>
+      <circle cx="0" cy="120" r="8" fill="#3498db" filter="url(#shadow)"/>
+      <circle cx="0" cy="95" r="6" fill="#2ecc71" filter="url(#shadow)"/>
+      <circle cx="0" cy="70" r="5" fill="#e74c3c" filter="url(#shadow)"/>
+      <circle cx="-180" cy="0" r="8" fill="#3498db" filter="url(#shadow)"/>
+      <circle cx="-140" cy="0" r="6" fill="#2ecc71" filter="url(#shadow)"/>
+      <circle cx="-100" cy="0" r="5" fill="#e74c3c" filter="url(#shadow)"/>
+      <circle cx="180" cy="0" r="8" fill="#3498db" filter="url(#shadow)"/>
+      <circle cx="140" cy="0" r="6" fill="#2ecc71" filter="url(#shadow)"/>
+      <circle cx="100" cy="0" r="5" fill="#e74c3c" filter="url(#shadow)"/>
+    </g>
+    
+    <g stroke="#3498db" stroke-width="1" opacity="0.4">
+      <line x1="-180" y1="0" x2="-140" y2="0"/>
+      <line x1="-140" y1="0" x2="-100" y2="0"/>
+      <line x1="100" y1="0" x2="140" y2="0"/>
+      <line x1="140" y1="0" x2="180" y2="0"/>
+      <line x1="0" y1="-120" x2="0" y2="-95"/>
+      <line x1="0" y1="-95" x2="0" y2="-70"/>
+      <line x1="0" y1="70" x2="0" y2="95"/>
+      <line x1="0" y1="95" x2="0" y2="120"/>
+    </g>
+    
+    <g opacity="0.7">
+      <circle cx="-160" cy="-80" r="3" fill="#e74c3c"/>
+      <circle cx="140" cy="60" r="3" fill="#e74c3c"/>
+      <circle cx="80" cy="-100" r="3" fill="#e74c3c"/>
+      <circle cx="-120" cy="90" r="3" fill="#e74c3c"/>
+    </g>
+    
+    <g font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">
+      <text x="0" y="-140" fill="#3498db" font-weight="bold">RUNTIME ISOLATION</text>
+      <text x="0" y="-110" fill="#2ecc71" font-weight="bold">HYPERVISOR LAYER</text>
+      <text x="0" y="-80" fill="#e74c3c" font-weight="bold">HARDENED CORE</text>
+      <text x="0" y="140" fill="#3498db" font-weight="bold">CONTAINER SECURITY</text>
+      <text x="0" y="110" fill="#2ecc71" font-weight="bold">PROCESS ISOLATION</text>
+      <text x="0" y="80" fill="#e74c3c" font-weight="bold">MEMORY PROTECTION</text>
+    </g>
+  </g>
+  
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="url(#layerGradient)" opacity="0.9" filter="url(#shadow)"/>
+    <text x="100" y="25" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" text-anchor="middle" font-weight="bold">HARDENED RUNTIME</text>
+    <text x="100" y="45" font-family="Arial, sans-serif" font-size="12" fill="#bdc3c7" text-anchor="middle">SECURITY VAULT</text>
+  </g>
+  
+  <g transform="translate(650, 50)">
+    <circle cx="0" cy="0" r="8" fill="#2ecc71"/>
+    <text x="15" y="4" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">SECURE</text>
+    <circle cx="0" cy="25" r="8" fill="#f39c12"/>
+    <text x="15" y="29" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">MONITORED</text>
+    <circle cx="0" cy="50" r="8" fill="#3498db"/>
+    <text x="15" y="54" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">ISOLATED</text>
+  </g>
+  
+  <g transform="translate(50, 320)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="10" fill="#bdc3c7">ISOLATION LAYERS: 3</text>
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="10" fill="#bdc3c7">SECURITY NODES: 12</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="10" fill="#bdc3c7">THREAT DETECTION: ACTIVE</text>
+  </g>
+</svg>
