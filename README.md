@@ -1,4 +1,6 @@
-# Edera Security Campaign Quarto Site
+# Hardened Campaign Security Campaign Concept Site
+
+## [Live Site](https://codetricity.github.io/hardened-container/pages/index.html)
 
 ## Quick Start
 
