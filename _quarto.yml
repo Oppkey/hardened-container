@@ -15,6 +15,9 @@ website:
         href: pages/isolation-vs-oss.qmd
       - text: "About"
         href: pages/about.qmd
+      - text: "Proposal"
+        href: pages/proposal.qmd
+
   page-navigation: true
   search: true
 

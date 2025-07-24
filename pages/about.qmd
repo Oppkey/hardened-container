@@ -10,15 +10,15 @@ This is a content prototype site designed to work with a community of independen
 
 ## Who We Are
 
-A small team of security-focused developers and technical writers working with a community of independent developers who contribute their expertise and insights.
+Security-focused developers and technical writers working with a community of independent technologists who contribute their expertise and insights with the use of AI.
 
 
-## Unique Approach
+## Transparency and Accountability
 
-The unique attribute of this site is that developers give their opinions, content, and suggestions under their real names. This transparency and accountability ensures authentic, credible perspectives from the community.
+The unique attribute of this site is that people work with AI to give their opinions, content, and suggestions under their real names. This transparency and accountability ensures authentic, credible perspectives from the community.
 
 ## Use of AI
-We believe that technologists and developers are using AI to augment human ideas. We use AI to:
+We believe that technologists and developers should use AI to augment human ideas. We use AI to:
 
 - understand the latest trends in the industry
 - research the latest tools, technologies, best practices, and the 
@@ -33,7 +33,7 @@ We believe that technologists and developers are using AI to augment human ideas
 ### FAQ
 
 **Q:** Is this sponsored by Edera?  
-**A:** Yes. This site is sponsored by Edera. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.
+**A:** This site is intended to be sponsored by Edera. It is currently a prototype. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.
 
 **Q:** Can I contribute?  
-**A:** Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names.
+**A:** Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas.

@@ -90,4 +90,5 @@ build/
 *.old
 
 # Quarto specific temporary files
-.quarto/ 
+.quarto/
+/.quarto/

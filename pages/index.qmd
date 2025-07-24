@@ -28,21 +28,15 @@ sections:
 
 ## Who Is This For?
 
-Security engineers, platform teams, DevOps leaders, and marketer-producers who need **credible technical substance** for campaigns.
-
-## How to Use This Site
-
-1. Browse posts for background.  
-2. Grab comparison tables for decks.  
-3. Use case studies as proof points.
+Security engineers, platform teams, DevOps leaders, and anyone interested in security.
 
 ### FAQ
 
 **Q:** Do you only cover Edera?  
-**A:** No. We compare multiple approaches, including OSS and cloud vendor options.
+**A:** No. We compare multiple approaches, including OSS and cloud vendor options. This site is intended to be sponsored by Edera. It is currently a prototype. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.
 
 **Q:** Are the posts peer reviewed?  
-**A:** We cite public CVEs and docs; feedback is welcome via PRs.
+**A:** Yes. The content is reviewed by a community of developers and security experts. We cite public CVEs and docs; feedback is welcome via PRs.
 
 **Q:** Can I reuse charts or tables?  
 **A:** Yes, with attribution.

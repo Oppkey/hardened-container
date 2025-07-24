@@ -18,7 +18,7 @@
     "href": "pages/about.html#who-we-are",
     "title": "About This Project",
     "section": "Who We Are",
-    "text": "Who We Are\nA small team of security-focused developers and technical writers working with a community of independent developers who contribute their expertise and insights."
+    "text": "Who We Are\nSecurity-focused developers and technical writers working with a community of independent technologists who contribute their expertise and insights with the use of AI."
   },
   {
     "objectID": "pages/about.html#unique-approach",
@@ -32,14 +32,14 @@
     "href": "pages/about.html#use-of-ai",
     "title": "About This Project",
     "section": "Use of AI",
-    "text": "Use of AI\nWe believe that technologists and developers are using AI to augment human ideas. We use AI to:\n\nunderstand the latest trends in the industry\nresearch the latest tools, technologies, best practices, and the latest security threats and vulnerabilities.\nwrite, edit, and review content"
+    "text": "Use of AI\nWe believe that technologists and developers should use AI to augment human ideas. We use AI to:\n\nunderstand the latest trends in the industry\nresearch the latest tools, technologies, best practices, and the latest security threats and vulnerabilities.\nwrite, edit, and review content"
   },
   {
     "objectID": "pages/about.html#contact",
     "href": "pages/about.html#contact",
     "title": "About This Project",
     "section": "Contact",
-    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jcasman@oppkey.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: Yes. This site is sponsored by Edera. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names."
+    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jcasman@oppkey.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: This site is intended to be sponsored by Edera. It is currently a prototype. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas."
   },
   {
     "objectID": "pages/isolation-vs-oss.html",
@@ -578,13 +578,55 @@
     "href": "pages/index.html#who-is-this-for",
     "title": "Hardened Runtimes & Container Isolation: What Actually Matters",
     "section": "Who Is This For?",
-    "text": "Who Is This For?\nSecurity engineers, platform teams, DevOps leaders, and marketer-producers who need credible technical substance for campaigns."
+    "text": "Who Is This For?\nSecurity engineers, platform teams, DevOps leaders, and anyone interested in security.\n\nFAQ\nQ: Do you only cover Edera?\nA: No. We compare multiple approaches, including OSS and cloud vendor options. This site is intended to be sponsored by Edera. It is currently a prototype. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Are the posts peer reviewed?\nA: Yes. The content is reviewed by a community of developers and security experts. We cite public CVEs and docs; feedback is welcome via PRs.\nQ: Can I reuse charts or tables?\nA: Yes, with attribution."
   },
   {
-    "objectID": "pages/index.html#how-to-use-this-site",
-    "href": "pages/index.html#how-to-use-this-site",
-    "title": "Hardened Runtimes & Container Isolation: What Actually Matters",
-    "section": "How to Use This Site",
-    "text": "How to Use This Site\n\nBrowse posts for background.\n\nGrab comparison tables for decks.\n\nUse case studies as proof points.\n\n\nFAQ\nQ: Do you only cover Edera?\nA: No. We compare multiple approaches, including OSS and cloud vendor options.\nQ: Are the posts peer reviewed?\nA: We cite public CVEs and docs; feedback is welcome via PRs.\nQ: Can I reuse charts or tables?\nA: Yes, with attribution."
+    "objectID": "pages/about.html#unique-approach---transparency-and-accountability",
+    "href": "pages/about.html#unique-approach---transparency-and-accountability",
+    "title": "About This Project",
+    "section": "Unique Approach - Transparency and Accountability",
+    "text": "Unique Approach - Transparency and Accountability\nThe unique attribute of this site is that developers give their opinions, content, and suggestions under their real names. This transparency and accountability ensures authentic, credible perspectives from the community."
+  },
+  {
+    "objectID": "pages/about.html#transparency-and-accountability",
+    "href": "pages/about.html#transparency-and-accountability",
+    "title": "About This Project",
+    "section": "Transparency and Accountability",
+    "text": "Transparency and Accountability\nThe unique attribute of this site is that people work with AI to give their opinions, content, and suggestions under their real names. This transparency and accountability ensures authentic, credible perspectives from the community."
+  },
+  {
+    "objectID": "pages/proposal.html",
+    "href": "pages/proposal.html",
+    "title": "Proposal",
+    "section": "",
+    "text": "This proposal is to explore the synergy of community, technology, and company through the use of human ideas augmented by AI."
+  },
+  {
+    "objectID": "pages/proposal.html#phases",
+    "href": "pages/proposal.html#phases",
+    "title": "Proposal",
+    "section": "Phases",
+    "text": "Phases\n\nPhase 1: Content Creation Humans from Oppkey work with the AI to be a site with content.\nPhase 2: Expert Vetting Oppkey reaches out to developers and security experts to vet the site and propose changes.\nPhase 3: Community Collaboration We work with the community to improve the site.\nPhase 4: Content Cycle The cycle is repeated with new content."
+  },
+  {
+    "objectID": "pages/proposal.html#example-of-real-people-working-with-a-site",
+    "href": "pages/proposal.html#example-of-real-people-working-with-a-site",
+    "title": "Proposal",
+    "section": "Example of Real People Working with a Site",
+    "text": "Example of Real People Working with a Site\nAn example of this model in action can be seen at the R Beats Python Community page."
+  },
+  {
+    "objectID": "pages/proposal.html#concepts",
+    "href": "pages/proposal.html#concepts",
+    "title": "Proposal",
+    "section": "Concepts",
+    "text": "Concepts\n\n\n\nCommunity Engagement Diagram\n\n\nThe diagram illustrates the evolution of community engagement through two phases:\nLeft side (Current State): Shows a smaller crossover between community and technology, with limited intersection between the three domains.\nRight side (Enhanced Engagement): Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge."
+  },
+  {
+    "objectID": "pages/proposal.html#community-engagement-evolution",
+    "href": "pages/proposal.html#community-engagement-evolution",
+    "title": "Proposal",
+    "section": "Community Engagement Evolution",
+    "text": "Community Engagement Evolution\n\n\n\nCommunity Engagement Diagram\n\n\nThe diagram illustrates the evolution of community engagement through two phases:\nLeft side (Current State): Shows a smaller crossover between community and technology, with limited intersection between the three domains.\nRight side (Enhanced Engagement): Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge."
   }
 ]
