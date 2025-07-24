@@ -65,6 +65,8 @@ DevOps Engineer, Fortune 500 Financial Services
 **Alex Thompson**  
 CTO, Startup Security Company
 
+![Alex Thompson](../assets/images/people/alex_thompson.png){.profile-image}
+
 > The security philosophy article really captures the essence of why we need to move beyond traditional container security. It's not just about adding more layers - it's about fundamentally rethinking how we approach runtime security. The comparison with OSS alternatives is particularly valuable for organizations trying to make informed decisions.
 
 **His opinion on the main message:**
@@ -108,6 +110,8 @@ Professor of Computer Science, Cybersecurity Research Lab
 
 **David Kim**  
 Security Architect, Cloud Platform Provider
+
+![David Kim](../assets/images/people/david_kim.png){.profile-image}
 
 > Having implemented hardened runtimes at scale, I can confirm that the performance characteristics described in the articles are accurate. The overhead is minimal for most workloads, and the security benefits far outweigh any performance impact. The key is proper implementation and monitoring.
 

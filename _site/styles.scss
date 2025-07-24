@@ -42,3 +42,27 @@ code { font-size: 0.9rem; }
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
 }
+
+/* Profile image styling */
+.profile-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1rem 0;
+  display: block;
+}
+
+/* Responsive design for profile images */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Dark theme compatibility for profile images */
+[data-theme="dark"] .profile-image {
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
