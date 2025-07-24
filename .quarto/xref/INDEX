@@ -49,5 +49,8 @@
   },
   "pages/proposal.qmd": {
     "proposal.html": "acaf4d40"
+  },
+  "pages/community.qmd": {
+    "community.html": "ed626b5d"
   }
 }

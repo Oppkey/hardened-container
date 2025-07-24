@@ -13,6 +13,8 @@ website:
         href: posts/index.qmd
       - text: "Compare"
         href: pages/isolation-vs-oss.qmd
+      - text: "Community"
+        href: pages/community.qmd
       - text: "About"
         href: pages/about.qmd
       - text: "Proposal"
