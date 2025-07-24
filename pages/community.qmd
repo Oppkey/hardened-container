@@ -16,7 +16,7 @@ The scale of AI with the trust of human verification, with the goal of creating 
 
 ### Here's what security professionals have to say!
 
-**Dr. Sarah Chen**  
+**Dr. Sarah Chen** *(Placeholder - Not a real person)*  
 Senior Security Researcher, Cloud Security Alliance
 
 ![Dr. Sarah Chen](../assets/images/people/sarah_chen.png){.profile-image}
@@ -35,7 +35,7 @@ About security tools
 
 ---
 
-**Marcus Rodriguez**  
+**Marcus Rodriguez** *(Placeholder - Not a real person)*  
 DevOps Engineer, Fortune 500 Financial Services
 
 ![Marcus Rodriguez](../assets/images/people/marcus_rodriguez.png){.profile-image}
@@ -62,7 +62,7 @@ DevOps Engineer, Fortune 500 Financial Services
 
 ---
 
-**Alex Thompson**  
+**Alex Thompson** *(Placeholder - Not a real person)*  
 CTO, Startup Security Company
 
 ![Alex Thompson](../assets/images/people/alex_thompson.png){.profile-image}
@@ -81,7 +81,7 @@ CTO, Startup Security Company
 
 ---
 
-**Dr. Emily Watson**  
+**Dr. Emily Watson** *(Placeholder - Not a real person)*  
 Professor of Computer Science, Cybersecurity Research Lab
 
 ![Dr. Emily Watson](../assets/images/people/emily_watson.png){.profile-image}
@@ -108,7 +108,7 @@ Professor of Computer Science, Cybersecurity Research Lab
 
 ---
 
-**David Kim**  
+**David Kim** *(Placeholder - Not a real person)*  
 Security Architect, Cloud Platform Provider
 
 ![David Kim](../assets/images/people/david_kim.png){.profile-image}
