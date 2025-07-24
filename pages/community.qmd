@@ -19,6 +19,8 @@ The scale of AI with the trust of human verification, with the goal of creating 
 **Dr. Sarah Chen**  
 Senior Security Researcher, Cloud Security Alliance
 
+![Dr. Sarah Chen](../assets/images/people/sarah_chen.png){.profile-image}
+
 > The comparison between hardened runtimes and traditional container isolation is spot-on. Having worked with both approaches in production environments, I can attest to the significant security improvements that hardened runtimes provide. The isolation mechanisms are fundamentally different - while containers share the kernel, hardened runtimes provide true process isolation that's much harder to escape from.
 
 About security tools
@@ -35,6 +37,8 @@ About security tools
 
 **Marcus Rodriguez**  
 DevOps Engineer, Fortune 500 Financial Services
+
+![Marcus Rodriguez](../assets/images/people/marcus_rodriguez.png){.profile-image}
 
 > As someone who's been responsible for container security in a highly regulated environment, the isolation comparison article really resonated with me. We've been using traditional containers for years, but the security gaps are becoming more apparent as attacks become more sophisticated. The move to hardened runtimes isn't just about security - it's about compliance and audit requirements too.
 
@@ -77,6 +81,8 @@ CTO, Startup Security Company
 
 **Dr. Emily Watson**  
 Professor of Computer Science, Cybersecurity Research Lab
+
+![Dr. Emily Watson](../assets/images/people/emily_watson.png){.profile-image}
 
 > The runtime isolation comparison provides an excellent technical foundation for understanding the security implications of different approaches. As an academic researcher, I appreciate the depth of technical analysis and the clear presentation of the underlying security principles.
 
