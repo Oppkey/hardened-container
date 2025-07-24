@@ -4,7 +4,19 @@ title: "Proposal"
 
 This proposal is to explore the synergy of community, technology, and company through the use of human ideas augmented by AI.
 
-## Phases
+## Community Engagement Evolution
+
+![Community Engagement Diagram](../assets/images/community-engagement-d1.png)
+
+The diagram illustrates the evolution of community engagement through two phases:
+
+**Left side (Current State):** Shows a smaller crossover between community and technology, with limited intersection between the three domains.
+
+**Right side (Enhanced Engagement):** Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge.
+
+## Engagement Phases
+
+![Engagement Phases Diagram](../assets/images/engagement_phases.png)
 
 1.  **Phase 1: Content Creation**
     Humans from Oppkey work with the AI to be a site with content.
@@ -18,16 +30,9 @@ This proposal is to explore the synergy of community, technology, and company th
 4.  **Phase 4: Content Cycle**
     The cycle is repeated with new content.
 
+
+
+
 ## Example of Real People Working with a Site
 
 An example of this model in action can be seen at the [R Beats Python Community page](https://oppkey.github.io/r-beats-python/community.html).
-
-## Community Engagement Evolution
-
-![Community Engagement Diagram](../assets/images/community-engagement-d1.png)
-
-The diagram illustrates the evolution of community engagement through two phases:
-
-**Left side (Current State):** Shows a smaller crossover between community and technology, with limited intersection between the three domains.
-
-**Right side (Enhanced Engagement):** Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge.
