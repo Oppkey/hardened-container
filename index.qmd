@@ -1,0 +1,14 @@
+---
+title: "Hardened Runtime Security Vault"
+description: "Technical deep-dives, comparisons, and case studies on hardened runtimes, container isolation, and cloud security."
+---
+
+![Hardened Runtime Security Philosophy](/assets/images/hero-graphic.svg){.hero-graphic}
+
+<script>
+window.location.href = 'pages/index.html';
+</script>
+
+<meta http-equiv="refresh" content="0; url=pages/index.html" />
+
+If you are not redirected automatically, [click here to go to the home page](pages/index.html). 

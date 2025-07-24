@@ -1,0 +1,68 @@
+---
+title: "Isolated Runtime vs. OSS Runtimes: Which Isolation Model Wins?"
+description: "We compare a hardened hypervisor-style runtime to community options like Kata Containers and gVisor."
+type: "compare"
+criteria: ["Security", "Performance", "Community Support", "Operational Complexity", "Cost"]
+summary_table: true
+---
+
+## Scope & Criteria
+
+We evaluate:
+
+1. **Security Surface**  
+2. **Performance Overhead**  
+3. **Community & Vendor Support**  
+4. **Operational Complexity**  
+5. **Cost & Licensing**
+
+::: {.callout-warning}
+**Heads up:** Data points are based on public docs and benchmarks; always validate with your environment.
+:::
+
+## Quick Comparison Table
+
+| Criterion              | Edera Hardened Runtime | Kata Containers / gVisor | Distroless / Bottlerocket Images |
+|------------------------|------------------------|--------------------------|----------------------------------|
+| Security Surface       | Isolated kernels; hypervisor boundary | Split-kernel/container userland; strong, but shared layers | Shared kernel; minimized userland |
+| Startup Overhead       | Higher (~100s ms)     | Moderate                 | Lowest                           |
+| Community Scrutiny     | Low/Medium (vendor-led)| High (CNCF/Google/etc.) | High (AWS/Google)                |
+| Ops Complexity         | New hypervisor layer  | Additional runtime shim  | Minimal (standard OCI)           |
+| Cost/Licensing         | Vendor contract        | OSS (support optional)   | Vendor images (often free)       |
+
+## Security Discussion
+
+### Edera
+
+- **Pros:** No shared kernel escapes by design; strong isolation for privileged workloads.  
+- **Cons:** Trust concentrated in one codebase; fewer eyes on the hypervisor.
+
+### Kata Containers / gVisor
+
+- **Pros:** OSS, broad audits, cloud-native integrations.  
+- **Cons:** Performance trade-offs; still some shared components; patch cycles vary.
+
+### Distroless / Bottlerocket
+
+- **Pros:** Minimal attack surface; easy adoption.  
+- **Cons:** Kernel still shared; you rely on patching cadence and mitigations.
+
+## Bottom Line
+
+If your threat model prioritizes **kernel escape prevention**, Edera-class isolation is compelling. For most orgs, mature OSS runtimes or hardened images hit the “good enough” bar with less friction.
+
+## Related Content
+
+- See our [Blog Posts](/posts/index.qmd) for upcoming technical deep-dives
+- Check out our [About page](/pages/about.qmd) for more information
+
+### FAQ
+
+**Q:** Can I layer detection on top of Edera?  
+**A:** Yes—prevention and detection aren’t mutually exclusive.
+
+**Q:** What about GPU and privileged containers?  
+**A:** Hypervisor isolation helps; OSS runtimes need extra hardening.
+
+**Q:** Is performance acceptable?  
+**A:** Benchmarks suggest low CPU overhead; startup latency increases.

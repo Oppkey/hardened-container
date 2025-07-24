@@ -1,0 +1,39 @@
+---
+title: "About This Project"
+description: "Who built this site and why it exists."
+type: "page"
+---
+
+## Mission
+
+This is a content prototype site designed to work with a community of independent developers to help other developers assess options for their core runtime architectures. We provide clear, technical, and opinionated content on container isolation and runtime hardening so teams can make informed decisions.
+
+## Who We Are
+
+A small team of security-focused developers and technical writers working with a community of independent developers who contribute their expertise and insights.
+
+
+## Unique Approach
+
+The unique attribute of this site is that developers give their opinions, content, and suggestions under their real names. This transparency and accountability ensures authentic, credible perspectives from the community.
+
+## Use of AI
+We believe that technologists and developers are using AI to augment human ideas. We use AI to:
+
+- understand the latest trends in the industry
+- research the latest tools, technologies, best practices, and the 
+  latest security threats and vulnerabilities.
+- write, edit, and review content
+
+## Contact
+
+- Open an issue or PR.  
+- Reach out via email (jcasman@oppkey.com).
+
+### FAQ
+
+**Q:** Is this sponsored by Edera?  
+**A:** Yes. This site is sponsored by Edera. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.
+
+**Q:** Can I contribute?  
+**A:** Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names.

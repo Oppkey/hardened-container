@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Hardened Runtime Community Vault"
+  description: "Technical deep-dives, comparisons, and case studies on hardened runtimes, container isolation, and cloud security."
+  favicon: assets/images/logo.svg
+  navbar:
+    logo: assets/images/logo.svg
+    left:
+      - text: "Posts"
+        href: posts/index.qmd
+      - text: "Compare"
+        href: pages/isolation-vs-oss.qmd
+      - text: "About"
+        href: pages/about.qmd
+  page-navigation: true
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.scss
+    toc: true
+    toc-depth: 3
+    number-sections: false
+    code-tools: true
+    code-fold: show

@@ -1,0 +1,185 @@
+---
+title: "Base Images: Full Kernel vs. Stripped-Down"
+description: "Comparing Edera's full kernel approach with vendor stripped-down images like AWS Bottlerocket and Google Container-Optimized OS"
+date: 2025-01-27
+categories: ["Security", "Performance", "Operations"]
+---
+
+## The Base Image Philosophy Divide
+
+Container base images represent a fundamental choice: **full kernel isolation** versus **minimal attack surface**. Edera takes the former approach, while cloud vendors prefer the latter. Let's examine why this matters.
+
+## Edera's Position: Each Zone Has Full Kernel
+
+Edera's approach gives each container zone its own **complete kernel instance**:
+
+### Technical Architecture
+
+```bash
+# Edera: Each container gets isolated kernel space
+┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
+│   Container A   │  │   Container B   │  │   Container C   │
+│  ┌───────────┐  │  │  ┌───────────┐  │  │  ┌───────────┐  │
+│  │   Kernel  │  │  │  │   Kernel  │  │  │  │   Kernel  │  │
+│  │ Instance  │  │  │  │ Instance  │  │  │  │ Instance  │  │
+│  └───────────┘  │  │  └───────────┘  │  │  └───────────┘  │
+└─────────────────┘  └─────────────────┘  └─────────────────┘
+         │                    │                    │
+         └────────────────────┼────────────────────┘
+                              │
+                    ┌─────────────────┐
+                    │   Hypervisor    │
+                    │   (Rust-based)  │
+                    └─────────────────┘
+```
+
+### Security Benefits
+
+- **Kernel Escape Elimination**: No shared kernel means no kernel-level attacks
+- **Deterministic Isolation**: Same security guarantees regardless of workload
+- **Privilege Separation**: Each container has its own privilege space
+
+### Operational Characteristics
+
+- **Resource Overhead**: Higher memory usage (~50-100MB per container)
+- **Startup Time**: Slower initialization (~100-200ms)
+- **Debugging**: More complex (need hypervisor debugging tools)
+
+## Community Alternatives: Stripped-Down Vendor Images
+
+### AWS Bottlerocket
+
+Bottlerocket uses a **minimal Linux distribution** optimized for containers:
+
+```toml
+# Bottlerocket configuration
+[settings.kernel]
+# Minimal kernel modules
+modules = ["overlay", "bridge", "iptable_nat"]
+
+[settings.kubernetes]
+# Optimized for Kubernetes workloads
+node-labels = ["bottlerocket.aws/updater/strategy=immediate"]
+```
+
+**Pros:**
+- Minimal attack surface
+- Fast boot times
+- AWS-native integrations
+- Automated updates
+
+**Cons:**
+- Shared kernel (vulnerable to kernel escapes)
+- Limited customization
+- Vendor lock-in
+
+### Google Container-Optimized OS (COS)
+
+Google's **minimal Linux distribution**:
+
+```yaml
+# COS configuration
+apiVersion: v1
+kind: Node
+metadata:
+  labels:
+    cloud.google.com/gke-os-distribution: cos
+```
+
+**Pros:**
+- Optimized for container workloads
+- Google Cloud integrations
+- Regular security updates
+- Minimal resource footprint
+
+**Cons:**
+- Still shares kernel
+- Limited debugging capabilities
+- Google-specific optimizations
+
+## The Core Debate: Hypervisor Overhead vs. Simplicity & Trust
+
+### Edera's Argument
+
+**"Complete isolation is worth the overhead"**
+
+- **Zero Kernel Sharing**: Eliminates entire attack vector
+- **Predictable Security**: Same isolation for all workloads
+- **Future-Proof**: Hardware trends favor virtualization
+
+### Community Counterpoint
+
+**"Minimal surface area with trusted vendors"**
+
+- **Reduced Complexity**: Simpler operational model
+- **Vendor Expertise**: Cloud providers have security teams
+- **Performance**: Lower resource overhead
+
+## Real-World Comparison
+
+| Aspect | Edera Full Kernel | AWS Bottlerocket | Google COS |
+|--------|-------------------|------------------|------------|
+| Memory per Container | 100MB | 20MB | 25MB |
+| Startup Time | 150ms | 30ms | 40ms |
+| Kernel Isolation | Complete | None | None |
+| Attack Surface | Minimal (per container) | Minimal (shared) | Minimal (shared) |
+| Debugging Complexity | High | Low | Low |
+| Vendor Lock-in | Edera | AWS | Google |
+
+## Security Threat Models
+
+### Edera's Threat Model
+
+**Assumes sophisticated attackers targeting kernel:**
+
+```rust
+// Edera: Kernel escape attempts fail at hypervisor boundary
+fn handle_kernel_escape_attempt(container_id: ContainerId) -> SecurityResult {
+    // Attempt fails at hypervisor boundary
+    // No shared kernel to compromise
+    SecurityResult::Blocked
+}
+```
+
+### Vendor Threat Model
+
+**Assumes rapid patching and minimal surface area:**
+
+```bash
+# Vendor approach: Rapid patching of shared kernel
+# Bottlerocket auto-updates kernel vulnerabilities
+systemctl restart update-engine
+```
+
+## When to Choose Each Approach
+
+### Choose Edera Full Kernel When:
+
+- **High-Security Requirements**: Financial, healthcare, government
+- **Multi-Tenant Environments**: Need absolute isolation
+- **Compliance Needs**: Clear security boundaries for auditors
+- **Sophisticated Threat Models**: Assume kernel-level attacks
+
+### Choose Vendor Images When:
+
+- **Cost Sensitivity**: Lower resource overhead
+- **Operational Simplicity**: Easier debugging and management
+- **Cloud-Native Workloads**: Leverage vendor optimizations
+- **Rapid Development**: Faster container startup
+
+## The Bottom Line
+
+**Edera's full kernel approach** provides the strongest isolation guarantees but requires accepting higher resource overhead and operational complexity. **Vendor stripped-down images** offer simplicity and performance but rely on shared kernel security.
+
+The choice depends on your **threat model** and **operational constraints**:
+
+- **Eliminate kernel escapes entirely** (Edera)
+- **Minimize attack surface with trusted vendors** (Bottlerocket/COS)
+
+For organizations where **kernel-level attacks are realistic threats**, Edera's approach is compelling. For those prioritizing **operational simplicity and vendor trust**, stripped-down images remain viable.
+
+The real question: **Is your threat model better served by eliminating the kernel attack vector entirely, or by minimizing the shared kernel's attack surface?**
+
+---
+
+*Next up: [Development Model: OSS + Proprietary vs. Pure OSS](/posts/dev-model-comparison.qmd)* 
