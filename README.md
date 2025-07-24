@@ -34,7 +34,3 @@ Or render locally:
 ```bash
 quarto render
 ```
-
----
-
-Scaffolded by ChatGPT. Customize freely.
