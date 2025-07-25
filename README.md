@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-1. Install Quarto: <https://quarto.org/docs/get-started/>
+1. Install Quarto.
 2. In this folder, run:
 
 ```bash
@@ -24,3 +24,10 @@ Or render locally:
 ```bash
 quarto render
 ```
+
+## Feeding Site into LLM
+
+I'm using this site to feed information to the LLM.
+
+<https://gitingest.com/>
+

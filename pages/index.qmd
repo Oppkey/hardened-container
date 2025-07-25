@@ -1,11 +1,11 @@
 ---
-title: "Hardened Runtimes & Container Isolation: What Actually Matters"
-description: "A technical hub comparing Edera's hardened runtime with community OSS and cloud-native alternatives."
+title: "The Security Isolation Imperative"
+description: "An educational project exploring the shift to architectural isolation with Edera, Kata Containers, gVisor, and the broader cloud-native ecosystem."
 type: "landing"
 layout: "full"
 hero:
-  headline: "Secure by Design—Not Just by Alert"
-  subhead: "Deep dives on hardened runtimes, hypervisors, and container security trade‑offs."
+  headline: "Beyond Shared Kernels: The New Security Baseline for the AI Era"
+  subhead: "An educational project exploring the shift to architectural isolation with Edera, Kata Containers, gVisor, and the broader cloud-native ecosystem."
   cta_text: "Read the Latest Posts"
   cta_link: "/posts/index.qmd"
 sections:
@@ -16,24 +16,48 @@ sections:
 
 ![Hardened Runtime Security Philosophy](/assets/images/hero-graphic.svg){.hero-graphic}
 
+## The Security Isolation Imperative
+
+The rapid advancement of AI capabilities has fundamentally changed the security landscape. Traditional detection-based security approaches are becoming less effective against AI-powered attacks that can:
+
+- **Adapt in Real-Time**: AI attackers can modify their techniques faster than detection systems can update
+- **Exploit Zero-Day Vulnerabilities**: AI can discover and exploit vulnerabilities before patches are available  
+- **Bypass Traditional Defenses**: AI can learn to evade signature-based detection systems
+
+This new reality requires a fundamental shift from reactive detection to proactive prevention through **architectural isolation**.
+
+## Why Hardened Runtimes Matter Now
+
+As enterprises increasingly deploy AI agents and leverage AI coding assistants, new security challenges have emerged around data privacy, preventing data exfiltration, and stopping privilege escalation. Traditional container security tools are seen as poorly maintained and unreliable, while detection-focused approaches generate unmanageable volumes of alerts without preventing actual breaches.
+
+**Hardened runtimes** provide the architectural foundation needed to secure the AI-powered enterprise by delivering:
+
+- **Production Grade Sandboxing**: Workloads run in fully isolated zones, eliminating entire classes of attacks such as lateral movement and data exfiltration
+- **Attack Surface Elimination**: Provides a minimal, hardened environment that shelters the host from vulnerable system calls and kernel-level attack paths
+- **Instant Breach Containment**: API-driven quarantine functionality that acts as an instant "kill switch" when triggered, stopping data breaches and preserving environments for forensic analysis
+
 ## What You'll Find Here
 
-- **Technical Comparisons**: Isolated Edera vs. Kata Containers, gVisor, AWS Bottlerocket, and more.  
+- **Technical Comparisons**: Educational analysis of Edera, Kata Containers, gVisor, AWS Bottlerocket, and more.  
 - **Attack Write-ups**: Real exploits (GPU escapes, LD_PRELOAD tricks) and how different runtimes respond.  
-- **Influencer-Ready Narratives**: Opinionated but evidence-backed takes you can amplify.
+- **Ecosystem Insights**: Evidence-backed analysis of the broader hardened runtime movement.
+- **Community Testing**: Best practices, examples, and tutorials for implementing hardened runtimes.
+- **Best Practices**: Real-world implementation guidance and operational considerations.
 
 ::: {.callout-tip}
-**Tip:** Start with our [Isolation vs OSS comparison](/pages/isolation-vs-oss.qmd) and explore our [technical blog posts](/posts/index.qmd) for deep dives on each topic.
+**Tip:** Start with our [Hardened Runtime Ecosystem Guide](/pages/isolation-vs-oss.qmd) and explore our [technical blog posts](/posts/index.qmd) for deep dives on each topic.
 :::
 
 ## Who Is This For?
 
-Security engineers, platform teams, DevOps leaders, and anyone interested in security.
+Security engineers, platform teams, DevOps leaders, and anyone interested in the future of container security.
 
 ### FAQ
 
 **Q:** Do you only cover Edera?  
-**A:** No. We compare multiple approaches, including OSS and cloud vendor options. This site is intended to be sponsored by Edera. It is currently a prototype. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.
+**A:** No. We compare multiple approaches, including OSS and cloud vendor options. This site is a concept that is intended to be sponsored
+by Edera, but it is open to cooperation from OSS projects and other cloud security vendors. It is currently a prototype. 
+Sponsors, including Edera,  do not control the content. All content is independent and analyzed by independent developers from the community.
 
 **Q:** Are the posts peer reviewed?  
 **A:** Yes. The content is reviewed by a community of developers and security experts. We cite public CVEs and docs; feedback is welcome via PRs.

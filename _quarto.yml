@@ -3,8 +3,8 @@ project:
   output-dir: _site
 
 website:
-  title: "Hardened Runtime Community Vault"
-  description: "Technical deep-dives, comparisons, and case studies on hardened runtimes, container isolation, and cloud security."
+  title: "The Security Isolation Imperative"
+  description: "An educational project exploring the shift to architectural isolation with Edera, Kata Containers, gVisor, and the broader cloud-native ecosystem."
   favicon: assets/images/logo.svg
   navbar:
     logo: assets/images/logo.svg

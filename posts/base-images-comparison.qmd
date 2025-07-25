@@ -1,22 +1,22 @@
 ---
 title: "Base Images: Full Kernel vs. Stripped-Down"
-description: "Comparing Edera's full kernel approach with vendor stripped-down images like AWS Bottlerocket and Google Container-Optimized OS"
+description: "Comparing full kernel isolation approaches with minimal attack surface strategies in the hardened runtime ecosystem"
 date: 2025-01-27
 categories: ["Security", "Performance", "Operations"]
 ---
 
 ## The Base Image Philosophy Divide
 
-Container base images represent a fundamental choice: **full kernel isolation** versus **minimal attack surface**. Edera takes the former approach, while cloud vendors prefer the latter. Let's examine why this matters.
+Container base images represent a fundamental choice: **full kernel isolation** versus **minimal attack surface**. Some hardened runtimes take the former approach, while cloud vendors prefer the latter. Let's examine why this matters.
 
-## Edera's Position: Each Zone Has Full Kernel
+## Full Kernel Isolation Approaches
 
-Edera's approach gives each container zone its own **complete kernel instance**:
+Some hardened runtimes give each container zone its own **complete kernel instance**:
 
 ### Technical Architecture
 
 ```bash
-# Edera: Each container gets isolated kernel space
+# Full kernel isolation: Each container gets isolated kernel space
 ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐
 │   Container A   │  │   Container B   │  │   Container C   │
 │  ┌───────────┐  │  │  ┌───────────┐  │  │  ┌───────────┐  │
@@ -45,7 +45,7 @@ Edera's approach gives each container zone its own **complete kernel instance**:
 - **Startup Time**: Slower initialization (~100-200ms)
 - **Debugging**: More complex (need hypervisor debugging tools)
 
-## Community Alternatives: Stripped-Down Vendor Images
+## Minimal Attack Surface Approaches
 
 ### AWS Bottlerocket
 
@@ -99,7 +99,7 @@ metadata:
 
 ## The Core Debate: Hypervisor Overhead vs. Simplicity & Trust
 
-### Edera's Argument
+### Full Kernel Isolation Philosophy
 
 **"Complete isolation is worth the overhead"**
 
@@ -107,7 +107,7 @@ metadata:
 - **Predictable Security**: Same isolation for all workloads
 - **Future-Proof**: Hardware trends favor virtualization
 
-### Community Counterpoint
+### Minimal Attack Surface Philosophy
 
 **"Minimal surface area with trusted vendors"**
 
@@ -117,23 +117,23 @@ metadata:
 
 ## Real-World Comparison
 
-| Aspect | Edera Full Kernel | AWS Bottlerocket | Google COS |
-|--------|-------------------|------------------|------------|
+| Aspect | Full Kernel Isolation | AWS Bottlerocket | Google COS |
+|--------|----------------------|------------------|------------|
 | Memory per Container | 100MB | 20MB | 25MB |
 | Startup Time | 150ms | 30ms | 40ms |
 | Kernel Isolation | Complete | None | None |
 | Attack Surface | Minimal (per container) | Minimal (shared) | Minimal (shared) |
 | Debugging Complexity | High | Low | Low |
-| Vendor Lock-in | Edera | AWS | Google |
+| Vendor Lock-in | Runtime vendor | AWS | Google |
 
 ## Security Threat Models
 
-### Edera's Threat Model
+### Full Kernel Isolation Threat Model
 
 **Assumes sophisticated attackers targeting kernel:**
 
 ```rust
-// Edera: Kernel escape attempts fail at hypervisor boundary
+// Full kernel isolation: Kernel escape attempts fail at hypervisor boundary
 fn handle_kernel_escape_attempt(container_id: ContainerId) -> SecurityResult {
     // Attempt fails at hypervisor boundary
     // No shared kernel to compromise
@@ -141,26 +141,26 @@ fn handle_kernel_escape_attempt(container_id: ContainerId) -> SecurityResult {
 }
 ```
 
-### Vendor Threat Model
+### Minimal Attack Surface Threat Model
 
 **Assumes rapid patching and minimal surface area:**
 
 ```bash
-# Vendor approach: Rapid patching of shared kernel
+# Minimal attack surface approach: Rapid patching of shared kernel
 # Bottlerocket auto-updates kernel vulnerabilities
 systemctl restart update-engine
 ```
 
 ## When to Choose Each Approach
 
-### Choose Edera Full Kernel When:
+### Choose Full Kernel Isolation When:
 
 - **High-Security Requirements**: Financial, healthcare, government
 - **Multi-Tenant Environments**: Need absolute isolation
 - **Compliance Needs**: Clear security boundaries for auditors
 - **Sophisticated Threat Models**: Assume kernel-level attacks
 
-### Choose Vendor Images When:
+### Choose Minimal Attack Surface When:
 
 - **Cost Sensitivity**: Lower resource overhead
 - **Operational Simplicity**: Easier debugging and management
@@ -169,14 +169,14 @@ systemctl restart update-engine
 
 ## The Bottom Line
 
-**Edera's full kernel approach** provides the strongest isolation guarantees but requires accepting higher resource overhead and operational complexity. **Vendor stripped-down images** offer simplicity and performance but rely on shared kernel security.
+**Full kernel isolation approaches** provide the strongest isolation guarantees but require accepting higher resource overhead and operational complexity. **Minimal attack surface approaches** offer simplicity and performance but rely on shared kernel security.
 
 The choice depends on your **threat model** and **operational constraints**:
 
-- **Eliminate kernel escapes entirely** (Edera)
+- **Eliminate kernel escapes entirely** (Full kernel isolation)
 - **Minimize attack surface with trusted vendors** (Bottlerocket/COS)
 
-For organizations where **kernel-level attacks are realistic threats**, Edera's approach is compelling. For those prioritizing **operational simplicity and vendor trust**, stripped-down images remain viable.
+For organizations where **kernel-level attacks are realistic threats**, full kernel isolation approaches are compelling. For those prioritizing **operational simplicity and vendor trust**, minimal attack surface approaches remain viable.
 
 The real question: **Is your threat model better served by eliminating the kernel attack vector entirely, or by minimizing the shared kernel's attack surface?**
 

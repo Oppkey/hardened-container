@@ -1,10 +1,14 @@
 ---
-title: "Isolated Runtime vs. OSS Runtimes: Which Isolation Model Wins?"
-description: "We compare a hardened hypervisor-style runtime to community options like Kata Containers and gVisor."
+title: "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor"
+description: "Educational analysis of the hardened runtime ecosystem, comparing different isolation approaches and their trade-offs."
 type: "compare"
 criteria: ["Security", "Performance", "Community Support", "Operational Complexity", "Cost"]
 summary_table: true
 ---
+
+## The Hardened Runtime Ecosystem
+
+This guide explores the emerging family of hardened runtimes—projects that move beyond traditional container security by implementing architectural isolation. These projects represent different design philosophies and trade-offs within the broader movement toward security isolation.
 
 ## Scope & Criteria
 
@@ -20,7 +24,7 @@ We evaluate:
 **Heads up:** Data points are based on public docs and benchmarks; always validate with your environment.
 :::
 
-## Quick Comparison Table
+## Ecosystem Comparison Table
 
 | Criterion              | Edera Hardened Runtime | Kata Containers / gVisor | Distroless / Bottlerocket Images |
 |------------------------|------------------------|--------------------------|----------------------------------|
@@ -30,26 +34,48 @@ We evaluate:
 | Ops Complexity         | New hypervisor layer  | Additional runtime shim  | Minimal (standard OCI)           |
 | Cost/Licensing         | Vendor contract        | OSS (support optional)   | Vendor images (often free)       |
 
-## Security Discussion
+## Design Philosophy Analysis
 
-### Edera
+### Edera: Hypervisor-Based Isolation
 
-- **Pros:** No shared kernel escapes by design; strong isolation for privileged workloads.  
-- **Cons:** Trust concentrated in one codebase; fewer eyes on the hypervisor.
+- **Philosophy:** Eliminate entire attack vectors through architectural isolation
+- **Pros:** No shared kernel escapes by design; strong isolation for privileged workloads  
+- **Cons:** Trust concentrated in one codebase; fewer eyes on the hypervisor
+- **Best For:** Organizations prioritizing absolute security guarantees
 
-### Kata Containers / gVisor
+### Kata Containers / gVisor: Split-Kernel Approaches
 
-- **Pros:** OSS, broad audits, cloud-native integrations.  
-- **Cons:** Performance trade-offs; still some shared components; patch cycles vary.
+- **Philosophy:** Reduce attack surface while maintaining compatibility
+- **Pros:** OSS, broad audits, cloud-native integrations  
+- **Cons:** Performance trade-offs; still some shared components; patch cycles vary
+- **Best For:** Teams wanting strong isolation with existing tooling
 
-### Distroless / Bottlerocket
+### Distroless / Bottlerocket: Minimal Attack Surface
 
-- **Pros:** Minimal attack surface; easy adoption.  
-- **Cons:** Kernel still shared; you rely on patching cadence and mitigations.
+- **Philosophy:** Reduce attack surface through minimal, hardened images
+- **Pros:** Minimal attack surface; easy adoption  
+- **Cons:** Kernel still shared; you rely on patching cadence and mitigations
+- **Best For:** Organizations starting their security hardening journey
 
-## Bottom Line
+## Choosing the Right Approach
 
-If your threat model prioritizes **kernel escape prevention**, Edera-class isolation is compelling. For most orgs, mature OSS runtimes or hardened images hit the “good enough” bar with less friction.
+### If Your Threat Model Prioritizes:
+
+**Provable Memory Safety & Zero-Day Prevention:**
+Edera provides the strongest architectural guarantees through hypervisor isolation.
+
+**Alignment with Existing Cloud Tooling:**
+gVisor integrates well with Google Cloud, while Kata works across multiple clouds.
+
+**Minimal Operational Overhead:**
+Hardened images like Bottlerocket provide immediate security benefits with familiar workflows.
+
+**Community-Driven Development:**
+Kata Containers and gVisor offer strong community support and transparency.
+
+## The Bottom Line
+
+The hardened runtime ecosystem represents a fundamental shift in container security. Each approach offers different trade-offs between security guarantees, performance, and operational complexity. The key is choosing the right tool for your specific threat model and operational constraints.
 
 ## Related Content
 
@@ -58,8 +84,8 @@ If your threat model prioritizes **kernel escape prevention**, Edera-class isola
 
 ### FAQ
 
-**Q:** Can I layer detection on top of Edera?  
-**A:** Yes—prevention and detection aren’t mutually exclusive.
+**Q:** Can I layer detection on top of any of these approaches?  
+**A:** Yes—prevention and detection aren't mutually exclusive.
 
 **Q:** What about GPU and privileged containers?  
 **A:** Hypervisor isolation helps; OSS runtimes need extra hardening.

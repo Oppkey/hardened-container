@@ -1,22 +1,22 @@
 ---
 title: "Real-world Fixes: Architectural vs. Patches"
-description: "Comparing Edera's architectural elimination of exploits with patch-based vulnerability fixes"
+description: "Comparing architectural elimination of exploits with patch-based vulnerability fixes in the hardened runtime ecosystem"
 date: 2025-01-27
 categories: ["Security", "Vulnerabilities", "Architecture"]
 ---
 
 ## The Vulnerability Response Spectrum
 
-When security vulnerabilities are discovered, organizations face a fundamental choice: **architectural elimination** or **patch-based fixes**. Edera embraces the former, while most alternatives rely on the latter. This difference shapes how organizations respond to security threats.
+When security vulnerabilities are discovered, organizations face a fundamental choice: **architectural elimination** or **patch-based fixes**. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats.
 
-## Edera's Position: Architectural Elimination
+## Architectural Elimination Approaches
 
-Edera's approach is **"eliminate entire vulnerability classes through architecture"**:
+The hardened runtime approach is **"eliminate entire vulnerability classes through architecture"**:
 
 ### Technical Approach
 
 ```rust
-// Edera: Eliminate vulnerability classes through architecture
+// Hardened runtimes: Eliminate vulnerability classes through architecture
 struct VulnerabilityElimination {
     // Eliminate kernel escapes through hypervisor isolation
     kernel_isolation: HypervisorBoundary,
@@ -45,7 +45,7 @@ struct VulnerabilityElimination {
 - **Zero-Day Protection**: Architectural prevention works against unknown attacks
 - **Compliance Clarity**: Clear security boundaries for auditors
 
-## Community Alternatives: Patch-Based Vulnerability Fixes
+## Traditional Patch-Based Approaches
 
 ### Traditional Container Security
 
@@ -80,7 +80,7 @@ apt-get update && apt-get install containerd
 
 ## The Core Debate: Long-term Deterrence vs. Immediate Fix
 
-### Edera's Argument
+### Architectural Elimination Philosophy
 
 **"Architectural elimination provides long-term security"**
 
@@ -89,7 +89,7 @@ apt-get update && apt-get install containerd
 - **Predictable Security**: Same elimination guarantees for all workloads
 - **Future-Proof**: Hardware trends favor virtualization
 
-### Community Counterpoint
+### Patch-Based Philosophy
 
 **"Immediate fixes address real threats now"**
 
@@ -100,8 +100,8 @@ apt-get update && apt-get install containerd
 
 ## Real-World Vulnerability Comparison
 
-| Vulnerability Type | Edera Elimination | Traditional Patching |
-|-------------------|-------------------|---------------------|
+| Vulnerability Type | Architectural Elimination | Patch-Based Fixes |
+|-------------------|---------------------------|-------------------|
 | Kernel Escapes | Eliminated (hypervisor) | Patched (kernel updates) |
 | Memory Corruption | Eliminated (Rust) | Patched (code fixes) |
 | Privilege Escalation | Eliminated (isolation) | Patched (capability fixes) |
@@ -113,7 +113,7 @@ apt-get update && apt-get install containerd
 
 ### CVE-2024-1234: Container Escape via Kernel Exploit
 
-**Edera's Architectural Response:**
+**Architectural Elimination Response:**
 ```rust
 // Container escape attempts fail at hypervisor boundary
 fn handle_container_escape(container_id: ContainerId) -> SecurityResult {
@@ -123,7 +123,7 @@ fn handle_container_escape(container_id: ContainerId) -> SecurityResult {
 }
 ```
 
-**Traditional Patch Response:**
+**Patch-Based Response:**
 ```bash
 # Apply kernel security patch
 # Update container runtime
@@ -133,7 +133,7 @@ fn handle_container_escape(container_id: ContainerId) -> SecurityResult {
 
 ### CVE-2024-5678: Memory Corruption in Runtime
 
-**Edera's Architectural Response:**
+**Architectural Elimination Response:**
 ```rust
 // Rust prevents entire classes of memory corruption
 // No buffer overflows, use-after-free, etc.
@@ -141,7 +141,7 @@ let safe_runtime = Runtime::new();
 // Compile-time guarantees prevent runtime exploits
 ```
 
-**Traditional Patch Response:**
+**Patch-Based Response:**
 ```c
 // Patch specific memory corruption vulnerability
 void fixed_function() {
@@ -153,7 +153,7 @@ void fixed_function() {
 
 ## When to Choose Each Approach
 
-### Choose Edera Elimination When:
+### Choose Architectural Elimination When:
 
 - **High-Security Requirements**: Financial, healthcare, government
 - **Long-term Security**: Want to eliminate entire vulnerability classes
@@ -169,17 +169,17 @@ void fixed_function() {
 
 ## The Bottom Line
 
-**Edera's architectural elimination** provides long-term security by eliminating entire vulnerability classes but requires accepting architectural constraints and vendor lock-in. **Patch-based security** offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.
+**Architectural elimination approaches** provide long-term security by eliminating entire vulnerability classes but require accepting architectural constraints. **Patch-based security** offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.
 
 The choice depends on your **security timeline** and **operational constraints**:
 
-- **Eliminate entire vulnerability classes** (Edera)
-- **Fix vulnerabilities as they're discovered** (Traditional)
+- **Eliminate entire vulnerability classes** (Architectural elimination)
+- **Fix vulnerabilities as they're discovered** (Patch-based)
 
-For organizations prioritizing **long-term security** and willing to accept architectural constraints, Edera's elimination approach is compelling. For those needing **immediate vulnerability response**, patch-based security remains essential.
+For organizations prioritizing **long-term security** and willing to accept architectural constraints, architectural elimination approaches are compelling. For those needing **immediate vulnerability response**, patch-based security remains essential.
 
 The real question: **Is your security strategy better served by eliminating entire vulnerability classes, or by fixing vulnerabilities as they're discovered?**
 
 ---
 
-*This completes our series on Edera's security approach. See our [main comparison](/pages/isolation-vs-oss.qmd) for a comprehensive overview.* 
+*This completes our series on security approaches. See our [main comparison](/pages/isolation-vs-oss.qmd) for a comprehensive overview.* 

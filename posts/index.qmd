@@ -1,16 +1,16 @@
 ---
 title: "Blog Posts"
-description: "Latest posts on hardened runtimes, container isolation, and security"
+description: "Latest posts on the hardened runtime ecosystem, container isolation, and security"
 ---
 
 ## Blog Posts
 
-Our latest technical deep-dives on hardened runtimes, container isolation, and security topics.
+Our latest technical deep-dives on the hardened runtime ecosystem, container isolation, and security topics.
 
 ### Latest Posts
 
-- **[Runtime Isolation: Hypervisor vs. OSS Runtimes](/posts/runtime-isolation-comparison.qmd)** - Comparing Edera's paravirtualized hypervisor with Kata Containers and gVisor
-- **[Base Images: Full Kernel vs. Stripped-Down](/posts/base-images-comparison.qmd)** - Edera's full kernel approach vs. AWS Bottlerocket and Google COS
+- **[Runtime Isolation: Hypervisor vs. OSS Runtimes](/posts/runtime-isolation-comparison.qmd)** - Comparing hypervisor-based isolation with Kata Containers and gVisor
+- **[Base Images: Full Kernel vs. Stripped-Down](/posts/base-images-comparison.qmd)** - Full kernel approaches vs. AWS Bottlerocket and Google COS
 - **[Development Model: OSS + Proprietary vs. Pure OSS](/posts/dev-model-comparison.qmd)** - Hybrid development vs. community-driven innovation
 - **[Security Philosophy: Prevention vs. Detection](/posts/security-philosophy.qmd)** - Proactive prevention vs. reactive detection strategies
 - **[Real-world Fixes: Architectural vs. Patches](/posts/real-world-fixes.qmd)** - Eliminating vulnerability classes vs. patch-based fixes

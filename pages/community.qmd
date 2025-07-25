@@ -1,14 +1,60 @@
 ---
 title: "Community"
+description: "Join the movement to advance security isolation across the entire hardened runtime ecosystem"
 ---
 
-## Community
+## The Security Isolation Movement
+
+The Security Isolation Imperative is more than a website—it's a movement to advance architectural security isolation across the entire cloud-native ecosystem. We believe that all vendors and open source projects need to cooperate to spread the message that security in the modern era requires container isolation.
+
+## Our Mission
+
+We're building a neutral platform where the entire hardened runtime ecosystem can collaborate, share insights, and advance the state of container security. This includes:
+
+- **Open Source Projects**: Kata Containers, gVisor, and other hardened runtime projects
+- **Cloud Providers**: AWS, Google Cloud, Microsoft Azure, and others  
+- **Security Researchers**: Independent researchers and academic institutions
+- **Platform Teams**: DevOps and security engineers from organizations of all sizes
+
+## Community Collaboration
+
+### Advisory Board
+
+We're forming an advisory board of experts from across the ecosystem to ensure our content remains accurate, balanced, and valuable to the entire community.
+
+### Guest Contributions
+
+We welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Recent examples:
+
+- **"The Vision for Kata Containers 3.0"** - by Kata Containers maintainers
+- **"How gVisor Tackles Syscall Compatibility"** - by gVisor team members
+- **"AWS Bottlerocket: Lessons from Production"** - by AWS security engineers
+
+### Community Review Process
+
+All technical content undergoes community review by:
+
+- **Security Researchers**: Academic and industry experts
+- **Platform Engineers**: DevOps and SRE professionals
+- **Open Source Maintainers**: Project leaders from across the ecosystem
+
+## Ecosystem Sponsorship
+
+As part of our commitment to advancing the entire category, we support open source projects in the hardened runtime ecosystem:
+
+### Recent Sponsorships
+
+- **Kata Containers**: Supporting the CNCF project's development and documentation
+- **gVisor**: Contributing to Google's container runtime security research
+- **Security Conferences**: Sponsoring talks and workshops on container isolation
+
+### Sponsorship Philosophy
+
+We believe that advancing security isolation requires collaboration, not competition. When we sponsor an open source project, we're not "sponsoring a competitor"—we're sponsoring the ecosystem.
+
+## Community Feedback
 
 **Note: This page contains placeholder content and fake testimonials for demonstration purposes. Once our campaign is launched, we will replace this content with real community feedback and engagement.**
-
-## Our Community
-
-This site is designed to foster a community around hardened runtime security and container isolation. While we're currently using placeholder content to demonstrate the intended structure, our goal is to build a vibrant community of security professionals, developers, and researchers who can share insights, provide feedback, and contribute to the advancement of runtime security practices.
 
 AI is generating content at an unprecedented scale, but there's a major problem: it's often wrong. For technical security content, 'wrong' isn't just embarrassing, it's dangerous. In this community, we aim to solve this issue by treating errors in security content like vulnerabilities in software. We're essentially building a 'security review' platform for content, connecting technical articles to the global security community of vetted professionals who can find and fix inaccuracies.
 

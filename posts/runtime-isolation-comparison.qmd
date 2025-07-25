@@ -1,6 +1,6 @@
 ---
 title: "Runtime Isolation: Hypervisor vs. OSS Runtimes"
-description: "Comparing Edera's paravirtualized hypervisor approach with community alternatives like Kata Containers and gVisor"
+description: "Comparing hypervisor-based isolation approaches with userland runtime alternatives in the hardened runtime ecosystem"
 date: 2025-01-27
 categories: ["Security", "Performance", "Architecture"]
 ---
@@ -9,9 +9,9 @@ categories: ["Security", "Performance", "Architecture"]
 
 When it comes to container runtime isolation, we're seeing a fundamental architectural split between **hypervisor-based isolation** and **userland runtime isolation**. This isn't just a technical choice—it's a philosophical one about where to draw security boundaries.
 
-## Edera's Position: Paravirtualized Hypervisor (Rust)
+## Hypervisor-Based Isolation Approaches
 
-Edera takes the most aggressive isolation approach with a **paravirtualized hypervisor written in Rust**. Here's what this means:
+Some hardened runtimes take the most aggressive isolation approach with **paravirtualized hypervisors written in Rust**. Here's what this means:
 
 ### Technical Architecture
 
@@ -41,7 +41,7 @@ struct ContainerRuntime {
 - **Runtime Overhead**: <5% CPU, <10% memory
 - **I/O Performance**: Near-native with paravirtualized drivers
 
-## Community Alternatives: OSS Runtimes
+## Userland Runtime Isolation Approaches
 
 ### Kata Containers
 
@@ -86,7 +86,7 @@ type Sentry struct {
 
 ## The Core Debate: Performance vs. Auditability
 
-### Edera's Argument
+### Hypervisor Isolation Philosophy
 
 **"Security by isolation, not by obscurity"**
 
@@ -94,7 +94,7 @@ type Sentry struct {
 - **Performance Predictability**: Consistent overhead regardless of application
 - **Future-Proof**: Hardware virtualization trends favor this approach
 
-### Community Counterpoint
+### Userland Runtime Philosophy
 
 **"Security through transparency and diversity"**
 
@@ -104,7 +104,7 @@ type Sentry struct {
 
 ## Real-World Performance Comparison
 
-| Metric | Edera Hypervisor | Kata Containers | gVisor |
+| Metric | Hypervisor-Based | Kata Containers | gVisor |
 |--------|------------------|-----------------|---------|
 | Startup Time | 150ms | 200ms | 50ms |
 | Memory Overhead | 8% | 12% | 5% |
@@ -115,13 +115,13 @@ type Sentry struct {
 
 ## When to Choose Each Approach
 
-### Choose Edera Hypervisor When:
+### Choose Hypervisor-Based Isolation When:
 
 - **High-Security Requirements**: Financial, healthcare, government workloads
 - **Predictable Performance**: Latency-sensitive applications
 - **Compliance Needs**: Clear isolation boundaries for auditors
 
-### Choose OSS Runtimes When:
+### Choose Userland Runtimes When:
 
 - **Cost Sensitivity**: Open source licensing
 - **Ecosystem Integration**: Existing Kubernetes/container workflows
@@ -129,9 +129,9 @@ type Sentry struct {
 
 ## The Bottom Line
 
-This isn't a zero-sum game. **Edera's hypervisor approach** provides the strongest isolation guarantees but requires accepting vendor lock-in and higher resource overhead. **OSS runtimes** offer transparency and ecosystem integration but with more variable security properties.
+This isn't a zero-sum game. **Hypervisor-based approaches** provide the strongest isolation guarantees but require accepting vendor lock-in and higher resource overhead. **Userland runtimes** offer transparency and ecosystem integration but with more variable security properties.
 
-For organizations prioritizing **absolute security isolation**, Edera's approach is compelling. For those valuing **openness and community**, OSS runtimes remain viable.
+For organizations prioritizing **absolute security isolation**, hypervisor-based approaches are compelling. For those valuing **openness and community**, userland runtimes remain viable.
 
 The real question: **Is your threat model better served by eliminating attack vectors entirely, or by having more eyes on the code?**
 
