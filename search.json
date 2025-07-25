@@ -1,136 +1,38 @@
 [
   {
-    "objectID": "spec/llm-brief.html",
-    "href": "spec/llm-brief.html",
-    "title": "",
+    "objectID": "pages/proposal.html",
+    "href": "pages/proposal.html",
+    "title": "Proposal",
     "section": "",
-    "text": "Code"
+    "text": "This is a proposal from Story Changes Culture to explore the synergy of community, technology, and company through the use of human ideas augmented by AI."
   },
   {
-    "objectID": "spec/llm-brief.html#project-summary",
-    "href": "spec/llm-brief.html#project-summary",
-    "title": "",
-    "section": "Project Summary",
-    "text": "Project Summary\n\nProject Name: Edera Security Campaign\nSite Purpose: Educate and persuade technical audiences about security trade‑offs in hardened runtimes, hypervisor isolation, and OSS vs vendor-managed approaches.\nPrimary Audience: Security engineers, platform teams, DevOps leads, technical marketers.\nTone: Professional, concise, evidence-backed, skimmable."
+    "objectID": "pages/proposal.html#community-engagement-evolution",
+    "href": "pages/proposal.html#community-engagement-evolution",
+    "title": "Proposal",
+    "section": "Community Engagement Evolution",
+    "text": "Community Engagement Evolution\n\n\n\nCommunity Engagement Diagram\n\n\nThe diagram illustrates the evolution of community engagement through two phases:\nLeft side (Current State): Shows a smaller crossover between community and technology, with limited intersection between the three domains.\nRight side (Enhanced Engagement): Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge."
   },
   {
-    "objectID": "spec/llm-brief.html#repo-layout",
-    "href": "spec/llm-brief.html#repo-layout",
-    "title": "",
-    "section": "Repo Layout",
-    "text": "Repo Layout\n_quarto.yml\nstyles.scss\nREADME.md\n/spec/llm-brief.md\n/spec/prompts.md\n/spec/page-types.md\n/spec/checklist.md\n/spec/seo-guidelines.md\n/pages/*.qmd\n/posts/*.qmd\n/partials/*.html\n/assets/images/*\n/data/*\n/drafts/*"
+    "objectID": "pages/proposal.html#building-trust-through-contribution",
+    "href": "pages/proposal.html#building-trust-through-contribution",
+    "title": "Proposal",
+    "section": "Building Trust Through Contribution",
+    "text": "Building Trust Through Contribution\nLeadership and respect in any community are earned, not given. For a company to establish category leadership, it must first demonstrate genuine contribution to the category—both in technology development and in sharing knowledge, information, and collaborative work.\nTrust is built through consistent, valuable contributions:\n\nTechnology Contributions: Developing and sharing tools, libraries, and solutions that benefit the broader community\nInformation Sharing: Providing insights, documentation, and educational content that helps others succeed\nCollaborative Work: Participating in open discussions, code reviews, and community initiatives\nLong-term Commitment: Showing sustained engagement rather than opportunistic participation\n\nCategory leadership emerges naturally when a company has proven its value to the community through meaningful contributions over time. This leadership position cannot be claimed through marketing alone—it must be earned through demonstrated expertise and generosity."
   },
   {
-    "objectID": "spec/llm-brief.html#page-types-front-matter",
-    "href": "spec/llm-brief.html#page-types-front-matter",
-    "title": "",
-    "section": "Page Types & Front Matter",
-    "text": "Page Types & Front Matter\nSee spec/page-types.md."
+    "objectID": "pages/proposal.html#engagement-phases",
+    "href": "pages/proposal.html#engagement-phases",
+    "title": "Proposal",
+    "section": "Engagement Phases",
+    "text": "Engagement Phases\n\n\n\nEngagement Phases Diagram\n\n\n\nPhase 1: Content Creation Humans from Story Changes Culture (SCC) work with the AI to be a site with content.\nPhase 2: Expert Vetting SCC reaches out to developers and security experts to vet the site and propose changes.\nPhase 3: Community Collaboration We work with the community to improve the site.\nPhase 4: Content Cycle The cycle is repeated with new content."
   },
   {
-    "objectID": "spec/llm-brief.html#formatting-rules",
-    "href": "spec/llm-brief.html#formatting-rules",
-    "title": "",
-    "section": "Formatting Rules",
-    "text": "Formatting Rules\n\nH1 is implicit; start content with ##.\nUse Quarto callouts for notes/warnings.\nUse fenced code blocks with language labels.\nProvide alt text for images."
-  },
-  {
-    "objectID": "spec/llm-brief.html#seo",
-    "href": "spec/llm-brief.html#seo",
-    "title": "",
-    "section": "SEO",
-    "text": "SEO\nFollow spec/seo-guidelines.md."
-  },
-  {
-    "objectID": "spec/llm-brief.html#qa-checklist",
-    "href": "spec/llm-brief.html#qa-checklist",
-    "title": "",
-    "section": "QA Checklist",
-    "text": "QA Checklist\nBefore returning any file, ensure all boxes in spec/checklist.md are checked."
-  },
-  {
-    "objectID": "spec/llm-brief.html#prompt-templates",
-    "href": "spec/llm-brief.html#prompt-templates",
-    "title": "",
-    "section": "Prompt Templates",
-    "text": "Prompt Templates\nUse spec/prompts.md."
-  },
-  {
-    "objectID": "spec/llm-brief.html#prohibited",
-    "href": "spec/llm-brief.html#prohibited",
-    "title": "",
-    "section": "Prohibited",
-    "text": "Prohibited\n\nNo placeholders like “TBD” unless asked.\nDo not modify _quarto.yml unless instructed."
-  },
-  {
-    "objectID": "spec/seo-guidelines.html",
-    "href": "spec/seo-guidelines.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nSEO Guidelines\n\nPrimary keyword in title, first 100 words, and one H2.\nUnique meta description ≤155 characters.\nUse related keywords naturally.\nLink to at least two internal pages.\nAdd FAQ section when relevant."
-  },
-  {
-    "objectID": "spec/checklist.html",
-    "href": "spec/checklist.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\nQA & Accessibility Checklist\n\nYAML is valid (no tabs).\nRequired front matter fields present.\nHeadings start at H2.\nImages have descriptive alt text.\nAt least two internal links where applicable.\nCode blocks labeled with language.\nNo dead or relative-link mistakes.\nMeta description ≤155 chars.\nTitle ≤70 chars."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html",
-    "href": "pages/isolation-vs-oss.html",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "",
-    "text": "This guide explores the emerging family of hardened runtimes—projects that move beyond traditional container security by implementing architectural isolation. These projects represent different design philosophies and trade-offs within the broader movement toward security isolation."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#the-hardened-runtime-ecosystem",
-    "href": "pages/isolation-vs-oss.html#the-hardened-runtime-ecosystem",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "",
-    "text": "This guide explores the emerging family of hardened runtimes—projects that move beyond traditional container security by implementing architectural isolation. These projects represent different design philosophies and trade-offs within the broader movement toward security isolation."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#scope-criteria",
-    "href": "pages/isolation-vs-oss.html#scope-criteria",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "Scope & Criteria",
-    "text": "Scope & Criteria\nWe evaluate:\n\nSecurity Surface\n\nPerformance Overhead\n\nCommunity & Vendor Support\n\nOperational Complexity\n\nCost & Licensing\n\n\n\n\n\n\n\nWarning\n\n\n\nHeads up: Data points are based on public docs and benchmarks; always validate with your environment."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#ecosystem-comparison-table",
-    "href": "pages/isolation-vs-oss.html#ecosystem-comparison-table",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "Ecosystem Comparison Table",
-    "text": "Ecosystem Comparison Table\n\n\n\n\n\n\n\n\n\nCriterion\nEdera Hardened Runtime\nKata Containers / gVisor\nDistroless / Bottlerocket Images\n\n\n\n\nSecurity Surface\nIsolated kernels; hypervisor boundary\nSplit-kernel/container userland; strong, but shared layers\nShared kernel; minimized userland\n\n\nStartup Overhead\nHigher (~100s ms)\nModerate\nLowest\n\n\nCommunity Scrutiny\nLow/Medium (vendor-led)\nHigh (CNCF/Google/etc.)\nHigh (AWS/Google)\n\n\nOps Complexity\nNew hypervisor layer\nAdditional runtime shim\nMinimal (standard OCI)\n\n\nCost/Licensing\nVendor contract\nOSS (support optional)\nVendor images (often free)"
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#design-philosophy-analysis",
-    "href": "pages/isolation-vs-oss.html#design-philosophy-analysis",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "Design Philosophy Analysis",
-    "text": "Design Philosophy Analysis\n\nEdera: Hypervisor-Based Isolation\n\nPhilosophy: Eliminate entire attack vectors through architectural isolation\nPros: No shared kernel escapes by design; strong isolation for privileged workloads\n\nCons: Trust concentrated in one codebase; fewer eyes on the hypervisor\nBest For: Organizations prioritizing absolute security guarantees\n\n\n\nKata Containers / gVisor: Split-Kernel Approaches\n\nPhilosophy: Reduce attack surface while maintaining compatibility\nPros: OSS, broad audits, cloud-native integrations\n\nCons: Performance trade-offs; still some shared components; patch cycles vary\nBest For: Teams wanting strong isolation with existing tooling\n\n\n\nDistroless / Bottlerocket: Minimal Attack Surface\n\nPhilosophy: Reduce attack surface through minimal, hardened images\nPros: Minimal attack surface; easy adoption\n\nCons: Kernel still shared; you rely on patching cadence and mitigations\nBest For: Organizations starting their security hardening journey"
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#choosing-the-right-approach",
-    "href": "pages/isolation-vs-oss.html#choosing-the-right-approach",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "Choosing the Right Approach",
-    "text": "Choosing the Right Approach\n\nIf Your Threat Model Prioritizes:\nProvable Memory Safety & Zero-Day Prevention: Edera provides the strongest architectural guarantees through hypervisor isolation.\nAlignment with Existing Cloud Tooling: gVisor integrates well with Google Cloud, while Kata works across multiple clouds.\nMinimal Operational Overhead: Hardened images like Bottlerocket provide immediate security benefits with familiar workflows.\nCommunity-Driven Development: Kata Containers and gVisor offer strong community support and transparency."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#the-bottom-line",
-    "href": "pages/isolation-vs-oss.html#the-bottom-line",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "The Bottom Line",
-    "text": "The Bottom Line\nThe hardened runtime ecosystem represents a fundamental shift in container security. Each approach offers different trade-offs between security guarantees, performance, and operational complexity. The key is choosing the right tool for your specific threat model and operational constraints."
-  },
-  {
-    "objectID": "pages/isolation-vs-oss.html#related-content",
-    "href": "pages/isolation-vs-oss.html#related-content",
-    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
-    "section": "Related Content",
-    "text": "Related Content\n\nSee our Blog Posts for upcoming technical deep-dives\nCheck out our About page for more information\n\n\nFAQ\nQ: Can I layer detection on top of any of these approaches?\nA: Yes—prevention and detection aren’t mutually exclusive.\nQ: What about GPU and privileged containers?\nA: Hypervisor isolation helps; OSS runtimes need extra hardening.\nQ: Is performance acceptable?\nA: Benchmarks suggest low CPU overhead; startup latency increases."
+    "objectID": "pages/proposal.html#example-of-real-people-working-with-a-site",
+    "href": "pages/proposal.html#example-of-real-people-working-with-a-site",
+    "title": "Proposal",
+    "section": "Example of Real People Working with a Site",
+    "text": "Example of Real People Working with a Site\nAn example of this model in action can be seen at the R Beats Python Community page."
   },
   {
     "objectID": "pages/index.html",
@@ -166,6 +68,132 @@
     "title": "The Security Isolation Imperative",
     "section": "Who Is This For?",
     "text": "Who Is This For?\nSecurity engineers, platform teams, DevOps leaders, and anyone interested in the future of container security.\n\nFAQ\nQ: Do you only cover Edera?\nA: No. We compare multiple approaches, including OSS and cloud vendor options. This site is a concept that is intended to be sponsored by Edera, but it is open to cooperation from OSS projects and other cloud security vendors. It is currently a prototype. Sponsors, including Edera, do not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Are the posts peer reviewed?\nA: Yes. The content is reviewed by a community of developers and security experts. We cite public CVEs and docs; feedback is welcome via PRs.\nQ: Can I reuse charts or tables?\nA: Yes, with attribution."
+  },
+  {
+    "objectID": "pages/community.html",
+    "href": "pages/community.html",
+    "title": "Community",
+    "section": "",
+    "text": "The Security Isolation Imperative is more than a website—it’s a movement to advance architectural security isolation across the entire cloud-native ecosystem. We believe that all vendors and open source projects need to cooperate to spread the message that security in the modern era requires container isolation."
+  },
+  {
+    "objectID": "pages/community.html#the-security-isolation-movement",
+    "href": "pages/community.html#the-security-isolation-movement",
+    "title": "Community",
+    "section": "",
+    "text": "The Security Isolation Imperative is more than a website—it’s a movement to advance architectural security isolation across the entire cloud-native ecosystem. We believe that all vendors and open source projects need to cooperate to spread the message that security in the modern era requires container isolation."
+  },
+  {
+    "objectID": "pages/community.html#our-mission",
+    "href": "pages/community.html#our-mission",
+    "title": "Community",
+    "section": "Our Mission",
+    "text": "Our Mission\nWe’re building a neutral platform where the entire hardened runtime ecosystem can collaborate, share insights, and advance the state of container security. This includes:\n\nOpen Source Projects: Kata Containers, gVisor, and other hardened runtime projects\nCloud Providers: AWS, Google Cloud, Microsoft Azure, and others\n\nSecurity Researchers: Independent researchers and academic institutions\nPlatform Teams: DevOps and security engineers from organizations of all sizes"
+  },
+  {
+    "objectID": "pages/community.html#community-collaboration",
+    "href": "pages/community.html#community-collaboration",
+    "title": "Community",
+    "section": "Community Collaboration",
+    "text": "Community Collaboration\n\nAdvisory Board\nWe’re forming an advisory board of experts from across the ecosystem to ensure our content remains accurate, balanced, and valuable to the entire community.\n\n\nGuest Contributions\nWe welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Recent examples:\n\n“The Vision for Kata Containers 3.0” - by Kata Containers maintainers\n“How gVisor Tackles Syscall Compatibility” - by gVisor team members\n“AWS Bottlerocket: Lessons from Production” - by AWS security engineers\n\n\n\nCommunity Review Process\nAll technical content undergoes community review by:\n\nSecurity Researchers: Academic and industry experts\nPlatform Engineers: DevOps and SRE professionals\nOpen Source Maintainers: Project leaders from across the ecosystem"
+  },
+  {
+    "objectID": "pages/community.html#ecosystem-sponsorship",
+    "href": "pages/community.html#ecosystem-sponsorship",
+    "title": "Community",
+    "section": "Ecosystem Sponsorship",
+    "text": "Ecosystem Sponsorship\nAs part of our commitment to advancing the entire category, we support open source projects in the hardened runtime ecosystem:\n\nRecent Sponsorships\n\nKata Containers: Supporting the CNCF project’s development and documentation\ngVisor: Contributing to Google’s container runtime security research\nSecurity Conferences: Sponsoring talks and workshops on container isolation\n\n\n\nSponsorship Philosophy\nWe believe that advancing security isolation requires collaboration, not competition. When we sponsor an open source project, we’re not “sponsoring a competitor”—we’re sponsoring the ecosystem."
+  },
+  {
+    "objectID": "pages/community.html#community-feedback",
+    "href": "pages/community.html#community-feedback",
+    "title": "Community",
+    "section": "Community Feedback",
+    "text": "Community Feedback\nNote: This page contains placeholder content and fake testimonials for demonstration purposes. Once our campaign is launched, we will replace this content with real community feedback and engagement.\nAI is generating content at an unprecedented scale, but there’s a major problem: it’s often wrong. For technical security content, ‘wrong’ isn’t just embarrassing, it’s dangerous. In this community, we aim to solve this issue by treating errors in security content like vulnerabilities in software. We’re essentially building a ‘security review’ platform for content, connecting technical articles to the global security community of vetted professionals who can find and fix inaccuracies.\nThe scale of AI with the trust of human verification, with the goal of creating scalable quality assurance in the security AI era.\n\nHere’s what security professionals have to say!\nDr. Sarah Chen (Placeholder - Not a real person)\nSenior Security Researcher, Cloud Security Alliance\n\n\n\nDr. Sarah Chen\n\n\n\nThe comparison between hardened runtimes and traditional container isolation is spot-on. Having worked with both approaches in production environments, I can attest to the significant security improvements that hardened runtimes provide. The isolation mechanisms are fundamentally different - while containers share the kernel, hardened runtimes provide true process isolation that’s much harder to escape from.\n\nAbout security tools\n\nThe current generation of security professionals often focuses too much on perimeter defense and not enough on runtime security. When attackers get past your perimeter, what happens next is critical. Hardened runtimes provide that last line of defense that can prevent lateral movement and data exfiltration.\n\n\nHer recommendations to improve content:\n\nThe technical deep-dives are excellent, but we need more real-world case studies showing actual attack scenarios and how hardened runtimes prevented them. Also, performance benchmarks comparing the overhead of different isolation approaches would be valuable for organizations considering adoption.\n\n\nMarcus Rodriguez (Placeholder - Not a real person)\nDevOps Engineer, Fortune 500 Financial Services\n\n\n\nMarcus Rodriguez\n\n\n\nAs someone who’s been responsible for container security in a highly regulated environment, the isolation comparison article really resonated with me. We’ve been using traditional containers for years, but the security gaps are becoming more apparent as attacks become more sophisticated. The move to hardened runtimes isn’t just about security - it’s about compliance and audit requirements too.\n\nHis opinion on the main advantages:\n\nThe main advantages of hardened runtimes over traditional containers that immediately come to mind are:\n\n\nTrue process isolation: Unlike containers that share the kernel, hardened runtimes provide complete process isolation that prevents privilege escalation attacks.\nReduced attack surface: By eliminating shared kernel components, hardened runtimes dramatically reduce the potential attack vectors available to adversaries.\nBetter compliance: For regulated industries, the additional security guarantees make it easier to meet audit requirements and demonstrate due diligence.\nSimplified security model: The security boundary is much clearer - either you’re inside the runtime or you’re not, with no gray areas.\n\n\nHis recommendations to improve content:\n\nWe need more practical implementation guides. How do you migrate existing containerized applications to hardened runtimes? What are the performance implications? How do you handle debugging and monitoring in these environments? These are the questions that keep me up at night.\n\n\nAlex Thompson (Placeholder - Not a real person)\nCTO, Startup Security Company\n\n\n\nAlex Thompson\n\n\n\nThe security philosophy article really captures the essence of why we need to move beyond traditional container security. It’s not just about adding more layers - it’s about fundamentally rethinking how we approach runtime security. The comparison with OSS alternatives is particularly valuable for organizations trying to make informed decisions.\n\nHis opinion on the main message:\n\nI wouldn’t say hardened runtimes “beat” traditional containers in all cases - they’re different tools for different security requirements. For high-security environments, hardened runtimes are essential. For development and testing, traditional containers might still be appropriate. The key is understanding your threat model and choosing the right tool.\n\n\nHis recommendations to improve content:\n\nThe technical content is solid, but we need more business case analysis. What’s the ROI of implementing hardened runtimes? How do you justify the additional complexity to management? These are the questions that determine whether security initiatives succeed or fail.\n\n\nDr. Emily Watson (Placeholder - Not a real person)\nProfessor of Computer Science, Cybersecurity Research Lab\n\n\n\nDr. Emily Watson\n\n\n\nThe runtime isolation comparison provides an excellent technical foundation for understanding the security implications of different approaches. As an academic researcher, I appreciate the depth of technical analysis and the clear presentation of the underlying security principles.\n\nHer opinion on the main advantages:\n\nFrom a research perspective, the main advantages of hardened runtimes are:\n\n\nProvable security: The isolation mechanisms can be mathematically proven to provide certain security guarantees, unlike traditional containers where security depends on kernel hardening.\nReduced complexity: The security model is simpler and easier to reason about, which reduces the likelihood of implementation errors.\nBetter monitoring: The clear security boundaries make it easier to detect and respond to security incidents.\nFuture-proof: As attack techniques evolve, the fundamental isolation properties remain effective.\n\n\nHer recommendations to improve content:\n\nThe academic rigor is excellent, but we need more peer-reviewed research citations. Also, consider adding sections on emerging threats and how hardened runtimes address them. The security landscape is constantly evolving, and content needs to keep pace.\n\n\nDavid Kim (Placeholder - Not a real person)\nSecurity Architect, Cloud Platform Provider\n\n\n\nDavid Kim\n\n\n\nHaving implemented hardened runtimes at scale, I can confirm that the performance characteristics described in the articles are accurate. The overhead is minimal for most workloads, and the security benefits far outweigh any performance impact. The key is proper implementation and monitoring.\n\nHis opinion on the main advantages:\n\nThe main advantages I’ve observed in production:\n\n\nReduced incident response time: When security incidents occur, the isolation makes containment much faster and more effective.\nSimplified compliance: Audit processes are much smoother when you can demonstrate clear security boundaries.\nBetter resource utilization: The isolation prevents noisy neighbor problems that can occur in shared container environments.\nEasier security testing: The clear boundaries make it easier to perform security assessments and penetration testing.\n\n\nHis recommendations to improve content:\n\nWe need more operational guidance. How do you monitor hardened runtimes? What metrics are important? How do you troubleshoot issues? These operational aspects are crucial for successful deployment.\n\n\nMore community testimonials and feedback will be added here as we grow and engage with real community members.\n\nJoin our community and help shape the future of runtime security. If you are interested in providing real feedback, please fill out this form to share your insights and experiences.\nNote: The testimonials above are placeholder content for demonstration purposes. Real community feedback will be added once our engagement campaign begins."
+  },
+  {
+    "objectID": "pages/community.html#example-of-real-community-engagement",
+    "href": "pages/community.html#example-of-real-community-engagement",
+    "title": "Community",
+    "section": "Example of Real Community Engagement",
+    "text": "Example of Real Community Engagement\nFor an example of how real community feedback and engagement works in practice, check out the R Beats Python community page. This page showcases authentic testimonials and feedback from real developers, researchers, and data scientists who have contributed their insights to improve the content and accuracy of technical articles. This demonstrates the power of combining AI-generated content with human expertise and community verification."
+  },
+  {
+    "objectID": "spec/prompts.html",
+    "href": "spec/prompts.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "spec/prompts.html#create-page",
+    "href": "spec/prompts.html#create-page",
+    "title": "",
+    "section": "Create Page",
+    "text": "Create Page\nSYSTEM: You are a Quarto site builder. Follow spec/llm-brief.md.\n\nUSER:\nCreate a &lt;PAGE_TYPE&gt; page about \"&lt;TOPIC&gt;\".\nFile path: &lt;RELATIVE_PATH&gt;.\nConstraints:\n- Follow the front matter schema exactly.\n- ≥3 H2 sections, ≥2 internal links.\n- 1 callout block.\n- End with FAQ (3 Q&A).\nReturn ONLY valid Markdown."
+  },
+  {
+    "objectID": "spec/prompts.html#revise-page",
+    "href": "spec/prompts.html#revise-page",
+    "title": "",
+    "section": "Revise Page",
+    "text": "Revise Page\nSYSTEM: Edit only what is requested. Preserve front matter unless asked.\n\nUSER:\nHere is the page (&lt;&lt;&lt; &gt;&gt;&gt;).\n&lt;&lt;&lt;\n...content...\n&gt;&gt;&gt;\nTasks:\n1. Improve SEO with keywords: &lt;KEYWORDS&gt;\n2. Tighten intro (≤100 words).\n3. Ensure H2/H3 hierarchy.\nReturn full updated file."
+  },
+  {
+    "objectID": "spec/prompts.html#comparison-table",
+    "href": "spec/prompts.html#comparison-table",
+    "title": "",
+    "section": "Comparison Table",
+    "text": "Comparison Table\nSYSTEM: Output a GitHub-flavor Markdown table.\n\nUSER:\nCreate a comparison table for &lt;X&gt; vs &lt;Y&gt; across &lt;CRITERIA&gt;."
+  },
+  {
+    "objectID": "spec/page-types.html",
+    "href": "spec/page-types.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "spec/page-types.html#blog-post-type-post",
+    "href": "spec/page-types.html#blog-post-type-post",
+    "title": "",
+    "section": "Blog Post (type: post)",
+    "text": "Blog Post (type: post)\n---\ntitle: \"&lt;Title ≤70 chars&gt;\"\ndescription: \"&lt;1-2 sentence SEO summary&gt;\"\nauthor: \"&lt;Name&gt;\"\ndate: \"YYYY-MM-DD\"\ncategories: [\"tag1\", \"tag2\"]\ntype: \"post\"\nslug: \"&lt;kebab-case-url&gt;\"\ndraft: false\nkeywords: [\"kw1\", \"kw2\"]\nimage: \"/assets/images/&lt;thumb&gt;.png\"\n---"
+  },
+  {
+    "objectID": "spec/page-types.html#landing-type-landing",
+    "href": "spec/page-types.html#landing-type-landing",
+    "title": "",
+    "section": "Landing (type: landing)",
+    "text": "Landing (type: landing)\n---\ntitle: \"&lt;Value Proposition&gt;\"\ndescription: \"&lt;SEO desc&gt;\"\ntype: \"landing\"\nlayout: \"full\"\nhero:\n  headline: \"&lt;Headline&gt;\"\n  subhead: \"&lt;Subhead&gt;\"\n  cta_text: \"Get Started\"\n  cta_link: \"/pages/get-started.qmd\"\nsections:\n  - id: \"benefits\"\n    title: \"Benefits\"\n    style: \"cards\"\n---"
+  },
+  {
+    "objectID": "spec/page-types.html#how-to-type-howto",
+    "href": "spec/page-types.html#how-to-type-howto",
+    "title": "",
+    "section": "How-To (type: howto)",
+    "text": "How-To (type: howto)\n---\ntitle: \"How to &lt;Do Thing&gt;\"\ndescription: \"&lt;Outcome&gt;\"\ntype: \"howto\"\ndifficulty: \"beginner|intermediate|advanced\"\ntime_required: \"X minutes\"\nprerequisites: [\"Thing1\"]\noutcomes: [\"Outcome1\"]\n---"
+  },
+  {
+    "objectID": "spec/page-types.html#comparison-type-compare",
+    "href": "spec/page-types.html#comparison-type-compare",
+    "title": "",
+    "section": "Comparison (type: compare)",
+    "text": "Comparison (type: compare)\n---\ntitle: \"&lt;X vs Y&gt; for &lt;Use Case&gt;\"\ndescription: \"&lt;Short summary&gt;\"\ntype: \"compare\"\ncriteria: [\"Security\", \"Performance\", \"Community Support\", \"Operational Complexity\", \"Cost\"]\nsummary_table: true\n---"
+  },
+  {
+    "objectID": "spec/page-types.html#case-study-type-case-study",
+    "href": "spec/page-types.html#case-study-type-case-study",
+    "title": "",
+    "section": "Case Study (type: case-study)",
+    "text": "Case Study (type: case-study)\n---\ntitle: \"Case Study: &lt;Client&gt;\"\ndescription: \"&lt;Impact statement&gt;\"\ntype: \"case-study\"\nclient: \"&lt;Name&gt;\"\nproblem: \"&lt;Problem&gt;\"\nsolution: \"&lt;Solution&gt;\"\nresults:\n  - metric: \"&lt;KPI&gt;\"\n    value: \"&lt;number&gt;\"\n---"
+  },
+  {
+    "objectID": "spec/seo-guidelines.html",
+    "href": "spec/seo-guidelines.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nSEO Guidelines\n\nPrimary keyword in title, first 100 words, and one H2.\nUnique meta description ≤155 characters.\nUse related keywords naturally.\nLink to at least two internal pages.\nAdd FAQ section when relevant."
   },
   {
     "objectID": "posts/security-philosophy.html",
@@ -229,153 +257,6 @@
     "title": "Security Philosophy: Prevention vs. Detection",
     "section": "The Bottom Line",
     "text": "The Bottom Line\nPrevention-first approaches provide strong protection against entire classes of attacks but require accepting architectural constraints. Detection-based security offers comprehensive visibility and flexibility but requires managing complex security tooling and dealing with false positives.\nThe choice depends on your security priorities and operational constraints:\n\nEliminate entire attack vectors (Prevention-first)\nDetect and respond to all threats (Detection-first)\n\nFor organizations prioritizing absolute security guarantees and willing to accept architectural constraints, prevention-first approaches are compelling. For those valuing comprehensive visibility and flexibility, detection-based security remains essential.\nThe real question: Is your security strategy better served by eliminating attack vectors entirely, or by detecting and responding to all possible threats?\n\nNext up: Real-world Fixes: Architectural vs. Patches"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html",
-    "href": "posts/dev-model-comparison.html",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "",
-    "text": "Software development models represent a fundamental tension between innovation velocity and community sustainability. Some hardened runtimes take a hybrid approach, while many alternatives embrace pure open source. Let’s examine the trade-offs."
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#the-development-model-spectrum",
-    "href": "posts/dev-model-comparison.html#the-development-model-spectrum",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "",
-    "text": "Software development models represent a fundamental tension between innovation velocity and community sustainability. Some hardened runtimes take a hybrid approach, while many alternatives embrace pure open source. Let’s examine the trade-offs."
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#hybrid-development-model-approaches",
-    "href": "posts/dev-model-comparison.html#hybrid-development-model-approaches",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "Hybrid Development Model Approaches",
-    "text": "Hybrid Development Model Approaches\nSome hardened runtimes follow a hybrid development model combining open source components with proprietary innovations:\n\nTechnical Architecture\n# Hybrid development model\ncomponents:\n  open_source:\n    - \"Container runtime interfaces\"\n    - \"Kubernetes integrations\"\n    - \"Standard OCI compliance\"\n    - \"Community tooling\"\n  \n  proprietary:\n    - \"Rust-based hypervisor\"\n    - \"Advanced isolation techniques\"\n    - \"Performance optimizations\"\n    - \"Enterprise features\"\n\n\nDevelopment Philosophy\n“Open interfaces, proprietary innovation”\n\nOpen Standards: Full OCI compliance, Kubernetes integration\nProprietary Core: Hypervisor and isolation technology\nCommunity Engagement: Open source tooling and interfaces\nCommercial Support: Enterprise features and support\n\n\n\nBusiness Model\n// Hybrid approach: Open interfaces, proprietary core\npub struct HybridRuntime {\n    // Open source components\n    pub oci_interface: OpenSourceOCI,\n    pub k8s_integration: OpenSourceK8s,\n    \n    // Proprietary components\n    hypervisor: ProprietaryHypervisor,\n    isolation_engine: ProprietaryIsolation,\n}"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#pure-open-source-model-approaches",
-    "href": "posts/dev-model-comparison.html#pure-open-source-model-approaches",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "Pure Open Source Model Approaches",
-    "text": "Pure Open Source Model Approaches\n\nKata Containers\nFully open source with community governance:\n# Kata: Everything is open source\ngit clone https://github.com/kata-containers/kata-containers\n# All code visible, community contributions welcome\nDevelopment Model: - Apache 2.0 License: Complete freedom - Community Governance: CNCF project - Vendor Neutral: No single vendor control - Transparent Development: All code public\n\n\ngVisor\nGoogle’s open source userland kernel:\n// gVisor: Fully open source\n// https://github.com/google/gvisor\ntype Sentry struct {\n    // All code open source\n    kernel: UserlandKernel,\n    container: Container,\n}\nDevelopment Model: - Apache 2.0 License: Google’s open source commitment - Google Backing: Corporate support - Community Contributions: External contributors welcome - Academic Roots: Research-driven development"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#the-core-debate-integration-vs.-distributed-innovation",
-    "href": "posts/dev-model-comparison.html#the-core-debate-integration-vs.-distributed-innovation",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "The Core Debate: Integration vs. Distributed Innovation",
-    "text": "The Core Debate: Integration vs. Distributed Innovation\n\nHybrid Development Philosophy\n“Proprietary innovation enables faster progress”\n\nFocused Development: Single team can move faster\nInnovation Investment: Proprietary revenue funds R&D\nQuality Control: Centralized development ensures consistency\nCustomer Alignment: Direct customer feedback drives features\n\n\n\nPure Open Source Philosophy\n“Distributed innovation creates better software”\n\nMore Eyes: Community review catches more bugs\nDiverse Perspectives: Different use cases drive innovation\nVendor Independence: No single vendor lock-in\nLong-term Sustainability: Community ownership"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#real-world-development-comparison",
-    "href": "posts/dev-model-comparison.html#real-world-development-comparison",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "Real-World Development Comparison",
-    "text": "Real-World Development Comparison\n\n\n\n\n\n\n\n\n\nAspect\nHybrid Model\nKata Containers\ngVisor\n\n\n\n\nLicense\nMixed (OSS + Proprietary)\nApache 2.0\nApache 2.0\n\n\nGovernance\nVendor-led\nCNCF Community\nGoogle + Community\n\n\nDevelopment Speed\nFast (focused)\nModerate (consensus)\nFast (Google-backed)\n\n\nInnovation Focus\nSecurity isolation\nContainer standards\nUserland kernel\n\n\nCommunity Size\nGrowing\nLarge\nLarge\n\n\nVendor Lock-in\nRuntime vendor\nNone\nGoogle (partial)"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#innovation-patterns",
-    "href": "posts/dev-model-comparison.html#innovation-patterns",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "Innovation Patterns",
-    "text": "Innovation Patterns\n\nHybrid Innovation Cycle\ngraph LR\n    A[Customer Needs] --&gt; B[Proprietary R&D]\n    B --&gt; C[Innovation]\n    C --&gt; D[Open Interfaces]\n    D --&gt; E[Community Adoption]\n    E --&gt; A\nCharacteristics: - Fast iteration: Direct customer feedback - Focused innovation: Security isolation specialization - Open integration: Standards-based interfaces\n\n\nCommunity Innovation Cycle\ngraph LR\n    A[Community Needs] --&gt; B[Distributed R&D]\n    B --&gt; C[Consensus Building]\n    C --&gt; D[Implementation]\n    D --&gt; E[Community Review]\n    E --&gt; A\nCharacteristics: - Broad innovation: Multiple use cases - Consensus-driven: Community agreement required - Transparent process: All decisions public"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#when-to-choose-each-model",
-    "href": "posts/dev-model-comparison.html#when-to-choose-each-model",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "When to Choose Each Model",
-    "text": "When to Choose Each Model\n\nChoose Hybrid Development When:\n\nSpecific Innovation Needs: Require focused security innovation\nEnterprise Support: Need commercial backing\nFast Time-to-Market: Can’t wait for community consensus\nSpecialized Requirements: Need custom security features\n\n\n\nChoose Pure OSS When:\n\nVendor Independence: Avoid lock-in to single vendor\nCommunity Participation: Want to contribute to development\nStandards Compliance: Prefer community-driven standards\nLong-term Sustainability: Value community ownership"
-  },
-  {
-    "objectID": "posts/dev-model-comparison.html#the-bottom-line",
-    "href": "posts/dev-model-comparison.html#the-bottom-line",
-    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
-    "section": "The Bottom Line",
-    "text": "The Bottom Line\nHybrid development models enable faster, more focused innovation but require accepting vendor lock-in and proprietary components. Pure OSS models offer transparency and community ownership but may move slower due to consensus requirements.\nThe choice depends on your innovation priorities and organizational values:\n\nFast, focused innovation with vendor support (Hybrid)\nTransparent, community-driven development (Kata/gVisor)\n\nFor organizations needing rapid security innovation and willing to accept vendor lock-in, hybrid approaches are compelling. For those valuing transparency and community participation, pure OSS remains the gold standard.\nThe real question: Is your organization better served by focused, vendor-backed innovation, or by distributed, community-driven development?\n\nNext up: Security Philosophy: Prevention vs. Detection"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html",
-    "href": "posts/real-world-fixes.html",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "",
-    "text": "When security vulnerabilities are discovered, organizations face a fundamental choice: architectural elimination or patch-based fixes. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats."
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#the-vulnerability-response-spectrum",
-    "href": "posts/real-world-fixes.html#the-vulnerability-response-spectrum",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "",
-    "text": "When security vulnerabilities are discovered, organizations face a fundamental choice: architectural elimination or patch-based fixes. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats."
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#architectural-elimination-approaches",
-    "href": "posts/real-world-fixes.html#architectural-elimination-approaches",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "Architectural Elimination Approaches",
-    "text": "Architectural Elimination Approaches\nThe hardened runtime approach is “eliminate entire vulnerability classes through architecture”:\n\nTechnical Approach\n// Hardened runtimes: Eliminate vulnerability classes through architecture\nstruct VulnerabilityElimination {\n    // Eliminate kernel escapes through hypervisor isolation\n    kernel_isolation: HypervisorBoundary,\n    \n    // Eliminate memory corruption through Rust\n    memory_safety: RustGuarantees,\n    \n    // Eliminate privilege escalation through isolation\n    privilege_isolation: ContainerPrivileges,\n}\n\n\nArchitectural Strategy\n“Prevent vulnerabilities by design, not by patching”\n\nKernel Escape Elimination: Hypervisor isolation prevents kernel attacks\nMemory Corruption Elimination: Rust prevents entire vulnerability classes\nPrivilege Escalation Elimination: Container isolation prevents privilege attacks\nZero-Day Protection: Architectural prevention works against unknown vulnerabilities\n\n\n\nLong-term Benefits\n\nDeterministic Security: Same elimination guarantees for all vulnerabilities\nReduced Patching: Fewer patches needed for eliminated vulnerability classes\nZero-Day Protection: Architectural prevention works against unknown attacks\nCompliance Clarity: Clear security boundaries for auditors"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#traditional-patch-based-approaches",
-    "href": "posts/real-world-fixes.html#traditional-patch-based-approaches",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "Traditional Patch-Based Approaches",
-    "text": "Traditional Patch-Based Approaches\n\nTraditional Container Security\nFix vulnerabilities as they’re discovered:\n# Traditional approach: Patch vulnerabilities\n# CVE-2024-1234: Container escape vulnerability\n# Response: Apply security patch\ndocker run --security-opt seccomp=profile.json nginx\n\n# CVE-2024-5678: Memory corruption in runtime\n# Response: Update container runtime\napt-get update && apt-get install containerd\n\n\nPatch-Based Security\n“Fix vulnerabilities when they’re found”\n\nVulnerability Scanning: Find known CVEs in images\nSecurity Patching: Apply patches as vulnerabilities are discovered\nRuntime Monitoring: Detect exploitation attempts\nIncident Response: React to exploited vulnerabilities\n\n\n\nSecurity Benefits\n\nImmediate Fixes: Address specific vulnerabilities quickly\nProven Tools: Mature patching ecosystem\nCommunity Knowledge: Leverage community vulnerability research\nFlexible Response: Adapt to new vulnerability types"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#the-core-debate-long-term-deterrence-vs.-immediate-fix",
-    "href": "posts/real-world-fixes.html#the-core-debate-long-term-deterrence-vs.-immediate-fix",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "The Core Debate: Long-term Deterrence vs. Immediate Fix",
-    "text": "The Core Debate: Long-term Deterrence vs. Immediate Fix\n\nArchitectural Elimination Philosophy\n“Architectural elimination provides long-term security”\n\nZero-Day Protection: Architectural prevention works against unknown vulnerabilities\nReduced Patching: Fewer patches needed for eliminated vulnerability classes\nPredictable Security: Same elimination guarantees for all workloads\nFuture-Proof: Hardware trends favor virtualization\n\n\n\nPatch-Based Philosophy\n“Immediate fixes address real threats now”\n\nImmediate Response: Fix vulnerabilities as they’re discovered\nProven Effectiveness: Patch-based security has worked for decades\nCommunity Support: Leverage community vulnerability research\nFlexible Adaptation: Adapt to new vulnerability types"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#real-world-vulnerability-comparison",
-    "href": "posts/real-world-fixes.html#real-world-vulnerability-comparison",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "Real-World Vulnerability Comparison",
-    "text": "Real-World Vulnerability Comparison\n\n\n\n\n\n\n\n\nVulnerability Type\nArchitectural Elimination\nPatch-Based Fixes\n\n\n\n\nKernel Escapes\nEliminated (hypervisor)\nPatched (kernel updates)\n\n\nMemory Corruption\nEliminated (Rust)\nPatched (code fixes)\n\n\nPrivilege Escalation\nEliminated (isolation)\nPatched (capability fixes)\n\n\nZero-Day Attacks\nProtected (architectural)\nVulnerable (pattern-based)\n\n\nPatching Overhead\nLow\nHigh\n\n\nLong-term Security\nHigh\nVariable"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#case-study-container-escape-vulnerabilities",
-    "href": "posts/real-world-fixes.html#case-study-container-escape-vulnerabilities",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "Case Study: Container Escape Vulnerabilities",
-    "text": "Case Study: Container Escape Vulnerabilities\n\nCVE-2024-1234: Container Escape via Kernel Exploit\nArchitectural Elimination Response:\n// Container escape attempts fail at hypervisor boundary\nfn handle_container_escape(container_id: ContainerId) -&gt; SecurityResult {\n    // Attempt blocked by hypervisor isolation\n    // No shared kernel to exploit\n    SecurityResult::Eliminated\n}\nPatch-Based Response:\n# Apply kernel security patch\n# Update container runtime\n# Monitor for exploitation attempts\n# Respond to successful exploits\n\n\nCVE-2024-5678: Memory Corruption in Runtime\nArchitectural Elimination Response:\n// Rust prevents entire classes of memory corruption\n// No buffer overflows, use-after-free, etc.\nlet safe_runtime = Runtime::new();\n// Compile-time guarantees prevent runtime exploits\nPatch-Based Response:\n// Patch specific memory corruption vulnerability\nvoid fixed_function() {\n    // Add bounds checking\n    // Fix buffer overflow\n    // Add memory safety checks\n}"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#when-to-choose-each-approach",
-    "href": "posts/real-world-fixes.html#when-to-choose-each-approach",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "When to Choose Each Approach",
-    "text": "When to Choose Each Approach\n\nChoose Architectural Elimination When:\n\nHigh-Security Requirements: Financial, healthcare, government\nLong-term Security: Want to eliminate entire vulnerability classes\nReduced Patching: Prefer fewer patches to manage\nZero-Day Protection: Need protection against unknown vulnerabilities\n\n\n\nChoose Patch-Based Fixes When:\n\nImmediate Response: Need to fix specific vulnerabilities quickly\nProven Tools: Want to use mature patching ecosystem\nCommunity Support: Value community vulnerability research\nFlexible Adaptation: Need to adapt to new vulnerability types"
-  },
-  {
-    "objectID": "posts/real-world-fixes.html#the-bottom-line",
-    "href": "posts/real-world-fixes.html#the-bottom-line",
-    "title": "Real-world Fixes: Architectural vs. Patches",
-    "section": "The Bottom Line",
-    "text": "The Bottom Line\nArchitectural elimination approaches provide long-term security by eliminating entire vulnerability classes but require accepting architectural constraints. Patch-based security offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.\nThe choice depends on your security timeline and operational constraints:\n\nEliminate entire vulnerability classes (Architectural elimination)\nFix vulnerabilities as they’re discovered (Patch-based)\n\nFor organizations prioritizing long-term security and willing to accept architectural constraints, architectural elimination approaches are compelling. For those needing immediate vulnerability response, patch-based security remains essential.\nThe real question: Is your security strategy better served by eliminating entire vulnerability classes, or by fixing vulnerabilities as they’re discovered?\n\nThis completes our series on security approaches. See our main comparison for a comprehensive overview."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "The Security Isolation Imperative",
-    "section": "",
-    "text": "Security Isolation Philosophy\n\n\n\n\nIf you are not redirected automatically, click here to go to the home page."
-  },
-  {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Blog Posts",
-    "section": "",
-    "text": "Our latest technical deep-dives on the hardened runtime ecosystem, container isolation, and security topics.\n\n\n\nRuntime Isolation: Hypervisor vs. OSS Runtimes - Comparing hypervisor-based isolation with Kata Containers and gVisor\nBase Images: Full Kernel vs. Stripped-Down - Full kernel approaches vs. AWS Bottlerocket and Google COS\nDevelopment Model: OSS + Proprietary vs. Pure OSS - Hybrid development vs. community-driven innovation\nSecurity Philosophy: Prevention vs. Detection - Proactive prevention vs. reactive detection strategies\nReal-world Fixes: Architectural vs. Patches - Eliminating vulnerability classes vs. patch-based fixes\n\n\n\n\nOur posts explore the core debates in container security:\n\nPerformance vs. Security: When to prioritize isolation over speed\nInnovation vs. Transparency: Proprietary innovation vs. community development\nPrevention vs. Detection: Architectural elimination vs. reactive response\nSimplicity vs. Capability: Operational complexity vs. security guarantees\n\nEach post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case."
-  },
-  {
-    "objectID": "posts/index.html#blog-posts",
-    "href": "posts/index.html#blog-posts",
-    "title": "Blog Posts",
-    "section": "",
-    "text": "Our latest technical deep-dives on the hardened runtime ecosystem, container isolation, and security topics.\n\n\n\nRuntime Isolation: Hypervisor vs. OSS Runtimes - Comparing hypervisor-based isolation with Kata Containers and gVisor\nBase Images: Full Kernel vs. Stripped-Down - Full kernel approaches vs. AWS Bottlerocket and Google COS\nDevelopment Model: OSS + Proprietary vs. Pure OSS - Hybrid development vs. community-driven innovation\nSecurity Philosophy: Prevention vs. Detection - Proactive prevention vs. reactive detection strategies\nReal-world Fixes: Architectural vs. Patches - Eliminating vulnerability classes vs. patch-based fixes\n\n\n\n\nOur posts explore the core debates in container security:\n\nPerformance vs. Security: When to prioritize isolation over speed\nInnovation vs. Transparency: Proprietary innovation vs. community development\nPrevention vs. Detection: Architectural elimination vs. reactive response\nSimplicity vs. Capability: Operational complexity vs. security guarantees\n\nEach post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case."
   },
   {
     "objectID": "posts/runtime-isolation-comparison.html",
@@ -497,6 +378,279 @@
     "text": "The Bottom Line\nFull kernel isolation approaches provide the strongest isolation guarantees but require accepting higher resource overhead and operational complexity. Minimal attack surface approaches offer simplicity and performance but rely on shared kernel security.\nThe choice depends on your threat model and operational constraints:\n\nEliminate kernel escapes entirely (Full kernel isolation)\nMinimize attack surface with trusted vendors (Bottlerocket/COS)\n\nFor organizations where kernel-level attacks are realistic threats, full kernel isolation approaches are compelling. For those prioritizing operational simplicity and vendor trust, minimal attack surface approaches remain viable.\nThe real question: Is your threat model better served by eliminating the kernel attack vector entirely, or by minimizing the shared kernel’s attack surface?\n\nNext up: Development Model: OSS + Proprietary vs. Pure OSS"
   },
   {
+    "objectID": "posts/real-world-fixes.html",
+    "href": "posts/real-world-fixes.html",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "",
+    "text": "When security vulnerabilities are discovered, organizations face a fundamental choice: architectural elimination or patch-based fixes. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats."
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#the-vulnerability-response-spectrum",
+    "href": "posts/real-world-fixes.html#the-vulnerability-response-spectrum",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "",
+    "text": "When security vulnerabilities are discovered, organizations face a fundamental choice: architectural elimination or patch-based fixes. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats."
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#architectural-elimination-approaches",
+    "href": "posts/real-world-fixes.html#architectural-elimination-approaches",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "Architectural Elimination Approaches",
+    "text": "Architectural Elimination Approaches\nThe hardened runtime approach is “eliminate entire vulnerability classes through architecture”:\n\nTechnical Approach\n// Hardened runtimes: Eliminate vulnerability classes through architecture\nstruct VulnerabilityElimination {\n    // Eliminate kernel escapes through hypervisor isolation\n    kernel_isolation: HypervisorBoundary,\n    \n    // Eliminate memory corruption through Rust\n    memory_safety: RustGuarantees,\n    \n    // Eliminate privilege escalation through isolation\n    privilege_isolation: ContainerPrivileges,\n}\n\n\nArchitectural Strategy\n“Prevent vulnerabilities by design, not by patching”\n\nKernel Escape Elimination: Hypervisor isolation prevents kernel attacks\nMemory Corruption Elimination: Rust prevents entire vulnerability classes\nPrivilege Escalation Elimination: Container isolation prevents privilege attacks\nZero-Day Protection: Architectural prevention works against unknown vulnerabilities\n\n\n\nLong-term Benefits\n\nDeterministic Security: Same elimination guarantees for all vulnerabilities\nReduced Patching: Fewer patches needed for eliminated vulnerability classes\nZero-Day Protection: Architectural prevention works against unknown attacks\nCompliance Clarity: Clear security boundaries for auditors"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#traditional-patch-based-approaches",
+    "href": "posts/real-world-fixes.html#traditional-patch-based-approaches",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "Traditional Patch-Based Approaches",
+    "text": "Traditional Patch-Based Approaches\n\nTraditional Container Security\nFix vulnerabilities as they’re discovered:\n# Traditional approach: Patch vulnerabilities\n# CVE-2024-1234: Container escape vulnerability\n# Response: Apply security patch\ndocker run --security-opt seccomp=profile.json nginx\n\n# CVE-2024-5678: Memory corruption in runtime\n# Response: Update container runtime\napt-get update && apt-get install containerd\n\n\nPatch-Based Security\n“Fix vulnerabilities when they’re found”\n\nVulnerability Scanning: Find known CVEs in images\nSecurity Patching: Apply patches as vulnerabilities are discovered\nRuntime Monitoring: Detect exploitation attempts\nIncident Response: React to exploited vulnerabilities\n\n\n\nSecurity Benefits\n\nImmediate Fixes: Address specific vulnerabilities quickly\nProven Tools: Mature patching ecosystem\nCommunity Knowledge: Leverage community vulnerability research\nFlexible Response: Adapt to new vulnerability types"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#the-core-debate-long-term-deterrence-vs.-immediate-fix",
+    "href": "posts/real-world-fixes.html#the-core-debate-long-term-deterrence-vs.-immediate-fix",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "The Core Debate: Long-term Deterrence vs. Immediate Fix",
+    "text": "The Core Debate: Long-term Deterrence vs. Immediate Fix\n\nArchitectural Elimination Philosophy\n“Architectural elimination provides long-term security”\n\nZero-Day Protection: Architectural prevention works against unknown vulnerabilities\nReduced Patching: Fewer patches needed for eliminated vulnerability classes\nPredictable Security: Same elimination guarantees for all workloads\nFuture-Proof: Hardware trends favor virtualization\n\n\n\nPatch-Based Philosophy\n“Immediate fixes address real threats now”\n\nImmediate Response: Fix vulnerabilities as they’re discovered\nProven Effectiveness: Patch-based security has worked for decades\nCommunity Support: Leverage community vulnerability research\nFlexible Adaptation: Adapt to new vulnerability types"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#real-world-vulnerability-comparison",
+    "href": "posts/real-world-fixes.html#real-world-vulnerability-comparison",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "Real-World Vulnerability Comparison",
+    "text": "Real-World Vulnerability Comparison\n\n\n\n\n\n\n\n\nVulnerability Type\nArchitectural Elimination\nPatch-Based Fixes\n\n\n\n\nKernel Escapes\nEliminated (hypervisor)\nPatched (kernel updates)\n\n\nMemory Corruption\nEliminated (Rust)\nPatched (code fixes)\n\n\nPrivilege Escalation\nEliminated (isolation)\nPatched (capability fixes)\n\n\nZero-Day Attacks\nProtected (architectural)\nVulnerable (pattern-based)\n\n\nPatching Overhead\nLow\nHigh\n\n\nLong-term Security\nHigh\nVariable"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#case-study-container-escape-vulnerabilities",
+    "href": "posts/real-world-fixes.html#case-study-container-escape-vulnerabilities",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "Case Study: Container Escape Vulnerabilities",
+    "text": "Case Study: Container Escape Vulnerabilities\n\nCVE-2024-1234: Container Escape via Kernel Exploit\nArchitectural Elimination Response:\n// Container escape attempts fail at hypervisor boundary\nfn handle_container_escape(container_id: ContainerId) -&gt; SecurityResult {\n    // Attempt blocked by hypervisor isolation\n    // No shared kernel to exploit\n    SecurityResult::Eliminated\n}\nPatch-Based Response:\n# Apply kernel security patch\n# Update container runtime\n# Monitor for exploitation attempts\n# Respond to successful exploits\n\n\nCVE-2024-5678: Memory Corruption in Runtime\nArchitectural Elimination Response:\n// Rust prevents entire classes of memory corruption\n// No buffer overflows, use-after-free, etc.\nlet safe_runtime = Runtime::new();\n// Compile-time guarantees prevent runtime exploits\nPatch-Based Response:\n// Patch specific memory corruption vulnerability\nvoid fixed_function() {\n    // Add bounds checking\n    // Fix buffer overflow\n    // Add memory safety checks\n}"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#when-to-choose-each-approach",
+    "href": "posts/real-world-fixes.html#when-to-choose-each-approach",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "When to Choose Each Approach",
+    "text": "When to Choose Each Approach\n\nChoose Architectural Elimination When:\n\nHigh-Security Requirements: Financial, healthcare, government\nLong-term Security: Want to eliminate entire vulnerability classes\nReduced Patching: Prefer fewer patches to manage\nZero-Day Protection: Need protection against unknown vulnerabilities\n\n\n\nChoose Patch-Based Fixes When:\n\nImmediate Response: Need to fix specific vulnerabilities quickly\nProven Tools: Want to use mature patching ecosystem\nCommunity Support: Value community vulnerability research\nFlexible Adaptation: Need to adapt to new vulnerability types"
+  },
+  {
+    "objectID": "posts/real-world-fixes.html#the-bottom-line",
+    "href": "posts/real-world-fixes.html#the-bottom-line",
+    "title": "Real-world Fixes: Architectural vs. Patches",
+    "section": "The Bottom Line",
+    "text": "The Bottom Line\nArchitectural elimination approaches provide long-term security by eliminating entire vulnerability classes but require accepting architectural constraints. Patch-based security offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.\nThe choice depends on your security timeline and operational constraints:\n\nEliminate entire vulnerability classes (Architectural elimination)\nFix vulnerabilities as they’re discovered (Patch-based)\n\nFor organizations prioritizing long-term security and willing to accept architectural constraints, architectural elimination approaches are compelling. For those needing immediate vulnerability response, patch-based security remains essential.\nThe real question: Is your security strategy better served by eliminating entire vulnerability classes, or by fixing vulnerabilities as they’re discovered?\n\nThis completes our series on security approaches. See our main comparison for a comprehensive overview."
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "Our latest technical deep-dives on the hardened runtime ecosystem, container isolation, and security topics.\n\n\n\nRuntime Isolation: Hypervisor vs. OSS Runtimes - Comparing hypervisor-based isolation with Kata Containers and gVisor\nBase Images: Full Kernel vs. Stripped-Down - Full kernel approaches vs. AWS Bottlerocket and Google COS\nDevelopment Model: OSS + Proprietary vs. Pure OSS - Hybrid development vs. community-driven innovation\nSecurity Philosophy: Prevention vs. Detection - Proactive prevention vs. reactive detection strategies\nReal-world Fixes: Architectural vs. Patches - Eliminating vulnerability classes vs. patch-based fixes\n\n\n\n\nOur posts explore the core debates in container security:\n\nPerformance vs. Security: When to prioritize isolation over speed\nInnovation vs. Transparency: Proprietary innovation vs. community development\nPrevention vs. Detection: Architectural elimination vs. reactive response\nSimplicity vs. Capability: Operational complexity vs. security guarantees\n\nEach post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case."
+  },
+  {
+    "objectID": "posts/index.html#blog-posts",
+    "href": "posts/index.html#blog-posts",
+    "title": "Blog Posts",
+    "section": "",
+    "text": "Our latest technical deep-dives on the hardened runtime ecosystem, container isolation, and security topics.\n\n\n\nRuntime Isolation: Hypervisor vs. OSS Runtimes - Comparing hypervisor-based isolation with Kata Containers and gVisor\nBase Images: Full Kernel vs. Stripped-Down - Full kernel approaches vs. AWS Bottlerocket and Google COS\nDevelopment Model: OSS + Proprietary vs. Pure OSS - Hybrid development vs. community-driven innovation\nSecurity Philosophy: Prevention vs. Detection - Proactive prevention vs. reactive detection strategies\nReal-world Fixes: Architectural vs. Patches - Eliminating vulnerability classes vs. patch-based fixes\n\n\n\n\nOur posts explore the core debates in container security:\n\nPerformance vs. Security: When to prioritize isolation over speed\nInnovation vs. Transparency: Proprietary innovation vs. community development\nPrevention vs. Detection: Architectural elimination vs. reactive response\nSimplicity vs. Capability: Operational complexity vs. security guarantees\n\nEach post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case."
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html",
+    "href": "posts/dev-model-comparison.html",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "",
+    "text": "Software development models represent a fundamental tension between innovation velocity and community sustainability. Some hardened runtimes take a hybrid approach, while many alternatives embrace pure open source. Let’s examine the trade-offs."
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#the-development-model-spectrum",
+    "href": "posts/dev-model-comparison.html#the-development-model-spectrum",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "",
+    "text": "Software development models represent a fundamental tension between innovation velocity and community sustainability. Some hardened runtimes take a hybrid approach, while many alternatives embrace pure open source. Let’s examine the trade-offs."
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#hybrid-development-model-approaches",
+    "href": "posts/dev-model-comparison.html#hybrid-development-model-approaches",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "Hybrid Development Model Approaches",
+    "text": "Hybrid Development Model Approaches\nSome hardened runtimes follow a hybrid development model combining open source components with proprietary innovations:\n\nTechnical Architecture\n# Hybrid development model\ncomponents:\n  open_source:\n    - \"Container runtime interfaces\"\n    - \"Kubernetes integrations\"\n    - \"Standard OCI compliance\"\n    - \"Community tooling\"\n  \n  proprietary:\n    - \"Rust-based hypervisor\"\n    - \"Advanced isolation techniques\"\n    - \"Performance optimizations\"\n    - \"Enterprise features\"\n\n\nDevelopment Philosophy\n“Open interfaces, proprietary innovation”\n\nOpen Standards: Full OCI compliance, Kubernetes integration\nProprietary Core: Hypervisor and isolation technology\nCommunity Engagement: Open source tooling and interfaces\nCommercial Support: Enterprise features and support\n\n\n\nBusiness Model\n// Hybrid approach: Open interfaces, proprietary core\npub struct HybridRuntime {\n    // Open source components\n    pub oci_interface: OpenSourceOCI,\n    pub k8s_integration: OpenSourceK8s,\n    \n    // Proprietary components\n    hypervisor: ProprietaryHypervisor,\n    isolation_engine: ProprietaryIsolation,\n}"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#pure-open-source-model-approaches",
+    "href": "posts/dev-model-comparison.html#pure-open-source-model-approaches",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "Pure Open Source Model Approaches",
+    "text": "Pure Open Source Model Approaches\n\nKata Containers\nFully open source with community governance:\n# Kata: Everything is open source\ngit clone https://github.com/kata-containers/kata-containers\n# All code visible, community contributions welcome\nDevelopment Model: - Apache 2.0 License: Complete freedom - Community Governance: CNCF project - Vendor Neutral: No single vendor control - Transparent Development: All code public\n\n\ngVisor\nGoogle’s open source userland kernel:\n// gVisor: Fully open source\n// https://github.com/google/gvisor\ntype Sentry struct {\n    // All code open source\n    kernel: UserlandKernel,\n    container: Container,\n}\nDevelopment Model: - Apache 2.0 License: Google’s open source commitment - Google Backing: Corporate support - Community Contributions: External contributors welcome - Academic Roots: Research-driven development"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#the-core-debate-integration-vs.-distributed-innovation",
+    "href": "posts/dev-model-comparison.html#the-core-debate-integration-vs.-distributed-innovation",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "The Core Debate: Integration vs. Distributed Innovation",
+    "text": "The Core Debate: Integration vs. Distributed Innovation\n\nHybrid Development Philosophy\n“Proprietary innovation enables faster progress”\n\nFocused Development: Single team can move faster\nInnovation Investment: Proprietary revenue funds R&D\nQuality Control: Centralized development ensures consistency\nCustomer Alignment: Direct customer feedback drives features\n\n\n\nPure Open Source Philosophy\n“Distributed innovation creates better software”\n\nMore Eyes: Community review catches more bugs\nDiverse Perspectives: Different use cases drive innovation\nVendor Independence: No single vendor lock-in\nLong-term Sustainability: Community ownership"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#real-world-development-comparison",
+    "href": "posts/dev-model-comparison.html#real-world-development-comparison",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "Real-World Development Comparison",
+    "text": "Real-World Development Comparison\n\n\n\n\n\n\n\n\n\nAspect\nHybrid Model\nKata Containers\ngVisor\n\n\n\n\nLicense\nMixed (OSS + Proprietary)\nApache 2.0\nApache 2.0\n\n\nGovernance\nVendor-led\nCNCF Community\nGoogle + Community\n\n\nDevelopment Speed\nFast (focused)\nModerate (consensus)\nFast (Google-backed)\n\n\nInnovation Focus\nSecurity isolation\nContainer standards\nUserland kernel\n\n\nCommunity Size\nGrowing\nLarge\nLarge\n\n\nVendor Lock-in\nRuntime vendor\nNone\nGoogle (partial)"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#innovation-patterns",
+    "href": "posts/dev-model-comparison.html#innovation-patterns",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "Innovation Patterns",
+    "text": "Innovation Patterns\n\nHybrid Innovation Cycle\ngraph LR\n    A[Customer Needs] --&gt; B[Proprietary R&D]\n    B --&gt; C[Innovation]\n    C --&gt; D[Open Interfaces]\n    D --&gt; E[Community Adoption]\n    E --&gt; A\nCharacteristics: - Fast iteration: Direct customer feedback - Focused innovation: Security isolation specialization - Open integration: Standards-based interfaces\n\n\nCommunity Innovation Cycle\ngraph LR\n    A[Community Needs] --&gt; B[Distributed R&D]\n    B --&gt; C[Consensus Building]\n    C --&gt; D[Implementation]\n    D --&gt; E[Community Review]\n    E --&gt; A\nCharacteristics: - Broad innovation: Multiple use cases - Consensus-driven: Community agreement required - Transparent process: All decisions public"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#when-to-choose-each-model",
+    "href": "posts/dev-model-comparison.html#when-to-choose-each-model",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "When to Choose Each Model",
+    "text": "When to Choose Each Model\n\nChoose Hybrid Development When:\n\nSpecific Innovation Needs: Require focused security innovation\nEnterprise Support: Need commercial backing\nFast Time-to-Market: Can’t wait for community consensus\nSpecialized Requirements: Need custom security features\n\n\n\nChoose Pure OSS When:\n\nVendor Independence: Avoid lock-in to single vendor\nCommunity Participation: Want to contribute to development\nStandards Compliance: Prefer community-driven standards\nLong-term Sustainability: Value community ownership"
+  },
+  {
+    "objectID": "posts/dev-model-comparison.html#the-bottom-line",
+    "href": "posts/dev-model-comparison.html#the-bottom-line",
+    "title": "Development Model: OSS + Proprietary vs. Pure OSS",
+    "section": "The Bottom Line",
+    "text": "The Bottom Line\nHybrid development models enable faster, more focused innovation but require accepting vendor lock-in and proprietary components. Pure OSS models offer transparency and community ownership but may move slower due to consensus requirements.\nThe choice depends on your innovation priorities and organizational values:\n\nFast, focused innovation with vendor support (Hybrid)\nTransparent, community-driven development (Kata/gVisor)\n\nFor organizations needing rapid security innovation and willing to accept vendor lock-in, hybrid approaches are compelling. For those valuing transparency and community participation, pure OSS remains the gold standard.\nThe real question: Is your organization better served by focused, vendor-backed innovation, or by distributed, community-driven development?\n\nNext up: Security Philosophy: Prevention vs. Detection"
+  },
+  {
+    "objectID": "spec/llm-brief.html",
+    "href": "spec/llm-brief.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "spec/llm-brief.html#project-summary",
+    "href": "spec/llm-brief.html#project-summary",
+    "title": "",
+    "section": "Project Summary",
+    "text": "Project Summary\n\nProject Name: Edera Security Campaign\nSite Purpose: Educate and persuade technical audiences about security trade‑offs in hardened runtimes, hypervisor isolation, and OSS vs vendor-managed approaches.\nPrimary Audience: Security engineers, platform teams, DevOps leads, technical marketers.\nTone: Professional, concise, evidence-backed, skimmable."
+  },
+  {
+    "objectID": "spec/llm-brief.html#repo-layout",
+    "href": "spec/llm-brief.html#repo-layout",
+    "title": "",
+    "section": "Repo Layout",
+    "text": "Repo Layout\n_quarto.yml\nstyles.scss\nREADME.md\n/spec/llm-brief.md\n/spec/prompts.md\n/spec/page-types.md\n/spec/checklist.md\n/spec/seo-guidelines.md\n/pages/*.qmd\n/posts/*.qmd\n/partials/*.html\n/assets/images/*\n/data/*\n/drafts/*"
+  },
+  {
+    "objectID": "spec/llm-brief.html#page-types-front-matter",
+    "href": "spec/llm-brief.html#page-types-front-matter",
+    "title": "",
+    "section": "Page Types & Front Matter",
+    "text": "Page Types & Front Matter\nSee spec/page-types.md."
+  },
+  {
+    "objectID": "spec/llm-brief.html#formatting-rules",
+    "href": "spec/llm-brief.html#formatting-rules",
+    "title": "",
+    "section": "Formatting Rules",
+    "text": "Formatting Rules\n\nH1 is implicit; start content with ##.\nUse Quarto callouts for notes/warnings.\nUse fenced code blocks with language labels.\nProvide alt text for images."
+  },
+  {
+    "objectID": "spec/llm-brief.html#seo",
+    "href": "spec/llm-brief.html#seo",
+    "title": "",
+    "section": "SEO",
+    "text": "SEO\nFollow spec/seo-guidelines.md."
+  },
+  {
+    "objectID": "spec/llm-brief.html#qa-checklist",
+    "href": "spec/llm-brief.html#qa-checklist",
+    "title": "",
+    "section": "QA Checklist",
+    "text": "QA Checklist\nBefore returning any file, ensure all boxes in spec/checklist.md are checked."
+  },
+  {
+    "objectID": "spec/llm-brief.html#prompt-templates",
+    "href": "spec/llm-brief.html#prompt-templates",
+    "title": "",
+    "section": "Prompt Templates",
+    "text": "Prompt Templates\nUse spec/prompts.md."
+  },
+  {
+    "objectID": "spec/llm-brief.html#prohibited",
+    "href": "spec/llm-brief.html#prohibited",
+    "title": "",
+    "section": "Prohibited",
+    "text": "Prohibited\n\nNo placeholders like “TBD” unless asked.\nDo not modify _quarto.yml unless instructed."
+  },
+  {
+    "objectID": "spec/checklist.html",
+    "href": "spec/checklist.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\nQA & Accessibility Checklist\n\nYAML is valid (no tabs).\nRequired front matter fields present.\nHeadings start at H2.\nImages have descriptive alt text.\nAt least two internal links where applicable.\nCode blocks labeled with language.\nNo dead or relative-link mistakes.\nMeta description ≤155 chars.\nTitle ≤70 chars."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Security Isolation Imperative",
+    "section": "",
+    "text": "Security Isolation Philosophy\n\n\n\n\nIf you are not redirected automatically, click here to go to the home page."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html",
+    "href": "pages/isolation-vs-oss.html",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "",
+    "text": "This guide explores the emerging family of hardened runtimes—projects that move beyond traditional container security by implementing architectural isolation. These projects represent different design philosophies and trade-offs within the broader movement toward security isolation."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#the-hardened-runtime-ecosystem",
+    "href": "pages/isolation-vs-oss.html#the-hardened-runtime-ecosystem",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "",
+    "text": "This guide explores the emerging family of hardened runtimes—projects that move beyond traditional container security by implementing architectural isolation. These projects represent different design philosophies and trade-offs within the broader movement toward security isolation."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#scope-criteria",
+    "href": "pages/isolation-vs-oss.html#scope-criteria",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "Scope & Criteria",
+    "text": "Scope & Criteria\nWe evaluate:\n\nSecurity Surface\n\nPerformance Overhead\n\nCommunity & Vendor Support\n\nOperational Complexity\n\nCost & Licensing\n\n\n\n\n\n\n\nWarning\n\n\n\nHeads up: Data points are based on public docs and benchmarks; always validate with your environment."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#ecosystem-comparison-table",
+    "href": "pages/isolation-vs-oss.html#ecosystem-comparison-table",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "Ecosystem Comparison Table",
+    "text": "Ecosystem Comparison Table\n\n\n\n\n\n\n\n\n\nCriterion\nEdera Hardened Runtime\nKata Containers / gVisor\nDistroless / Bottlerocket Images\n\n\n\n\nSecurity Surface\nIsolated kernels; hypervisor boundary\nSplit-kernel/container userland; strong, but shared layers\nShared kernel; minimized userland\n\n\nStartup Overhead\nHigher (~100s ms)\nModerate\nLowest\n\n\nCommunity Scrutiny\nLow/Medium (vendor-led)\nHigh (CNCF/Google/etc.)\nHigh (AWS/Google)\n\n\nOps Complexity\nNew hypervisor layer\nAdditional runtime shim\nMinimal (standard OCI)\n\n\nCost/Licensing\nVendor contract\nOSS (support optional)\nVendor images (often free)"
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#design-philosophy-analysis",
+    "href": "pages/isolation-vs-oss.html#design-philosophy-analysis",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "Design Philosophy Analysis",
+    "text": "Design Philosophy Analysis\n\nEdera: Hypervisor-Based Isolation\n\nPhilosophy: Eliminate entire attack vectors through architectural isolation\nPros: No shared kernel escapes by design; strong isolation for privileged workloads\n\nCons: Trust concentrated in one codebase; fewer eyes on the hypervisor\nBest For: Organizations prioritizing absolute security guarantees\n\n\n\nKata Containers / gVisor: Split-Kernel Approaches\n\nPhilosophy: Reduce attack surface while maintaining compatibility\nPros: OSS, broad audits, cloud-native integrations\n\nCons: Performance trade-offs; still some shared components; patch cycles vary\nBest For: Teams wanting strong isolation with existing tooling\n\n\n\nDistroless / Bottlerocket: Minimal Attack Surface\n\nPhilosophy: Reduce attack surface through minimal, hardened images\nPros: Minimal attack surface; easy adoption\n\nCons: Kernel still shared; you rely on patching cadence and mitigations\nBest For: Organizations starting their security hardening journey"
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#choosing-the-right-approach",
+    "href": "pages/isolation-vs-oss.html#choosing-the-right-approach",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "Choosing the Right Approach",
+    "text": "Choosing the Right Approach\n\nIf Your Threat Model Prioritizes:\nProvable Memory Safety & Zero-Day Prevention: Edera provides the strongest architectural guarantees through hypervisor isolation.\nAlignment with Existing Cloud Tooling: gVisor integrates well with Google Cloud, while Kata works across multiple clouds.\nMinimal Operational Overhead: Hardened images like Bottlerocket provide immediate security benefits with familiar workflows.\nCommunity-Driven Development: Kata Containers and gVisor offer strong community support and transparency."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#the-bottom-line",
+    "href": "pages/isolation-vs-oss.html#the-bottom-line",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "The Bottom Line",
+    "text": "The Bottom Line\nThe hardened runtime ecosystem represents a fundamental shift in container security. Each approach offers different trade-offs between security guarantees, performance, and operational complexity. The key is choosing the right tool for your specific threat model and operational constraints."
+  },
+  {
+    "objectID": "pages/isolation-vs-oss.html#related-content",
+    "href": "pages/isolation-vs-oss.html#related-content",
+    "title": "A Guide to the Hardened Runtime Ecosystem: Comparing Edera, Kata, and gVisor",
+    "section": "Related Content",
+    "text": "Related Content\n\nSee our Blog Posts for upcoming technical deep-dives\nCheck out our About page for more information\n\n\nFAQ\nQ: Can I layer detection on top of any of these approaches?\nA: Yes—prevention and detection aren’t mutually exclusive.\nQ: What about GPU and privileged containers?\nA: Hypervisor isolation helps; OSS runtimes need extra hardening.\nQ: Is performance acceptable?\nA: Benchmarks suggest low CPU overhead; startup latency increases."
+  },
+  {
     "objectID": "pages/about.html",
     "href": "pages/about.html",
     "title": "About This Project",
@@ -557,160 +711,6 @@
     "href": "pages/about.html#contact",
     "title": "About This Project",
     "section": "Contact",
-    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jcasman@oppkey.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: This site is stewarded by Edera as the primary founder and sponsor of the Security Isolation Imperative. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas.\nQ: How do you maintain neutrality?\nA: We maintain editorial independence through community review processes and transparent methodology. All comparisons are evidence-based and cite public sources.\nQ: Do you only cover Edera?\nA: No. We cover the entire hardened runtime ecosystem, including Kata Containers, gVisor, AWS Bottlerocket, and other approaches. Our goal is to advance the entire category."
-  },
-  {
-    "objectID": "pages/community.html",
-    "href": "pages/community.html",
-    "title": "Community",
-    "section": "",
-    "text": "The Security Isolation Imperative is more than a website—it’s a movement to advance architectural security isolation across the entire cloud-native ecosystem. We believe that all vendors and open source projects need to cooperate to spread the message that security in the modern era requires container isolation."
-  },
-  {
-    "objectID": "pages/community.html#the-security-isolation-movement",
-    "href": "pages/community.html#the-security-isolation-movement",
-    "title": "Community",
-    "section": "",
-    "text": "The Security Isolation Imperative is more than a website—it’s a movement to advance architectural security isolation across the entire cloud-native ecosystem. We believe that all vendors and open source projects need to cooperate to spread the message that security in the modern era requires container isolation."
-  },
-  {
-    "objectID": "pages/community.html#our-mission",
-    "href": "pages/community.html#our-mission",
-    "title": "Community",
-    "section": "Our Mission",
-    "text": "Our Mission\nWe’re building a neutral platform where the entire hardened runtime ecosystem can collaborate, share insights, and advance the state of container security. This includes:\n\nOpen Source Projects: Kata Containers, gVisor, and other hardened runtime projects\nCloud Providers: AWS, Google Cloud, Microsoft Azure, and others\n\nSecurity Researchers: Independent researchers and academic institutions\nPlatform Teams: DevOps and security engineers from organizations of all sizes"
-  },
-  {
-    "objectID": "pages/community.html#community-collaboration",
-    "href": "pages/community.html#community-collaboration",
-    "title": "Community",
-    "section": "Community Collaboration",
-    "text": "Community Collaboration\n\nAdvisory Board\nWe’re forming an advisory board of experts from across the ecosystem to ensure our content remains accurate, balanced, and valuable to the entire community.\n\n\nGuest Contributions\nWe welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Recent examples:\n\n“The Vision for Kata Containers 3.0” - by Kata Containers maintainers\n“How gVisor Tackles Syscall Compatibility” - by gVisor team members\n“AWS Bottlerocket: Lessons from Production” - by AWS security engineers\n\n\n\nCommunity Review Process\nAll technical content undergoes community review by:\n\nSecurity Researchers: Academic and industry experts\nPlatform Engineers: DevOps and SRE professionals\nOpen Source Maintainers: Project leaders from across the ecosystem"
-  },
-  {
-    "objectID": "pages/community.html#ecosystem-sponsorship",
-    "href": "pages/community.html#ecosystem-sponsorship",
-    "title": "Community",
-    "section": "Ecosystem Sponsorship",
-    "text": "Ecosystem Sponsorship\nAs part of our commitment to advancing the entire category, we support open source projects in the hardened runtime ecosystem:\n\nRecent Sponsorships\n\nKata Containers: Supporting the CNCF project’s development and documentation\ngVisor: Contributing to Google’s container runtime security research\nSecurity Conferences: Sponsoring talks and workshops on container isolation\n\n\n\nSponsorship Philosophy\nWe believe that advancing security isolation requires collaboration, not competition. When we sponsor an open source project, we’re not “sponsoring a competitor”—we’re sponsoring the ecosystem."
-  },
-  {
-    "objectID": "pages/community.html#community-feedback",
-    "href": "pages/community.html#community-feedback",
-    "title": "Community",
-    "section": "Community Feedback",
-    "text": "Community Feedback\nNote: This page contains placeholder content and fake testimonials for demonstration purposes. Once our campaign is launched, we will replace this content with real community feedback and engagement.\nAI is generating content at an unprecedented scale, but there’s a major problem: it’s often wrong. For technical security content, ‘wrong’ isn’t just embarrassing, it’s dangerous. In this community, we aim to solve this issue by treating errors in security content like vulnerabilities in software. We’re essentially building a ‘security review’ platform for content, connecting technical articles to the global security community of vetted professionals who can find and fix inaccuracies.\nThe scale of AI with the trust of human verification, with the goal of creating scalable quality assurance in the security AI era.\n\nHere’s what security professionals have to say!\nDr. Sarah Chen (Placeholder - Not a real person)\nSenior Security Researcher, Cloud Security Alliance\n\n\n\nDr. Sarah Chen\n\n\n\nThe comparison between hardened runtimes and traditional container isolation is spot-on. Having worked with both approaches in production environments, I can attest to the significant security improvements that hardened runtimes provide. The isolation mechanisms are fundamentally different - while containers share the kernel, hardened runtimes provide true process isolation that’s much harder to escape from.\n\nAbout security tools\n\nThe current generation of security professionals often focuses too much on perimeter defense and not enough on runtime security. When attackers get past your perimeter, what happens next is critical. Hardened runtimes provide that last line of defense that can prevent lateral movement and data exfiltration.\n\n\nHer recommendations to improve content:\n\nThe technical deep-dives are excellent, but we need more real-world case studies showing actual attack scenarios and how hardened runtimes prevented them. Also, performance benchmarks comparing the overhead of different isolation approaches would be valuable for organizations considering adoption.\n\n\nMarcus Rodriguez (Placeholder - Not a real person)\nDevOps Engineer, Fortune 500 Financial Services\n\n\n\nMarcus Rodriguez\n\n\n\nAs someone who’s been responsible for container security in a highly regulated environment, the isolation comparison article really resonated with me. We’ve been using traditional containers for years, but the security gaps are becoming more apparent as attacks become more sophisticated. The move to hardened runtimes isn’t just about security - it’s about compliance and audit requirements too.\n\nHis opinion on the main advantages:\n\nThe main advantages of hardened runtimes over traditional containers that immediately come to mind are:\n\n\nTrue process isolation: Unlike containers that share the kernel, hardened runtimes provide complete process isolation that prevents privilege escalation attacks.\nReduced attack surface: By eliminating shared kernel components, hardened runtimes dramatically reduce the potential attack vectors available to adversaries.\nBetter compliance: For regulated industries, the additional security guarantees make it easier to meet audit requirements and demonstrate due diligence.\nSimplified security model: The security boundary is much clearer - either you’re inside the runtime or you’re not, with no gray areas.\n\n\nHis recommendations to improve content:\n\nWe need more practical implementation guides. How do you migrate existing containerized applications to hardened runtimes? What are the performance implications? How do you handle debugging and monitoring in these environments? These are the questions that keep me up at night.\n\n\nAlex Thompson (Placeholder - Not a real person)\nCTO, Startup Security Company\n\n\n\nAlex Thompson\n\n\n\nThe security philosophy article really captures the essence of why we need to move beyond traditional container security. It’s not just about adding more layers - it’s about fundamentally rethinking how we approach runtime security. The comparison with OSS alternatives is particularly valuable for organizations trying to make informed decisions.\n\nHis opinion on the main message:\n\nI wouldn’t say hardened runtimes “beat” traditional containers in all cases - they’re different tools for different security requirements. For high-security environments, hardened runtimes are essential. For development and testing, traditional containers might still be appropriate. The key is understanding your threat model and choosing the right tool.\n\n\nHis recommendations to improve content:\n\nThe technical content is solid, but we need more business case analysis. What’s the ROI of implementing hardened runtimes? How do you justify the additional complexity to management? These are the questions that determine whether security initiatives succeed or fail.\n\n\nDr. Emily Watson (Placeholder - Not a real person)\nProfessor of Computer Science, Cybersecurity Research Lab\n\n\n\nDr. Emily Watson\n\n\n\nThe runtime isolation comparison provides an excellent technical foundation for understanding the security implications of different approaches. As an academic researcher, I appreciate the depth of technical analysis and the clear presentation of the underlying security principles.\n\nHer opinion on the main advantages:\n\nFrom a research perspective, the main advantages of hardened runtimes are:\n\n\nProvable security: The isolation mechanisms can be mathematically proven to provide certain security guarantees, unlike traditional containers where security depends on kernel hardening.\nReduced complexity: The security model is simpler and easier to reason about, which reduces the likelihood of implementation errors.\nBetter monitoring: The clear security boundaries make it easier to detect and respond to security incidents.\nFuture-proof: As attack techniques evolve, the fundamental isolation properties remain effective.\n\n\nHer recommendations to improve content:\n\nThe academic rigor is excellent, but we need more peer-reviewed research citations. Also, consider adding sections on emerging threats and how hardened runtimes address them. The security landscape is constantly evolving, and content needs to keep pace.\n\n\nDavid Kim (Placeholder - Not a real person)\nSecurity Architect, Cloud Platform Provider\n\n\n\nDavid Kim\n\n\n\nHaving implemented hardened runtimes at scale, I can confirm that the performance characteristics described in the articles are accurate. The overhead is minimal for most workloads, and the security benefits far outweigh any performance impact. The key is proper implementation and monitoring.\n\nHis opinion on the main advantages:\n\nThe main advantages I’ve observed in production:\n\n\nReduced incident response time: When security incidents occur, the isolation makes containment much faster and more effective.\nSimplified compliance: Audit processes are much smoother when you can demonstrate clear security boundaries.\nBetter resource utilization: The isolation prevents noisy neighbor problems that can occur in shared container environments.\nEasier security testing: The clear boundaries make it easier to perform security assessments and penetration testing.\n\n\nHis recommendations to improve content:\n\nWe need more operational guidance. How do you monitor hardened runtimes? What metrics are important? How do you troubleshoot issues? These operational aspects are crucial for successful deployment.\n\n\nMore community testimonials and feedback will be added here as we grow and engage with real community members.\n\nJoin our community and help shape the future of runtime security. If you are interested in providing real feedback, please fill out this form to share your insights and experiences.\nNote: The testimonials above are placeholder content for demonstration purposes. Real community feedback will be added once our engagement campaign begins."
-  },
-  {
-    "objectID": "pages/community.html#example-of-real-community-engagement",
-    "href": "pages/community.html#example-of-real-community-engagement",
-    "title": "Community",
-    "section": "Example of Real Community Engagement",
-    "text": "Example of Real Community Engagement\nFor an example of how real community feedback and engagement works in practice, check out the R Beats Python community page. This page showcases authentic testimonials and feedback from real developers, researchers, and data scientists who have contributed their insights to improve the content and accuracy of technical articles. This demonstrates the power of combining AI-generated content with human expertise and community verification."
-  },
-  {
-    "objectID": "pages/proposal.html",
-    "href": "pages/proposal.html",
-    "title": "Proposal",
-    "section": "",
-    "text": "This proposal is to explore the synergy of community, technology, and company through the use of human ideas augmented by AI."
-  },
-  {
-    "objectID": "pages/proposal.html#community-engagement-evolution",
-    "href": "pages/proposal.html#community-engagement-evolution",
-    "title": "Proposal",
-    "section": "Community Engagement Evolution",
-    "text": "Community Engagement Evolution\n\n\n\nCommunity Engagement Diagram\n\n\nThe diagram illustrates the evolution of community engagement through two phases:\nLeft side (Current State): Shows a smaller crossover between community and technology, with limited intersection between the three domains.\nRight side (Enhanced Engagement): Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge."
-  },
-  {
-    "objectID": "pages/proposal.html#building-trust-through-contribution",
-    "href": "pages/proposal.html#building-trust-through-contribution",
-    "title": "Proposal",
-    "section": "Building Trust Through Contribution",
-    "text": "Building Trust Through Contribution\nLeadership and respect in any community are earned, not given. For a company to establish category leadership, it must first demonstrate genuine contribution to the category—both in technology development and in sharing knowledge, information, and collaborative work.\nTrust is built through consistent, valuable contributions:\n\nTechnology Contributions: Developing and sharing tools, libraries, and solutions that benefit the broader community\nInformation Sharing: Providing insights, documentation, and educational content that helps others succeed\nCollaborative Work: Participating in open discussions, code reviews, and community initiatives\nLong-term Commitment: Showing sustained engagement rather than opportunistic participation\n\nCategory leadership emerges naturally when a company has proven its value to the community through meaningful contributions over time. This leadership position cannot be claimed through marketing alone—it must be earned through demonstrated expertise and generosity."
-  },
-  {
-    "objectID": "pages/proposal.html#engagement-phases",
-    "href": "pages/proposal.html#engagement-phases",
-    "title": "Proposal",
-    "section": "Engagement Phases",
-    "text": "Engagement Phases\n\n\n\nEngagement Phases Diagram\n\n\n\nPhase 1: Content Creation Humans from Oppkey work with the AI to be a site with content.\nPhase 2: Expert Vetting Oppkey reaches out to developers and security experts to vet the site and propose changes.\nPhase 3: Community Collaboration We work with the community to improve the site.\nPhase 4: Content Cycle The cycle is repeated with new content."
-  },
-  {
-    "objectID": "pages/proposal.html#example-of-real-people-working-with-a-site",
-    "href": "pages/proposal.html#example-of-real-people-working-with-a-site",
-    "title": "Proposal",
-    "section": "Example of Real People Working with a Site",
-    "text": "Example of Real People Working with a Site\nAn example of this model in action can be seen at the R Beats Python Community page."
-  },
-  {
-    "objectID": "spec/prompts.html",
-    "href": "spec/prompts.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "spec/prompts.html#create-page",
-    "href": "spec/prompts.html#create-page",
-    "title": "",
-    "section": "Create Page",
-    "text": "Create Page\nSYSTEM: You are a Quarto site builder. Follow spec/llm-brief.md.\n\nUSER:\nCreate a &lt;PAGE_TYPE&gt; page about \"&lt;TOPIC&gt;\".\nFile path: &lt;RELATIVE_PATH&gt;.\nConstraints:\n- Follow the front matter schema exactly.\n- ≥3 H2 sections, ≥2 internal links.\n- 1 callout block.\n- End with FAQ (3 Q&A).\nReturn ONLY valid Markdown."
-  },
-  {
-    "objectID": "spec/prompts.html#revise-page",
-    "href": "spec/prompts.html#revise-page",
-    "title": "",
-    "section": "Revise Page",
-    "text": "Revise Page\nSYSTEM: Edit only what is requested. Preserve front matter unless asked.\n\nUSER:\nHere is the page (&lt;&lt;&lt; &gt;&gt;&gt;).\n&lt;&lt;&lt;\n...content...\n&gt;&gt;&gt;\nTasks:\n1. Improve SEO with keywords: &lt;KEYWORDS&gt;\n2. Tighten intro (≤100 words).\n3. Ensure H2/H3 hierarchy.\nReturn full updated file."
-  },
-  {
-    "objectID": "spec/prompts.html#comparison-table",
-    "href": "spec/prompts.html#comparison-table",
-    "title": "",
-    "section": "Comparison Table",
-    "text": "Comparison Table\nSYSTEM: Output a GitHub-flavor Markdown table.\n\nUSER:\nCreate a comparison table for &lt;X&gt; vs &lt;Y&gt; across &lt;CRITERIA&gt;."
-  },
-  {
-    "objectID": "spec/page-types.html",
-    "href": "spec/page-types.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "spec/page-types.html#blog-post-type-post",
-    "href": "spec/page-types.html#blog-post-type-post",
-    "title": "",
-    "section": "Blog Post (type: post)",
-    "text": "Blog Post (type: post)\n---\ntitle: \"&lt;Title ≤70 chars&gt;\"\ndescription: \"&lt;1-2 sentence SEO summary&gt;\"\nauthor: \"&lt;Name&gt;\"\ndate: \"YYYY-MM-DD\"\ncategories: [\"tag1\", \"tag2\"]\ntype: \"post\"\nslug: \"&lt;kebab-case-url&gt;\"\ndraft: false\nkeywords: [\"kw1\", \"kw2\"]\nimage: \"/assets/images/&lt;thumb&gt;.png\"\n---"
-  },
-  {
-    "objectID": "spec/page-types.html#landing-type-landing",
-    "href": "spec/page-types.html#landing-type-landing",
-    "title": "",
-    "section": "Landing (type: landing)",
-    "text": "Landing (type: landing)\n---\ntitle: \"&lt;Value Proposition&gt;\"\ndescription: \"&lt;SEO desc&gt;\"\ntype: \"landing\"\nlayout: \"full\"\nhero:\n  headline: \"&lt;Headline&gt;\"\n  subhead: \"&lt;Subhead&gt;\"\n  cta_text: \"Get Started\"\n  cta_link: \"/pages/get-started.qmd\"\nsections:\n  - id: \"benefits\"\n    title: \"Benefits\"\n    style: \"cards\"\n---"
-  },
-  {
-    "objectID": "spec/page-types.html#how-to-type-howto",
-    "href": "spec/page-types.html#how-to-type-howto",
-    "title": "",
-    "section": "How-To (type: howto)",
-    "text": "How-To (type: howto)\n---\ntitle: \"How to &lt;Do Thing&gt;\"\ndescription: \"&lt;Outcome&gt;\"\ntype: \"howto\"\ndifficulty: \"beginner|intermediate|advanced\"\ntime_required: \"X minutes\"\nprerequisites: [\"Thing1\"]\noutcomes: [\"Outcome1\"]\n---"
-  },
-  {
-    "objectID": "spec/page-types.html#comparison-type-compare",
-    "href": "spec/page-types.html#comparison-type-compare",
-    "title": "",
-    "section": "Comparison (type: compare)",
-    "text": "Comparison (type: compare)\n---\ntitle: \"&lt;X vs Y&gt; for &lt;Use Case&gt;\"\ndescription: \"&lt;Short summary&gt;\"\ntype: \"compare\"\ncriteria: [\"Security\", \"Performance\", \"Community Support\", \"Operational Complexity\", \"Cost\"]\nsummary_table: true\n---"
-  },
-  {
-    "objectID": "spec/page-types.html#case-study-type-case-study",
-    "href": "spec/page-types.html#case-study-type-case-study",
-    "title": "",
-    "section": "Case Study (type: case-study)",
-    "text": "Case Study (type: case-study)\n---\ntitle: \"Case Study: &lt;Client&gt;\"\ndescription: \"&lt;Impact statement&gt;\"\ntype: \"case-study\"\nclient: \"&lt;Name&gt;\"\nproblem: \"&lt;Problem&gt;\"\nsolution: \"&lt;Solution&gt;\"\nresults:\n  - metric: \"&lt;KPI&gt;\"\n    value: \"&lt;number&gt;\"\n---"
+    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jcasman@storychangesculture.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: This site is stewarded by Edera as the primary founder and sponsor of the Security Isolation Imperative. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas.\nQ: How do you maintain neutrality?\nA: We maintain editorial independence through community review processes and transparent methodology. All comparisons are evidence-based and cite public sources.\nQ: Do you only cover Edera?\nA: No. We cover the entire hardened runtime ecosystem, including Kata Containers, gVisor, AWS Bottlerocket, and other approaches. Our goal is to advance the entire category."
   }
 ]
