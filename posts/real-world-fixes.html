@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2025-01-27">
-<meta name="description" content="Comparing Edera’s architectural elimination of exploits with patch-based vulnerability fixes">
+<meta name="description" content="Comparing architectural elimination of exploits with patch-based vulnerability fixes in the hardened runtime ecosystem">
 
-<title>Real-world Fixes: Architectural vs.&nbsp;Patches – Hardened Runtime Community Vault</title>
+<title>Real-world Fixes: Architectural vs.&nbsp;Patches – The Security Isolation Imperative</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,8 +23,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -35,7 +36,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -67,15 +68,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/images/logo.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d33a963d721e9cf094b6d298c84ae72d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -108,7 +110,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../styles.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -119,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <img src="../assets/images/logo.svg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Hardened Runtime Community Vault</span>
+    <span class="navbar-title">The Security Isolation Imperative</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -165,13 +167,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#the-vulnerability-response-spectrum" id="toc-the-vulnerability-response-spectrum" class="nav-link active" data-scroll-target="#the-vulnerability-response-spectrum">The Vulnerability Response Spectrum</a></li>
-  <li><a href="#ederas-position-architectural-elimination" id="toc-ederas-position-architectural-elimination" class="nav-link" data-scroll-target="#ederas-position-architectural-elimination">Edera’s Position: Architectural Elimination</a>
+  <li><a href="#architectural-elimination-approaches" id="toc-architectural-elimination-approaches" class="nav-link" data-scroll-target="#architectural-elimination-approaches">Architectural Elimination Approaches</a>
   <ul class="collapse">
   <li><a href="#technical-approach" id="toc-technical-approach" class="nav-link" data-scroll-target="#technical-approach">Technical Approach</a></li>
   <li><a href="#architectural-strategy" id="toc-architectural-strategy" class="nav-link" data-scroll-target="#architectural-strategy">Architectural Strategy</a></li>
   <li><a href="#long-term-benefits" id="toc-long-term-benefits" class="nav-link" data-scroll-target="#long-term-benefits">Long-term Benefits</a></li>
   </ul></li>
-  <li><a href="#community-alternatives-patch-based-vulnerability-fixes" id="toc-community-alternatives-patch-based-vulnerability-fixes" class="nav-link" data-scroll-target="#community-alternatives-patch-based-vulnerability-fixes">Community Alternatives: Patch-Based Vulnerability Fixes</a>
+  <li><a href="#traditional-patch-based-approaches" id="toc-traditional-patch-based-approaches" class="nav-link" data-scroll-target="#traditional-patch-based-approaches">Traditional Patch-Based Approaches</a>
   <ul class="collapse">
   <li><a href="#traditional-container-security" id="toc-traditional-container-security" class="nav-link" data-scroll-target="#traditional-container-security">Traditional Container Security</a></li>
   <li><a href="#patch-based-security" id="toc-patch-based-security" class="nav-link" data-scroll-target="#patch-based-security">Patch-Based Security</a></li>
@@ -179,8 +181,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#the-core-debate-long-term-deterrence-vs.-immediate-fix" id="toc-the-core-debate-long-term-deterrence-vs.-immediate-fix" class="nav-link" data-scroll-target="#the-core-debate-long-term-deterrence-vs.-immediate-fix">The Core Debate: Long-term Deterrence vs.&nbsp;Immediate Fix</a>
   <ul class="collapse">
-  <li><a href="#ederas-argument" id="toc-ederas-argument" class="nav-link" data-scroll-target="#ederas-argument">Edera’s Argument</a></li>
-  <li><a href="#community-counterpoint" id="toc-community-counterpoint" class="nav-link" data-scroll-target="#community-counterpoint">Community Counterpoint</a></li>
+  <li><a href="#architectural-elimination-philosophy" id="toc-architectural-elimination-philosophy" class="nav-link" data-scroll-target="#architectural-elimination-philosophy">Architectural Elimination Philosophy</a></li>
+  <li><a href="#patch-based-philosophy" id="toc-patch-based-philosophy" class="nav-link" data-scroll-target="#patch-based-philosophy">Patch-Based Philosophy</a></li>
   </ul></li>
   <li><a href="#real-world-vulnerability-comparison" id="toc-real-world-vulnerability-comparison" class="nav-link" data-scroll-target="#real-world-vulnerability-comparison">Real-World Vulnerability Comparison</a></li>
   <li><a href="#case-study-container-escape-vulnerabilities" id="toc-case-study-container-escape-vulnerabilities" class="nav-link" data-scroll-target="#case-study-container-escape-vulnerabilities">Case Study: Container Escape Vulnerabilities</a>
@@ -190,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#when-to-choose-each-approach" id="toc-when-to-choose-each-approach" class="nav-link" data-scroll-target="#when-to-choose-each-approach">When to Choose Each Approach</a>
   <ul class="collapse">
-  <li><a href="#choose-edera-elimination-when" id="toc-choose-edera-elimination-when" class="nav-link" data-scroll-target="#choose-edera-elimination-when">Choose Edera Elimination When:</a></li>
+  <li><a href="#choose-architectural-elimination-when" id="toc-choose-architectural-elimination-when" class="nav-link" data-scroll-target="#choose-architectural-elimination-when">Choose Architectural Elimination When:</a></li>
   <li><a href="#choose-patch-based-fixes-when" id="toc-choose-patch-based-fixes-when" class="nav-link" data-scroll-target="#choose-patch-based-fixes-when">Choose Patch-Based Fixes When:</a></li>
   </ul></li>
   <li><a href="#the-bottom-line" id="toc-the-bottom-line" class="nav-link" data-scroll-target="#the-bottom-line">The Bottom Line</a></li>
@@ -212,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    Comparing Edera’s architectural elimination of exploits with patch-based vulnerability fixes
+    Comparing architectural elimination of exploits with patch-based vulnerability fixes in the hardened runtime ecosystem
   </div>
 </div>
 
@@ -237,14 +239,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="the-vulnerability-response-spectrum" class="level2">
 <h2 class="anchored" data-anchor-id="the-vulnerability-response-spectrum">The Vulnerability Response Spectrum</h2>
-<p>When security vulnerabilities are discovered, organizations face a fundamental choice: <strong>architectural elimination</strong> or <strong>patch-based fixes</strong>. Edera embraces the former, while most alternatives rely on the latter. This difference shapes how organizations respond to security threats.</p>
+<p>When security vulnerabilities are discovered, organizations face a fundamental choice: <strong>architectural elimination</strong> or <strong>patch-based fixes</strong>. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats.</p>
 </section>
-<section id="ederas-position-architectural-elimination" class="level2">
-<h2 class="anchored" data-anchor-id="ederas-position-architectural-elimination">Edera’s Position: Architectural Elimination</h2>
-<p>Edera’s approach is <strong>“eliminate entire vulnerability classes through architecture”</strong>:</p>
+<section id="architectural-elimination-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="architectural-elimination-approaches">Architectural Elimination Approaches</h2>
+<p>The hardened runtime approach is <strong>“eliminate entire vulnerability classes through architecture”</strong>:</p>
 <section id="technical-approach" class="level3">
 <h3 class="anchored" data-anchor-id="technical-approach">Technical Approach</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Edera: Eliminate vulnerability classes through architecture</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Hardened runtimes: Eliminate vulnerability classes through architecture</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> VulnerabilityElimination <span class="op">{</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Eliminate kernel escapes through hypervisor isolation</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    kernel_isolation<span class="op">:</span> HypervisorBoundary<span class="op">,</span></span>
@@ -276,8 +278,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 </section>
-<section id="community-alternatives-patch-based-vulnerability-fixes" class="level2">
-<h2 class="anchored" data-anchor-id="community-alternatives-patch-based-vulnerability-fixes">Community Alternatives: Patch-Based Vulnerability Fixes</h2>
+<section id="traditional-patch-based-approaches" class="level2">
+<h2 class="anchored" data-anchor-id="traditional-patch-based-approaches">Traditional Patch-Based Approaches</h2>
 <section id="traditional-container-security" class="level3">
 <h3 class="anchored" data-anchor-id="traditional-container-security">Traditional Container Security</h3>
 <p><strong>Fix vulnerabilities as they’re discovered:</strong></p>
@@ -312,8 +314,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="the-core-debate-long-term-deterrence-vs.-immediate-fix" class="level2">
 <h2 class="anchored" data-anchor-id="the-core-debate-long-term-deterrence-vs.-immediate-fix">The Core Debate: Long-term Deterrence vs.&nbsp;Immediate Fix</h2>
-<section id="ederas-argument" class="level3">
-<h3 class="anchored" data-anchor-id="ederas-argument">Edera’s Argument</h3>
+<section id="architectural-elimination-philosophy" class="level3">
+<h3 class="anchored" data-anchor-id="architectural-elimination-philosophy">Architectural Elimination Philosophy</h3>
 <p><strong>“Architectural elimination provides long-term security”</strong></p>
 <ul>
 <li><strong>Zero-Day Protection</strong>: Architectural prevention works against unknown vulnerabilities</li>
@@ -322,8 +324,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Future-Proof</strong>: Hardware trends favor virtualization</li>
 </ul>
 </section>
-<section id="community-counterpoint" class="level3">
-<h3 class="anchored" data-anchor-id="community-counterpoint">Community Counterpoint</h3>
+<section id="patch-based-philosophy" class="level3">
+<h3 class="anchored" data-anchor-id="patch-based-philosophy">Patch-Based Philosophy</h3>
 <p><strong>“Immediate fixes address real threats now”</strong></p>
 <ul>
 <li><strong>Immediate Response</strong>: Fix vulnerabilities as they’re discovered</li>
@@ -337,15 +339,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="real-world-vulnerability-comparison">Real-World Vulnerability Comparison</h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 32%">
-<col style="width: 32%">
-<col style="width: 35%">
+<col style="width: 29%">
+<col style="width: 41%">
+<col style="width: 29%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>Vulnerability Type</th>
-<th>Edera Elimination</th>
-<th>Traditional Patching</th>
+<th>Architectural Elimination</th>
+<th>Patch-Based Fixes</th>
 </tr>
 </thead>
 <tbody>
@@ -386,14 +388,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="case-study-container-escape-vulnerabilities">Case Study: Container Escape Vulnerabilities</h2>
 <section id="cve-2024-1234-container-escape-via-kernel-exploit" class="level3">
 <h3 class="anchored" data-anchor-id="cve-2024-1234-container-escape-via-kernel-exploit">CVE-2024-1234: Container Escape via Kernel Exploit</h3>
-<p><strong>Edera’s Architectural Response:</strong></p>
+<p><strong>Architectural Elimination Response:</strong></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Container escape attempts fail at hypervisor boundary</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> handle_container_escape(container_id<span class="op">:</span> ContainerId) <span class="op">-&gt;</span> SecurityResult <span class="op">{</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Attempt blocked by hypervisor isolation</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// No shared kernel to exploit</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="pp">SecurityResult::</span>Eliminated</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Traditional Patch Response:</strong></p>
+<p><strong>Patch-Based Response:</strong></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply kernel security patch</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Update container runtime</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Monitor for exploitation attempts</span></span>
@@ -401,12 +403,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="cve-2024-5678-memory-corruption-in-runtime" class="level3">
 <h3 class="anchored" data-anchor-id="cve-2024-5678-memory-corruption-in-runtime">CVE-2024-5678: Memory Corruption in Runtime</h3>
-<p><strong>Edera’s Architectural Response:</strong></p>
+<p><strong>Architectural Elimination Response:</strong></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode rust code-with-copy"><code class="sourceCode rust"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Rust prevents entire classes of memory corruption</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">// No buffer overflows, use-after-free, etc.</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> safe_runtime <span class="op">=</span> <span class="pp">Runtime::</span>new()<span class="op">;</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">// Compile-time guarantees prevent runtime exploits</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Traditional Patch Response:</strong></p>
+<p><strong>Patch-Based Response:</strong></p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Patch specific memory corruption vulnerability</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> fixed_function<span class="op">()</span> <span class="op">{</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Add bounds checking</span></span>
@@ -417,8 +419,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="when-to-choose-each-approach" class="level2">
 <h2 class="anchored" data-anchor-id="when-to-choose-each-approach">When to Choose Each Approach</h2>
-<section id="choose-edera-elimination-when" class="level3">
-<h3 class="anchored" data-anchor-id="choose-edera-elimination-when">Choose Edera Elimination When:</h3>
+<section id="choose-architectural-elimination-when" class="level3">
+<h3 class="anchored" data-anchor-id="choose-architectural-elimination-when">Choose Architectural Elimination When:</h3>
 <ul>
 <li><strong>High-Security Requirements</strong>: Financial, healthcare, government</li>
 <li><strong>Long-term Security</strong>: Want to eliminate entire vulnerability classes</li>
@@ -438,16 +440,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="the-bottom-line" class="level2">
 <h2 class="anchored" data-anchor-id="the-bottom-line">The Bottom Line</h2>
-<p><strong>Edera’s architectural elimination</strong> provides long-term security by eliminating entire vulnerability classes but requires accepting architectural constraints and vendor lock-in. <strong>Patch-based security</strong> offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.</p>
+<p><strong>Architectural elimination approaches</strong> provide long-term security by eliminating entire vulnerability classes but require accepting architectural constraints. <strong>Patch-based security</strong> offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.</p>
 <p>The choice depends on your <strong>security timeline</strong> and <strong>operational constraints</strong>:</p>
 <ul>
-<li><strong>Eliminate entire vulnerability classes</strong> (Edera)</li>
-<li><strong>Fix vulnerabilities as they’re discovered</strong> (Traditional)</li>
+<li><strong>Eliminate entire vulnerability classes</strong> (Architectural elimination)</li>
+<li><strong>Fix vulnerabilities as they’re discovered</strong> (Patch-based)</li>
 </ul>
-<p>For organizations prioritizing <strong>long-term security</strong> and willing to accept architectural constraints, Edera’s elimination approach is compelling. For those needing <strong>immediate vulnerability response</strong>, patch-based security remains essential.</p>
+<p>For organizations prioritizing <strong>long-term security</strong> and willing to accept architectural constraints, architectural elimination approaches are compelling. For those needing <strong>immediate vulnerability response</strong>, patch-based security remains essential.</p>
 <p>The real question: <strong>Is your security strategy better served by eliminating entire vulnerability classes, or by fixing vulnerabilities as they’re discovered?</strong></p>
 <hr>
-<p><em>This completes our series on Edera’s security approach. See our <a href="../pages/isolation-vs-oss.html">main comparison</a> for a comprehensive overview.</em></p>
+<p><em>This completes our series on security approaches. See our <a href="../pages/isolation-vs-oss.html">main comparison</a> for a comprehensive overview.</em></p>
 
 
 <!-- -->
@@ -456,290 +458,293 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/codetricity\.github\.io\/hardened-container\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
         }
-        return container.innerHTML
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/codetricity\.github\.io\/hardened-container\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -747,214 +752,190 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Real-world Fixes: Architectural vs. Patches"</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Comparing Edera's architectural elimination of exploits with patch-based vulnerability fixes"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> "Comparing architectural elimination of exploits with patch-based vulnerability fixes in the hardened runtime ecosystem"</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025-01-27</span></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> ["Security", "Vulnerabilities", "Architecture"]</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Vulnerability Response Spectrum</span></span>
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>When security vulnerabilities are discovered, organizations face a fundamental choice: **architectural elimination** or **patch-based fixes**. Edera embraces the former, while most alternatives rely on the latter. This difference shapes how organizations respond to security threats.</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>When security vulnerabilities are discovered, organizations face a fundamental choice: **architectural elimination** or **patch-based fixes**. The hardened runtime ecosystem embraces the former, while most traditional approaches rely on the latter. This difference shapes how organizations respond to security threats.</span>
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Edera's Position: Architectural Elimination</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">## Architectural Elimination Approaches</span></span>
 <span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>Edera's approach is **"eliminate entire vulnerability classes through architecture"**:</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>The hardened runtime approach is **"eliminate entire vulnerability classes through architecture"**:</span>
 <span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="fu">### Technical Approach</span></span>
 <span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="in">```rust</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="co">// Edera: Eliminate vulnerability classes through architecture</span></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="kw">struct</span> VulnerabilityElimination <span class="op">{</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Eliminate kernel escapes through hypervisor isolation</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    kernel_isolation<span class="op">:</span> HypervisorBoundary<span class="op">,</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="sc">/</span><span class="er">/</span> Hardened runtimes<span class="sc">:</span> Eliminate vulnerability classes through architecture</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>struct VulnerabilityElimination {</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="sc">/</span><span class="er">/</span> Eliminate kernel escapes through hypervisor isolation</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    kernel_isolation<span class="sc">:</span> HypervisorBoundary,</span>
 <span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Eliminate memory corruption through Rust</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    memory_safety<span class="op">:</span> RustGuarantees<span class="op">,</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="sc">/</span><span class="er">/</span> Eliminate memory corruption through Rust</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    memory_safety<span class="sc">:</span> RustGuarantees,</span>
 <span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Eliminate privilege escalation through isolation</span></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    privilege_isolation<span class="op">:</span> ContainerPrivileges<span class="op">,</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>    <span class="sc">/</span><span class="er">/</span> Eliminate privilege escalation through isolation</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    privilege_isolation<span class="sc">:</span> ContainerPrivileges,</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### Architectural Strategy</span></span>
@@ -973,7 +954,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Zero-Day Protection**: Architectural prevention works against unknown attacks</span>
 <span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Compliance Clarity**: Clear security boundaries for auditors</span>
 <span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Community Alternatives: Patch-Based Vulnerability Fixes</span></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="fu">## Traditional Patch-Based Approaches</span></span>
 <span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="fu">### Traditional Container Security</span></span>
 <span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a></span>
@@ -1008,7 +989,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Core Debate: Long-term Deterrence vs. Immediate Fix</span></span>
 <span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Edera's Argument</span></span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="fu">### Architectural Elimination Philosophy</span></span>
 <span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>**"Architectural elimination provides long-term security"**</span>
 <span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a></span>
@@ -1017,7 +998,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Predictable Security**: Same elimination guarantees for all workloads</span>
 <span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Future-Proof**: Hardware trends favor virtualization</span>
 <span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Community Counterpoint</span></span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a><span class="fu">### Patch-Based Philosophy</span></span>
 <span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>**"Immediate fixes address real threats now"**</span>
 <span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a></span>
@@ -1028,30 +1009,30 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a><span class="fu">## Real-World Vulnerability Comparison</span></span>
 <span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a>| Vulnerability Type | Edera Elimination | Traditional Patching |</span>
-<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a>|-------------------|-------------------|---------------------|</span>
-<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>| Kernel Escapes | Eliminated (hypervisor) | Patched (kernel updates) |</span>
-<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a>| Memory Corruption | Eliminated (Rust) | Patched (code fixes) |</span>
-<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a>| Privilege Escalation | Eliminated (isolation) | Patched (capability fixes) |</span>
-<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a>| Zero-Day Attacks | Protected (architectural) | Vulnerable (pattern-based) |</span>
-<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a>| Patching Overhead | Low | High |</span>
-<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a>| Long-term Security | High | Variable |</span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Vulnerability Type <span class="pp">|</span> Architectural Elimination <span class="pp">|</span> Patch-Based Fixes <span class="pp">|</span></span>
+<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a><span class="pp">|-------------------|---------------------------|-------------------|</span></span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Kernel Escapes <span class="pp">|</span> Eliminated (hypervisor) <span class="pp">|</span> Patched (kernel updates) <span class="pp">|</span></span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Memory Corruption <span class="pp">|</span> Eliminated (Rust) <span class="pp">|</span> Patched (code fixes) <span class="pp">|</span></span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Privilege Escalation <span class="pp">|</span> Eliminated (isolation) <span class="pp">|</span> Patched (capability fixes) <span class="pp">|</span></span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Zero-Day Attacks <span class="pp">|</span> Protected (architectural) <span class="pp">|</span> Vulnerable (pattern-based) <span class="pp">|</span></span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Patching Overhead <span class="pp">|</span> Low <span class="pp">|</span> High <span class="pp">|</span></span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Long-term Security <span class="pp">|</span> High <span class="pp">|</span> Variable <span class="pp">|</span></span>
 <span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## Case Study: Container Escape Vulnerabilities</span></span>
 <span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### CVE-2024-1234: Container Escape via Kernel Exploit</span></span>
 <span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>**Edera's Architectural Response:**</span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>**Architectural Elimination Response:**</span>
 <span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a><span class="in">```rust</span></span>
-<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a><span class="co">// Container escape attempts fail at hypervisor boundary</span></span>
-<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a><span class="kw">fn</span> handle_container_escape(container_id<span class="op">:</span> ContainerId) <span class="op">-&gt;</span> SecurityResult <span class="op">{</span></span>
-<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Attempt blocked by hypervisor isolation</span></span>
-<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a>    <span class="co">// No shared kernel to exploit</span></span>
-<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>    <span class="pp">SecurityResult::</span>Eliminated</span>
-<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a><span class="sc">/</span><span class="er">/</span> Container escape attempts fail at hypervisor boundary</span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a>fn <span class="fu">handle_container_escape</span>(container_id<span class="sc">:</span> ContainerId) <span class="ot">-&gt;</span> SecurityResult {</span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>    <span class="sc">/</span><span class="er">/</span> Attempt blocked by hypervisor isolation</span>
+<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a>    <span class="sc">/</span><span class="er">/</span> No shared kernel to exploit</span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>    SecurityResult<span class="sc">::</span>Eliminated</span>
+<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>**Traditional Patch Response:**</span>
+<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>**Patch-Based Response:**</span>
 <span id="cb7-127"><a href="#cb7-127" aria-hidden="true" tabindex="-1"></a><span class="in">```bash</span></span>
 <span id="cb7-128"><a href="#cb7-128" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply kernel security patch</span></span>
 <span id="cb7-129"><a href="#cb7-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Update container runtime</span></span>
@@ -1061,15 +1042,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-133"><a href="#cb7-133" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-134"><a href="#cb7-134" aria-hidden="true" tabindex="-1"></a><span class="fu">### CVE-2024-5678: Memory Corruption in Runtime</span></span>
 <span id="cb7-135"><a href="#cb7-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-136"><a href="#cb7-136" aria-hidden="true" tabindex="-1"></a>**Edera's Architectural Response:**</span>
+<span id="cb7-136"><a href="#cb7-136" aria-hidden="true" tabindex="-1"></a>**Architectural Elimination Response:**</span>
 <span id="cb7-137"><a href="#cb7-137" aria-hidden="true" tabindex="-1"></a><span class="in">```rust</span></span>
-<span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a><span class="co">// Rust prevents entire classes of memory corruption</span></span>
-<span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a><span class="co">// No buffer overflows, use-after-free, etc.</span></span>
-<span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> safe_runtime <span class="op">=</span> <span class="pp">Runtime::</span>new()<span class="op">;</span></span>
-<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a><span class="co">// Compile-time guarantees prevent runtime exploits</span></span>
+<span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a><span class="sc">/</span><span class="er">/</span> Rust prevents entire classes of memory corruption</span>
+<span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a><span class="sc">/</span><span class="er">/</span> No buffer overflows, use<span class="sc">-</span>after<span class="sc">-</span>free, etc.</span>
+<span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a>let safe_runtime <span class="ot">=</span> Runtime<span class="sc">::</span><span class="fu">new</span>();</span>
+<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a><span class="sc">/</span><span class="er">/</span> Compile<span class="sc">-</span>time guarantees prevent runtime exploits</span>
 <span id="cb7-142"><a href="#cb7-142" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb7-143"><a href="#cb7-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a>**Traditional Patch Response:**</span>
+<span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a>**Patch-Based Response:**</span>
 <span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a><span class="in">```c</span></span>
 <span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a><span class="co">// Patch specific memory corruption vulnerability</span></span>
 <span id="cb7-147"><a href="#cb7-147" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> fixed_function<span class="op">()</span> <span class="op">{</span></span>
@@ -1081,7 +1062,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-153"><a href="#cb7-153" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-154"><a href="#cb7-154" aria-hidden="true" tabindex="-1"></a><span class="fu">## When to Choose Each Approach</span></span>
 <span id="cb7-155"><a href="#cb7-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-156"><a href="#cb7-156" aria-hidden="true" tabindex="-1"></a><span class="fu">### Choose Edera Elimination When:</span></span>
+<span id="cb7-156"><a href="#cb7-156" aria-hidden="true" tabindex="-1"></a><span class="fu">### Choose Architectural Elimination When:</span></span>
 <span id="cb7-157"><a href="#cb7-157" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-158"><a href="#cb7-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**High-Security Requirements**: Financial, healthcare, government</span>
 <span id="cb7-159"><a href="#cb7-159" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Long-term Security**: Want to eliminate entire vulnerability classes</span>
@@ -1097,20 +1078,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb7-169"><a href="#cb7-169" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-170"><a href="#cb7-170" aria-hidden="true" tabindex="-1"></a><span class="fu">## The Bottom Line</span></span>
 <span id="cb7-171"><a href="#cb7-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>**Edera's architectural elimination** provides long-term security by eliminating entire vulnerability classes but requires accepting architectural constraints and vendor lock-in. **Patch-based security** offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.</span>
+<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>**Architectural elimination approaches** provide long-term security by eliminating entire vulnerability classes but require accepting architectural constraints. **Patch-based security** offers immediate fixes for specific vulnerabilities but requires ongoing patching and monitoring.</span>
 <span id="cb7-173"><a href="#cb7-173" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-174"><a href="#cb7-174" aria-hidden="true" tabindex="-1"></a>The choice depends on your **security timeline** and **operational constraints**:</span>
 <span id="cb7-175"><a href="#cb7-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Eliminate entire vulnerability classes** (Edera)</span>
-<span id="cb7-177"><a href="#cb7-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Fix vulnerabilities as they're discovered** (Traditional)</span>
+<span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Eliminate entire vulnerability classes** (Architectural elimination)</span>
+<span id="cb7-177"><a href="#cb7-177" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Fix vulnerabilities as they're discovered** (Patch-based)</span>
 <span id="cb7-178"><a href="#cb7-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-179"><a href="#cb7-179" aria-hidden="true" tabindex="-1"></a>For organizations prioritizing **long-term security** and willing to accept architectural constraints, Edera's elimination approach is compelling. For those needing **immediate vulnerability response**, patch-based security remains essential.</span>
+<span id="cb7-179"><a href="#cb7-179" aria-hidden="true" tabindex="-1"></a>For organizations prioritizing **long-term security** and willing to accept architectural constraints, architectural elimination approaches are compelling. For those needing **immediate vulnerability response**, patch-based security remains essential.</span>
 <span id="cb7-180"><a href="#cb7-180" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-181"><a href="#cb7-181" aria-hidden="true" tabindex="-1"></a>The real question: **Is your security strategy better served by eliminating entire vulnerability classes, or by fixing vulnerabilities as they're discovered?**</span>
 <span id="cb7-182"><a href="#cb7-182" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-183"><a href="#cb7-183" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb7-184"><a href="#cb7-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-185"><a href="#cb7-185" aria-hidden="true" tabindex="-1"></a>*This completes our series on Edera's security approach. See our [main comparison](/pages/isolation-vs-oss.qmd) for a comprehensive overview.* </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb7-185"><a href="#cb7-185" aria-hidden="true" tabindex="-1"></a>*This completes our series on security approaches. See our [main comparison](/pages/isolation-vs-oss.qmd) for a comprehensive overview.* </span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
