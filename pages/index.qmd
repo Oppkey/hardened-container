@@ -14,7 +14,7 @@ sections:
     style: "cards"
 ---
 
-![Hardened Runtime Security Philosophy](/assets/images/hero-graphic.svg){.hero-graphic}
+![Security Isolation Imperative](/assets/images/hero-graphic.svg){.hero-graphic}
 
 ## The Security Isolation Imperative
 
