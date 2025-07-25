@@ -14,6 +14,19 @@ The diagram illustrates the evolution of community engagement through two phases
 
 **Right side (Enhanced Engagement):** Demonstrates a stronger crossover between community, company, and technology through the use of a community engagement campaign. The center crossover area grows from 10% to 30%, representing the expanded intersection where community discussions, technology trends, and company awareness converge.
 
+## Building Trust Through Contribution
+
+Leadership and respect in any community are earned, not given. For a company to establish category leadership, it must first demonstrate genuine contribution to the category—both in technology development and in sharing knowledge, information, and collaborative work.
+
+**Trust is built through consistent, valuable contributions:**
+
+- **Technology Contributions:** Developing and sharing tools, libraries, and solutions that benefit the broader community
+- **Information Sharing:** Providing insights, documentation, and educational content that helps others succeed
+- **Collaborative Work:** Participating in open discussions, code reviews, and community initiatives
+- **Long-term Commitment:** Showing sustained engagement rather than opportunistic participation
+
+**Category leadership emerges naturally** when a company has proven its value to the community through meaningful contributions over time. This leadership position cannot be claimed through marketing alone—it must be earned through demonstrated expertise and generosity.
+
 ## Engagement Phases
 
 ![Engagement Phases Diagram](../assets/images/engagement_phases.png)
@@ -29,9 +42,6 @@ The diagram illustrates the evolution of community engagement through two phases
 
 4.  **Phase 4: Content Cycle**
     The cycle is repeated with new content.
-
-
-
 
 ## Example of Real People Working with a Site
 
