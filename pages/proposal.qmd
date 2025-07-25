@@ -2,7 +2,7 @@
 title: "Proposal"
 ---
 
-This proposal is to explore the synergy of community, technology, and company through the use of human ideas augmented by AI.
+This is a proposal from Story Changes Culture to explore the synergy of community, technology, and company through the use of human ideas augmented by AI.
 
 ## Community Engagement Evolution
 
@@ -32,10 +32,10 @@ Leadership and respect in any community are earned, not given. For a company to 
 ![Engagement Phases Diagram](../assets/images/engagement_phases.png)
 
 1.  **Phase 1: Content Creation**
-    Humans from Oppkey work with the AI to be a site with content.
+    Humans from Story Changes Culture (SCC) work with the AI to be a site with content.
 
 2.  **Phase 2: Expert Vetting**
-    Oppkey reaches out to developers and security experts to vet the site and propose changes.
+    SCC reaches out to developers and security experts to vet the site and propose changes.
 
 3.  **Phase 3: Community Collaboration**
     We work with the community to improve the site.
