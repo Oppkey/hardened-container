@@ -33,3 +33,8 @@ to check for accuracy and balanced viewpoints.
 
 <https://gitingest.com/>
 
+## Community Discussion Infrastructure
+
+* Using [Giscus](https://giscus.app/) for posts at bottom of pages
+* Discussion posts go to [GitHub Discussions](https://github.com/Oppkey/hardened-container/discussions)
+
