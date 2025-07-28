@@ -2,11 +2,11 @@
 title: "Proposal"
 ---
 
-This is a proposal from Story Changes Culture to explore the synergy of community, technology, and company through the use of human ideas augmented by AI.
+This is a proposal from Story Changes Culture (SCC) to explore the synergy of community, technology, and company through the use of human ideas augmented by AI.
 
 ## Community Engagement Evolution
 
-![Community Engagement Diagram](../assets/images/community-engagement-d1.png)
+![](../assets/images/community-engagement-d1.png)
 
 The diagram illustrates the evolution of community engagement through two phases:
 
@@ -29,18 +29,22 @@ Leadership and respect in any community are earned, not given. For a company to 
 
 ## Engagement Phases
 
-![Engagement Phases Diagram](../assets/images/engagement_phases.png)
+![](../assets/images/engagement_phases.png)
 
 1.  **Phase 1: Content Creation**
-    Humans from Story Changes Culture (SCC) work with the AI to be a site with content.
+    
+    Humans from SCC work with the AI to be a site with content.
 
 2.  **Phase 2: Expert Vetting**
+    
     SCC reaches out to developers and security experts to vet the site and propose changes.
 
 3.  **Phase 3: Community Collaboration**
-    We work with the community to improve the site.
+    
+    SCC works with the community to improve the site.
 
 4.  **Phase 4: Content Cycle**
+    
     The cycle is repeated with new content.
 
 ## Example of Real People Working with a Site
