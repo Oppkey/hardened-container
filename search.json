@@ -193,7 +193,7 @@
     "href": "spec/seo-guidelines.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\nSEO Guidelines\n\nPrimary keyword in title, first 100 words, and one H2.\nUnique meta description ≤155 characters.\nUse related keywords naturally.\nLink to at least two internal pages.\nAdd FAQ section when relevant."
+    "text": "Code\n\n\n\n\n\nSEO Guidelines\n\nPrimary keyword in title, first 100 words, and one H2.\nUnique meta description ≤155 characters.\nUse related keywords naturally.\nLink to at least two internal pages.\nAdd FAQ section when relevant."
   },
   {
     "objectID": "posts/shared-kernel-vs-micro-vms.html",
@@ -592,7 +592,7 @@
     "href": "spec/checklist.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\nQA & Accessibility Checklist\n\nYAML is valid (no tabs).\nRequired front matter fields present.\nHeadings start at H2.\nImages have descriptive alt text.\nAt least two internal links where applicable.\nCode blocks labeled with language.\nNo dead or relative-link mistakes.\nMeta description ≤155 chars.\nTitle ≤70 chars."
+    "text": "Code\n\n\n\n\n\nQA & Accessibility Checklist\n\nYAML is valid (no tabs).\nRequired front matter fields present.\nHeadings start at H2.\nImages have descriptive alt text.\nAt least two internal links where applicable.\nCode blocks labeled with language.\nNo dead or relative-link mistakes.\nMeta description ≤155 chars.\nTitle ≤70 chars."
   },
   {
     "objectID": "index.html",
