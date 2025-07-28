@@ -1,7 +1,7 @@
 ---
 title: "Development Model: OSS + Proprietary vs. Pure OSS"
 description: "Comparing hybrid development models with pure open source approaches in the hardened runtime ecosystem"
-date: 2025-01-27
+date: 2025-07-24
 categories: ["Development", "Business", "Community"]
 ---
 
