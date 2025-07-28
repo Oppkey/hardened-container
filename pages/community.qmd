@@ -65,7 +65,7 @@ The scale of AI with the trust of human verification, with the goal of creating 
 **Dr. Sarah Chen** *(Placeholder - Not a real person)*  
 Senior Security Researcher, Cloud Security Alliance
 
-![Dr. Sarah Chen](/assets/images/sarah_chen.png?v=2){.profile-image}
+![](../assets/images/sarah_chen.png){width=40%}
 
 > The comparison between hardened runtimes and traditional container isolation is spot-on. Having worked with both approaches in production environments, I can attest to the significant security improvements that hardened runtimes provide. The isolation mechanisms are fundamentally different - while containers share the kernel, hardened runtimes provide true process isolation that's much harder to escape from.
 
@@ -84,7 +84,7 @@ About security tools
 **Marcus Rodriguez** *(Placeholder - Not a real person)*  
 DevOps Engineer, Fortune 500 Financial Services
 
-![Marcus Rodriguez](/assets/images/marcus_rodriguez.png?v=2){.profile-image}
+![](../assets/images/marcus_rodriguez.png){width=40%}
 
 > As someone who's been responsible for container security in a highly regulated environment, the isolation comparison article really resonated with me. We've been using traditional containers for years, but the security gaps are becoming more apparent as attacks become more sophisticated. The move to hardened runtimes isn't just about security - it's about compliance and audit requirements too.
 
@@ -111,7 +111,7 @@ DevOps Engineer, Fortune 500 Financial Services
 **Alex Thompson** *(Placeholder - Not a real person)*  
 CTO, Startup Security Company
 
-![Alex Thompson](/assets/images/alex_thompson.png?v=2){.profile-image}
+![](../assets/images/alex_thompson.png){width=40%}
 
 > The security philosophy article really captures the essence of why we need to move beyond traditional container security. It's not just about adding more layers - it's about fundamentally rethinking how we approach runtime security. The comparison with OSS alternatives is particularly valuable for organizations trying to make informed decisions.
 
@@ -130,7 +130,7 @@ CTO, Startup Security Company
 **Dr. Emily Watson** *(Placeholder - Not a real person)*  
 Professor of Computer Science, Cybersecurity Research Lab
 
-![Dr. Emily Watson](/assets/images/emily_watson.png?v=2){.profile-image}
+![](/assets/images/emily_watson.png){width=40%}
 
 > The runtime isolation comparison provides an excellent technical foundation for understanding the security implications of different approaches. As an academic researcher, I appreciate the depth of technical analysis and the clear presentation of the underlying security principles.
 
@@ -157,7 +157,7 @@ Professor of Computer Science, Cybersecurity Research Lab
 **David Kim** *(Placeholder - Not a real person)*  
 Security Architect, Cloud Platform Provider
 
-![David Kim](/assets/images/david_kim.png?v=2){.profile-image}
+![](../assets/images/david_kim.png){width=40%}
 
 > Having implemented hardened runtimes at scale, I can confirm that the performance characteristics described in the articles are accurate. The overhead is minimal for most workloads, and the security benefits far outweigh any performance impact. The key is proper implementation and monitoring.
 
