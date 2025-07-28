@@ -91,18 +91,32 @@
     "text": "Our Mission\nWe’re building a neutral platform where the entire hardened runtime ecosystem can collaborate, share insights, and advance the state of container security. This includes:\n\nOpen Source Projects: Kata Containers, gVisor, and other hardened runtime projects\nCloud Providers: AWS, Google Cloud, Microsoft Azure, and others\n\nSecurity Researchers: Independent researchers and academic institutions\nPlatform Teams: DevOps and security engineers from organizations of all sizes"
   },
   {
-    "objectID": "pages/community.html#community-collaboration",
-    "href": "pages/community.html#community-collaboration",
+    "objectID": "pages/community.html#contributing-from-community",
+    "href": "pages/community.html#contributing-from-community",
     "title": "Community",
-    "section": "Community Collaboration",
-    "text": "Community Collaboration\n\nAdvisory Board\nWe’re forming an advisory board of experts from across the ecosystem to ensure our content remains accurate, balanced, and valuable to the entire community.\n\n\nGuest Contributions\nWe welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Recent examples:\n\n“The Vision for Kata Containers 3.0” - by Kata Containers maintainers\n“How gVisor Tackles Syscall Compatibility” - by gVisor team members\n“AWS Bottlerocket: Lessons from Production” - by AWS security engineers\n\n\n\nCommunity Review Process\nAll technical content undergoes community review by:\n\nSecurity Researchers: Academic and industry experts\nPlatform Engineers: DevOps and SRE professionals\nOpen Source Maintainers: Project leaders from across the ecosystem"
+    "section": "Contributing from Community",
+    "text": "Contributing from Community\nWe welcome contributions from the community. There are three ways to contribute:\n\nComment on an existing article by writing markdown in the text box at the bottom of the article. Requires login to GitHub for authentication.\nSubmit a new article. Fork repository. Write article. Submit pull request.\nSubmit results of a test. Follow the same process as a blog post for submission."
+  },
+  {
+    "objectID": "pages/community.html#micro-sponsorships-for-students",
+    "href": "pages/community.html#micro-sponsorships-for-students",
+    "title": "Community",
+    "section": "Micro-Sponsorships for Students",
+    "text": "Micro-Sponsorships for Students\nIf you are in college, either undergraduate or graduate, and are interested in contributing content, we are offering micro-sponsorships to help you get started. High school students on a registered US Air and Space Force CyberPatriot defense competition team are also welcome.\nContact Jesse Casman at jesse@storychangesculture.com to apply.\n\n\n\nActivity\nSponsorship Amount\n\n\n\n\nComment on blog post\nUSD $20\n\n\nWrite blog post\nUSD $50\n\n\nTest\nUSD $100 to $500"
+  },
+  {
+    "objectID": "pages/community.html#community-collaboration-concept-only",
+    "href": "pages/community.html#community-collaboration-concept-only",
+    "title": "Community",
+    "section": "Community Collaboration (Concept Only)",
+    "text": "Community Collaboration (Concept Only)\n\nAdvisory Board\nWe’re forming an advisory board of experts from across the ecosystem to ensure our content remains accurate, balanced, and valuable to the entire community.\n\n\nGuest Contributions\nWe welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Conceptual examples:\n\n“The Vision for Kata Containers 3.0” - by Kata Containers maintainers (placeholder)\n“How gVisor Tackles Syscall Compatibility” - by gVisor team members (placeholder)\n“AWS Bottlerocket: Lessons from Production” - by AWS security engineers (placeholder)\n\n\n\nCommunity Review Process\nAll technical content undergoes community review by:\n\nSecurity Researchers: Academic and industry experts\nPlatform Engineers: DevOps and SRE professionals\nOpen Source Maintainers: Project leaders from across the ecosystem"
   },
   {
     "objectID": "pages/community.html#ecosystem-sponsorship",
     "href": "pages/community.html#ecosystem-sponsorship",
     "title": "Community",
     "section": "Ecosystem Sponsorship",
-    "text": "Ecosystem Sponsorship\nAs part of our commitment to advancing the entire category, we support open source projects in the hardened runtime ecosystem:\n\nRecent Sponsorships\n\nKata Containers: Supporting the CNCF project’s development and documentation\ngVisor: Contributing to Google’s container runtime security research\nSecurity Conferences: Sponsoring talks and workshops on container isolation\n\n\n\nSponsorship Philosophy\nWe believe that advancing security isolation requires collaboration, not competition. When we sponsor an open source project, we’re not “sponsoring a competitor”—we’re sponsoring the ecosystem."
+    "text": "Ecosystem Sponsorship\nAs part of our commitment to advancing the entire category, we support open source projects in the hardened runtime ecosystem:\n\nRecent Sponsorships\n\nKata Containers: Supporting the CNCF project’s development and documentation (placeholder)\ngVisor: Contributing to Google’s container runtime security research (placeholder)\nSecurity Conferences: Sponsoring talks and workshops on container isolation (placeholder)\n\n\n\nSponsorship Philosophy\nWe believe that advancing security isolation requires collaboration, not competition. When we sponsor an open source project, we’re not “sponsoring a competitor”—we’re sponsoring the ecosystem."
   },
   {
     "objectID": "pages/community.html#community-feedback",
@@ -718,6 +732,6 @@
     "href": "pages/about.html#contact",
     "title": "About This Project",
     "section": "Contact",
-    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jcasman@storychangesculture.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: This site is stewarded by Edera as the primary founder and sponsor of the Security Isolation Imperative. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas.\nQ: How do you maintain neutrality?\nA: We maintain editorial independence through community review processes and transparent methodology. All comparisons are evidence-based and cite public sources.\nQ: Do you only cover Edera?\nA: No. We cover the entire hardened runtime ecosystem, including Kata Containers, gVisor, AWS Bottlerocket, and other approaches. Our goal is to advance the entire category."
+    "text": "Contact\n\nOpen an issue or PR.\n\nReach out via email (jesse@storychangesculture.com).\n\n\nFAQ\nQ: Is this sponsored by Edera?\nA: This site is stewarded by Edera as the primary founder and sponsor of the Security Isolation Imperative. However, Edera does not control the content. All content is independent and analyzed by independent developers from the community.\nQ: Can I contribute?\nA: Yes—submit a PR! We welcome contributions from developers who are willing to engage under their real names. We are using AI to augment human ideas.\nQ: How do you maintain neutrality?\nA: We maintain editorial independence through community review processes and transparent methodology. All comparisons are evidence-based and cite public sources.\nQ: Do you only cover Edera?\nA: No. We cover the entire hardened runtime ecosystem, including Kata Containers, gVisor, AWS Bottlerocket, and other approaches. Our goal is to advance the entire category."
   }
 ]
