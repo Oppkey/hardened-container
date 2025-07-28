@@ -27,7 +27,8 @@ quarto render
 
 ## Feeding Site into LLM
 
-I'm using this site to feed information to the LLM.
+I'm using this site to feed information to the LLM as a human-augmented tool to check
+technical accuracy and fairness in tone.
 
 <https://gitingest.com/>
 
