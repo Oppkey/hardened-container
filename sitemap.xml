@@ -2,70 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://Oppkey.github.io/hardened-container/pages/proposal.html</loc>
-    <lastmod>2025-07-28T14:23:30.983Z</lastmod>
+    <lastmod>2025-07-28T14:50:27.020Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/pages/index.html</loc>
-    <lastmod>2025-07-28T14:23:29.627Z</lastmod>
+    <lastmod>2025-07-28T14:50:25.637Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/pages/community.html</loc>
-    <lastmod>2025-07-28T14:23:28.141Z</lastmod>
+    <lastmod>2025-07-28T14:50:24.157Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/spec/prompts.html</loc>
-    <lastmod>2025-07-28T14:23:26.503Z</lastmod>
+    <lastmod>2025-07-28T14:50:22.465Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/spec/page-types.html</loc>
-    <lastmod>2025-07-28T14:23:25.529Z</lastmod>
+    <lastmod>2025-07-28T14:50:21.487Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/spec/seo-guidelines.html</loc>
-    <lastmod>2025-07-28T14:23:24.441Z</lastmod>
+    <lastmod>2025-07-28T14:50:20.354Z</lastmod>
   </url>
   <url>
-    <loc>https://Oppkey.github.io/hardened-container/posts/security-philosophy.html</loc>
-    <lastmod>2025-07-28T14:23:22.838Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Oppkey.github.io/hardened-container/posts/runtime-isolation-comparison.html</loc>
-    <lastmod>2025-07-28T14:23:21.452Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Oppkey.github.io/hardened-container/posts/base-images-comparison.html</loc>
-    <lastmod>2025-07-28T14:23:19.839Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Oppkey.github.io/hardened-container/posts/real-world-fixes.html</loc>
-    <lastmod>2025-07-28T14:23:20.689Z</lastmod>
+    <loc>https://Oppkey.github.io/hardened-container/posts/shared-kernel-vs-micro-vms.html</loc>
+    <lastmod>2025-07-28T14:50:18.747Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/posts/index.html</loc>
-    <lastmod>2025-07-28T14:23:22.013Z</lastmod>
+    <lastmod>2025-07-28T14:50:17.076Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Oppkey.github.io/hardened-container/posts/real-world-fixes.html</loc>
+    <lastmod>2025-07-28T14:50:15.697Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Oppkey.github.io/hardened-container/posts/base-images-comparison.html</loc>
+    <lastmod>2025-07-28T14:50:14.759Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Oppkey.github.io/hardened-container/posts/runtime-isolation-comparison.html</loc>
+    <lastmod>2025-07-28T14:50:16.483Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Oppkey.github.io/hardened-container/posts/security-philosophy.html</loc>
+    <lastmod>2025-07-28T14:50:17.900Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/posts/dev-model-comparison.html</loc>
-    <lastmod>2025-07-28T14:23:23.948Z</lastmod>
+    <lastmod>2025-07-28T14:50:19.849Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/spec/llm-brief.html</loc>
-    <lastmod>2025-07-28T14:23:24.994Z</lastmod>
+    <lastmod>2025-07-28T14:50:20.955Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/spec/checklist.html</loc>
-    <lastmod>2025-07-28T14:23:26.034Z</lastmod>
+    <lastmod>2025-07-28T14:50:21.997Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/index.html</loc>
-    <lastmod>2025-07-28T14:23:27.031Z</lastmod>
+    <lastmod>2025-07-28T14:50:23.006Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/pages/isolation-vs-oss.html</loc>
-    <lastmod>2025-07-28T14:23:28.911Z</lastmod>
+    <lastmod>2025-07-28T14:50:24.924Z</lastmod>
   </url>
   <url>
     <loc>https://Oppkey.github.io/hardened-container/pages/about.html</loc>
-    <lastmod>2025-07-28T14:23:30.350Z</lastmod>
+    <lastmod>2025-07-28T14:50:26.373Z</lastmod>
   </url>
 </urlset>

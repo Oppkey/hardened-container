@@ -200,6 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong><a href="../posts/dev-model-comparison.html">Development Model: OSS + Proprietary vs.&nbsp;Pure OSS</a></strong> - Hybrid development vs.&nbsp;community-driven innovation</li>
 <li><strong><a href="../posts/security-philosophy.html">Security Philosophy: Prevention vs.&nbsp;Detection</a></strong> - Proactive prevention vs.&nbsp;reactive detection strategies</li>
 <li><strong><a href="../posts/real-world-fixes.html">Real-world Fixes: Architectural vs.&nbsp;Patches</a></strong> - Eliminating vulnerability classes vs.&nbsp;patch-based fixes</li>
+<li><strong><a href="../posts/shared-kernel-vs-micro-vms.html">Shared Kernel vs.&nbsp;Micro VMs: A Practical Security Showdown</a></strong> - Do your containers share a kernel, or does each one get its own?</li>
 </ul>
 </section>
 <section id="technical-themes" class="level3">
@@ -520,17 +521,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**[Development Model: OSS + Proprietary vs. Pure OSS](/posts/dev-model-comparison.qmd)** - Hybrid development vs. community-driven innovation</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**[Security Philosophy: Prevention vs. Detection](/posts/security-philosophy.qmd)** - Proactive prevention vs. reactive detection strategies</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**[Real-world Fixes: Architectural vs. Patches](/posts/real-world-fixes.qmd)** - Eliminating vulnerability classes vs. patch-based fixes</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Technical Themes</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Our posts explore the core debates in container security:</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Performance vs. Security**: When to prioritize isolation over speed</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Innovation vs. Transparency**: Proprietary innovation vs. community development</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prevention vs. Detection**: Architectural elimination vs. reactive response</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Simplicity vs. Capability**: Operational complexity vs. security guarantees</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Each post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**[Shared Kernel vs. Micro VMs: A Practical Security Showdown](/posts/shared-kernel-vs-micro-vms.qmd)** - Do your containers share a kernel, or does each one get its own?</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">### Technical Themes</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Our posts explore the core debates in container security:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Performance vs. Security**: When to prioritize isolation over speed</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Innovation vs. Transparency**: Proprietary innovation vs. community development</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prevention vs. Detection**: Architectural elimination vs. reactive response</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Simplicity vs. Capability**: Operational complexity vs. security guarantees</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>Each post includes technical comparisons, real-world benchmarks, and practical guidance for choosing the right approach for your use case. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
