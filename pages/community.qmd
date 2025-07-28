@@ -16,7 +16,32 @@ We're building a neutral platform where the entire hardened runtime ecosystem ca
 - **Security Researchers**: Independent researchers and academic institutions
 - **Platform Teams**: DevOps and security engineers from organizations of all sizes
 
-## Community Collaboration
+## Contributing from Community
+
+We welcome contributions from the community. There are three ways to contribute:
+
+1. Comment on an existing article by writing markdown in the text box at the 
+    bottom of the article.  Requires login to GitHub for authentication.
+2. Submit a new article. Fork repository. Write article. Submit pull request.
+3. Submit results of a test. Follow the same process as a blog post for submission.
+
+## Micro-Sponsorships for Students
+
+If you are in college, either undergraduate or graduate, and are interested in
+contributing content, we are offering micro-sponsorships to help you get started.
+High school students on a registered US Air and Space Force CyberPatriot defense competition
+team are also welcome.
+
+Contact Jesse Casman at jesse@storychangesculture.com to apply.
+
+| Activity | Sponsorship Amount |
+| -- | -- |
+| Comment on blog post | USD $20 |
+| Write blog post | USD $50 |
+| Test | USD $100 to $500 |
+
+
+## Community Collaboration (Concept Only)
 
 ### Advisory Board
 
@@ -24,11 +49,11 @@ We're forming an advisory board of experts from across the ecosystem to ensure o
 
 ### Guest Contributions
 
-We welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Recent examples:
+We welcome guest posts from maintainers and contributors across the hardened runtime ecosystem. Conceptual examples:
 
-- **"The Vision for Kata Containers 3.0"** - by Kata Containers maintainers
-- **"How gVisor Tackles Syscall Compatibility"** - by gVisor team members
-- **"AWS Bottlerocket: Lessons from Production"** - by AWS security engineers
+- **"The Vision for Kata Containers 3.0"** - by Kata Containers maintainers (placeholder)
+- **"How gVisor Tackles Syscall Compatibility"** - by gVisor team members (placeholder)
+- **"AWS Bottlerocket: Lessons from Production"** - by AWS security engineers (placeholder)
 
 ### Community Review Process
 
@@ -44,9 +69,9 @@ As part of our commitment to advancing the entire category, we support open sour
 
 ### Recent Sponsorships
 
-- **Kata Containers**: Supporting the CNCF project's development and documentation
-- **gVisor**: Contributing to Google's container runtime security research
-- **Security Conferences**: Sponsoring talks and workshops on container isolation
+- **Kata Containers**: Supporting the CNCF project's development and documentation (placeholder)
+- **gVisor**: Contributing to Google's container runtime security research (placeholder)
+- **Security Conferences**: Sponsoring talks and workshops on container isolation (placeholder)
 
 ### Sponsorship Philosophy
 
