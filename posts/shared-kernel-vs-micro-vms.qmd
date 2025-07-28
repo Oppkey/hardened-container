@@ -1,0 +1,98 @@
+---
+title: "Shared Kernel vs. Micro VMs: A Practical Security Showdown"
+description: "Do your containers share a kernel, or does each one get its own?"
+date: 2025-07-28
+categories: ["Security", "Strategy", "Philosophy"]
+---
+
+{{< video https://www.youtube.com/embed/JoDRHUWDOt0 >}}
+
+### Shared Kernel vs. Micro VMs: A Practical Security Showdown
+
+When discussing containers, the word "isolation" is a core concept. Applications are packaged into containers with the expectation that they are sandboxed, secure, and separated from one another. But is that always the case? The level of isolation achieved depends heavily on the underlying container runtime architecture.
+
+At the heart of the matter lies a fundamental architectural choice: do containers share a kernel, or does each one get its own? This single decision has profound security implications. This article explores the two dominant models, followed by a practical demo that illustrates exactly why the architectural choice matters.
+
+#### The Two Faces of Containerization
+
+**1. The Shared Kernel Model (e.g., Docker)**
+
+The most common approach to containerization, popularized by Docker, is the shared kernel model. In this setup, all containers running on a host (whether it's a bare-metal server or a cloud VM) share the same underlying Linux kernel.
+
+*   **How it Works:** The container engine uses kernel features like namespaces (to isolate process IDs, networks, etc.) and cgroups (to limit resource usage) to create the illusion of separate environments.
+*   **The Pro:** This model is lightweight and fast. Since a full OS is not spun up for each container, startup times are quick and resource overhead is minimal.
+*   **The Con:** The shared kernel is also a shared attack surface. A vulnerability in the kernel itself could potentially affect all containers on the host. More pressingly, misconfigurations can easily break down the walls of isolation, allowing one container to "see" and interact with the processes or environment of another.
+
+**2. The Isolated Kernel Model (e.g., Apple Containerization, Edera Protect)**
+
+A more security-focused approach is to provide each container with its own dedicated kernel. This is achieved by running each container inside its own lightweight, purpose-built virtual machine, often called a Micro VM.
+
+*   **How it Works:** A virtualization layer launches a separate Micro VM for every container (or pod). Each Micro VM has its own minimal, isolated kernel.
+*   **The Pro:** This provides true kernel-level isolation. There is no shared process space and no shared kernel between containers. One container is architecturally blind to the existence of another, drastically reducing the risk of lateral movement or information leakage.
+*   **The Con:** There is a slight performance overhead compared to the shared model, but modern virtualization technology has made this difference negligible for most workloads.
+
+![A diagram comparing a shared kernel architecture with an isolated kernel (Edera Zone) architecture.](https://docs.edera.dev/EderaProtectZones.png)
+
+#### Putting Theory to the Test: The Leaky Vessel Demo
+
+Architectural theory is one thing, but seeing the security impact is another. To demonstrate the risk of the shared kernel model, a simple scenario is run involving two containers:
+
+1.  **`leaky-vessel`**: The "victim" container. It runs a simple background process and is configured with a sensitive environment variable, simulating a database password or an API token.
+    *   `SECRET_KEY="my-super-secret-creds"`
+    *   `SUPER_ORCHESTRATOR_SECRET="this-is-fine-leaky-vessel"`
+2.  **`raider`**: The "attacker" container. Its goal is to inspect other processes on the host and steal the secret from `leaky-vessel`.
+
+**The Attack on a Shared Kernel (Docker)**
+
+First, the scenario is run using Docker. The `leaky-vessel` container is started normally.
+
+```bash
+# Start the victim container with a secret
+$ docker run -d -e SUPER_ORCHESTRATOR_SECRET="this-is-fine-leaky" leaky-vessel
+```
+
+Next, the `raider` container is launched with a specific, dangerous flag: `--pid=host`. This flag tells Docker to disable process ID (PID) namespace isolation, allowing the container to see all processes running on the host VM, not just its own.
+
+```bash
+# Start the attacker container, sharing the host's process namespace
+$ docker run --rm -it --pid=host --name raider raider:latest
+```
+
+Now, from inside the `raider` container's shell, an attacker can proceed:
+
+```bash
+# Inside the 'raider' container...
+
+# 1. List all processes on the host. The 'sleep.sh' from the other container is visible!
+root@raider:/# ps auxf | grep sleep.sh
+root 751 ... /bin/sh /sleep.sh
+
+# 2. Inspect the environment variables of that process using its PID (751).
+# The output is messy, so it's cleaned up to find the secret.
+root@raider:/# cat /proc/751/environ | tr '\0' '\n' | grep SUPER
+SUPER_ORCHESTRATOR_SECRET=this-is-fine-leaky
+```
+
+The attack is successful. The `raider` container breaks out of its isolation and steals a secret from another container. This is a classic example of a shared runtime security risk, enabled by a single misconfigured flag.
+
+**The Secure-by-Design Defense (Isolated Kernels)**
+
+Next, observe what happens when using a runtime built on the isolated kernel model, like Apple's or Edera's.
+
+Attempting to run the `raider` container with the same malicious intent immediately results in an error.
+
+```bash
+# Attempting to run the attacker container
+$ container run -dit --pid=host --name raider raider:latest
+Error: unknown option '--pid'. Did you mean '--uid'?
+```
+
+The runtime simply doesn't support the flag. The design enforces isolation rather than providing options to disable it.
+
+Even if the command were supported, the attack would still fail. Because `leaky-vessel` and `raider` would be running in completely separate Micro VMs, each with its own kernel and process tree, the `ps auxf` command inside `raider` would only show its own processes. It would be architecturally impossible for it to see the `sleep.sh` process from `leaky-vessel`.
+
+#### The Bottom Line: Eliminating a Class of Runtime Risks
+
+This demonstration highlights a critical truth: the shared kernel model relies on perfect configuration to maintain security. A single insecure setting, like `--pid=host` or `--privileged`, can compromise every workload on the node.
+
+The isolated kernel model, used by platforms like Edera Protect, is fundamentally more secure because it doesn't just configure isolation—it enforces it at the hardware virtualization level. This **eliminates an entire class of shared runtime security risks by design**, making it the superior choice for running multi-tenant, untrusted, or high-security workloads. When security is paramount, the choice of architecture makes all the difference.

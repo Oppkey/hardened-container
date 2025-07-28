@@ -1,7 +1,7 @@
 ---
 title: "Security Philosophy: Prevention vs. Detection"
 description: "Comparing proactive prevention approaches with reactive detection and visibility strategies in the hardened runtime ecosystem"
-date: 2025-01-27
+date: 2025-07-24
 categories: ["Security", "Strategy", "Philosophy"]
 ---
 

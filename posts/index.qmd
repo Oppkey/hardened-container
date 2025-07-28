@@ -14,6 +14,7 @@ Our latest technical deep-dives on the hardened runtime ecosystem, container iso
 - **[Development Model: OSS + Proprietary vs. Pure OSS](/posts/dev-model-comparison.qmd)** - Hybrid development vs. community-driven innovation
 - **[Security Philosophy: Prevention vs. Detection](/posts/security-philosophy.qmd)** - Proactive prevention vs. reactive detection strategies
 - **[Real-world Fixes: Architectural vs. Patches](/posts/real-world-fixes.qmd)** - Eliminating vulnerability classes vs. patch-based fixes
+- **[Shared Kernel vs. Micro VMs: A Practical Security Showdown](/posts/shared-kernel-vs-micro-vms.qmd)** - Do your containers share a kernel, or does each one get its own?
 
 ### Technical Themes
 

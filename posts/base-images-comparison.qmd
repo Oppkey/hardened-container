@@ -1,7 +1,7 @@
 ---
 title: "Base Images: Full Kernel vs. Stripped-Down"
 description: "Comparing full kernel isolation approaches with minimal attack surface strategies in the hardened runtime ecosystem"
-date: 2025-01-27
+date: 2025-07-24
 categories: ["Security", "Performance", "Operations"]
 ---
 
